@@ -1,0 +1,1667 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic Page Needs
+  ================================================== -->
+    <meta charset="utf-8">
+    <title>Investment MF Product Dashboard | Invest4Edu</title>
+
+    <!-- Mobile Specific Metas
+  ================================================== -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="author" content="">
+    <meta name="generator" content="">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+
+    <!-- PLUGINS CSS STYLE -->
+    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="plugins/slick/slick.css">
+    <link rel="stylesheet" href="plugins/slick/slick-theme.css">
+    <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="plugins/aos/aos.css">
+
+    <!------------- css edu abacus ----------------->
+
+    <link rel="stylesheet" type="text/css" href="iofrm-by-brandio/Template/css/fontawesome-all.min.css">
+    <link rel="stylesheet" type="text/css" href="iofrm-by-brandio/Template/css/iofrm-style.css">
+    <link rel="stylesheet" type="text/css" href="iofrm-by-brandio/Template/css/iofrm-theme5.css">
+
+    <!-- CUSTOM CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!------- MWS JS ----------->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <script src="plugins/bootstrap/bootstrap.min.js"></script>
+
+    <!-- GOOGLE WEB FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600" rel="stylesheet">
+
+    <!-- link for animation of MOdal, by Myduz Web Studio -->
+    <link href="notification/assets/css/animate.min.css" rel="stylesheet">
+    <link href="notification/assets/css/animate.css" rel="stylesheet">
+    <link href="notification/style.css" rel="stylesheet">
+
+    <style>
+        .top-mum {
+            margin-top: 5%;
+            background-color: #00315d;
+        }
+
+        .mum-h3 {
+            font-weight: bold;
+            color: #646464;
+            margin-bottom: 3%;
+        }
+
+        .mum-h4 {
+            color: #646464;
+            margin-bottom: 3%;
+        }
+
+        .main-nav {
+            background: #ebebeb;
+        }
+
+        .mumLabel {
+            font-size: 12px;
+            padding-left: 2%;
+            width: auto;
+            padding-right: 2%;
+            color: #fff;
+            margin-bottom: 0;
+            color: #00305b;
+        }
+
+        .mumBg {
+            background-color: #edf4ff;
+            border-radius: 20px;
+        }
+
+        .mumCircle {
+            border: 2px solid #2e7eed;
+            padding: 55% 30%;
+        }
+
+        .block {
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .circle {
+            background: #2e7eed;
+            border-radius: 200px;
+            color: white;
+            height: 200px;
+            font-weight: bold;
+            width: 200px;
+            display: table;
+            margin: 20px auto;
+        }
+
+        .circle p {
+            vertical-align: middle;
+            display: table-cell;
+            color: #fff;
+        }
+
+        /************ ======== form gmail like input ==========**********/
+
+        .field-wrapper {
+            position: relative;
+            margin-bottom: 15px;
+        }
+
+        .field-wrapper input,
+        select {
+            border: 1px solid #DADCE0;
+            padding: 15px;
+            border-radius: 4px;
+            width: 100%;
+        }
+
+        .field-wrapper .field-placeholder {
+            font-size: 16px;
+            position: absolute;
+            /* background: #fff; */
+            bottom: 6px;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            color: #80868b;
+            left: 8px;
+            padding: 0 8px;
+            -webkit-transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1), opacity 150ms cubic-bezier(0.4, 0, 0.2, 1);
+            transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1), opacity 150ms cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: 1;
+            text-align: left;
+            width: 100%;
+        }
+
+        .field-wrapper .field-placeholder span {
+            color: #05499c;
+            font-size: 12px;
+            background-color: #fff;
+            padding: 0 5px;
+        }
+
+        .field-wrapper input:not([disabled]):focus~.field-placeholder {
+            color: #1A73E8;
+        }
+
+        .field-wrapper input {
+            height: 10px;
+            font-size: 12px;
+            color: #1A73E8;
+        }
+
+        .form-control {
+            font-size: 12px;
+            color: #05499c;
+        }
+
+        .form-control select {
+            height: 10px;
+            font-size: 12px;
+            color: #05499c;
+        }
+
+        .field-wrapper input:not([disabled]):focus~.field-placeholder,
+        .field-wrapper.hasValue input:not([disabled])~.field-placeholder {
+            -webkit-transform: scale(.75) translateY(-39px) translateX(-60px);
+            transform: scale(1) translateY(-15px) translateX(-5px);
+        }
+
+        .field-wrapper input:not([disabled]):focus {
+            border: 1px solid #05499c;
+            background-color: #fff;
+            font-size: 12px;
+        }
+
+        .form-content input:hover,
+        .form-content input:focus,
+        .form-content .dropdown-toggle.btn-default:hover,
+        .form-content .dropdown-toggle.btn-default:focus {
+            border: 0;
+            background-color: #fff;
+            color: #05499c;
+        }
+
+        /* post invest mf dashbd css */
+        .post-mf-dashbd {
+            background-color: #edf4ff;
+            border-radius: 20px;
+            padding: 2%;
+            margin-bottom: 3%;
+            /* background-color: #e6e6e6; border-radius: 20px; padding: 3% 2% 3%; margin-bottom: 3%; */
+        }
+
+        .mf-cart-hold {
+            font-size: 2rem;
+            color: #000;
+            line-height: 1.1;
+        }
+
+        .mf-cart-hold ul {
+            margin: 0;
+        }
+
+        .mf-cart-hold ul li {
+            display: inline-block;
+            width: 48%;
+            font-size: 1rem;
+            font-weight: 400;
+            color: #121417;
+        }
+
+        .mf-cart-hold label {
+            display: block;
+            font-size: 12px;
+            color: #808080;
+            margin-bottom: 0.25rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            white-space: nowrap;
+        }
+
+        .mf-cart-hold-table ul {
+            display: table;
+            width: 100%;
+            padding: 0px;
+        }
+
+        .mf-cart-hold-table ul li {
+            display: table-cell;
+            width: initial;
+            vertical-align: middle;
+            text-align: center;
+            padding: 0 !important;
+        }
+
+        .mf-cart-hold-table ul li:first-child {
+            text-align: left;
+        }
+
+        .text-green {
+            color: #029b26;
+        }
+
+        .positive:after {
+            display: inline-block;
+            width: 0;
+            height: 0;
+            margin-left: .355em;
+            vertical-align: middle;
+            content: "";
+            border-bottom: .5em solid #029b26;
+            border-right: .5em solid transparent;
+            border-top: 0;
+            border-left: .5em solid transparent;
+        }
+
+        /* 
+        .prtflio-content {
+        } */
+        .prtflio-head-tab {
+            display: inline;
+        }
+
+        .prtflio-content-tabs {
+            /* display: flex;
+            justify-content: space-between;
+            width: 80%;
+            margin: 0 auto; */
+            padding: 10px;
+        }
+
+        .prtflio-content .prtflio-content-tabs {
+            padding: 0px;
+            display: inline;
+            float: right;
+            /* display: flex; */
+            /* list-style: none; */
+            /* margin: 0px; */
+        }
+
+        .prtflio-content-tabs .portfolio-tab {
+            margin-right: 10px;
+            font-size: 20px;
+            border-bottom: 3px solid;
+            padding: 5px 10px;
+            color: black;
+            display: inline;
+            cursor: pointer;
+        }
+
+        .prtflio-content-tabs .portfolio-tab:last-child {
+            margin-right: 0px;
+        }
+
+        .prtflio-content-tabs .portfolio-tab.active {
+            box-shadow: 0px -5px 8px 4px skyblue;
+            border-color: deepskyblue;
+        }
+
+        #piechart_3d svg g[column-id] rect {
+            font-size: 40px;
+        }
+
+        @media (max-width:960px) {
+            .prtflio-content .prtflio-content-tabs {
+                padding: 0px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                float: none;
+                display: inherit;
+            }
+        }
+
+        @media (min-width:960px) and (max-width:990px) {
+            .prtflio-content .prtflio-content-tabs {
+                padding: 0px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                float: none;
+                display: inherit;
+            }
+        }
+
+        .myaccordion thead th {
+            white-space: nowrap;
+        }
+
+        .myaccordion2 thead th {
+            white-space: nowrap;
+        }
+    </style>
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+
+</head>
+
+<body class="body-wrapper" data-spy="scroll" data-target=".privacy-nav">
+    <nav class="navbar main-nav navbar-expand-lg px-2 px-sm-0 py-2 py-lg-0  fixed-top" style="z-index:10;">
+        <div class="container">
+            <a class="navbar-brand" href="index.html" style="width: 40%;">
+                <img src="images/logo_3.png" alt="logo" style="width: 40%;"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="ti-menu"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">About us
+                            <span><i class="ti-angle-down"></i></span>
+                        </a>
+                        <!-- Dropdown list -->
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item active" href="why-us.html">Why invest4Edu</a></li>
+                            <li><a class="dropdown-item" href="who-we-are.html">Who we are</a></li>
+                            <li><a class="dropdown-item" href="how-it-works.html">How Invest4edu works</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown @@pages">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Education opportunities
+                            <span><i class="ti-angle-down"></i></span>
+                        </a>
+                        <!-- Dropdown list -->
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item @@team" href="india.html">Study in India</a></li>
+                            <li><a class="dropdown-item @@team" href="canada.html">Study in Canada</a></li>
+                            <li><a class="dropdown-item @@career" href="uk.html">Study in UK</a></li>
+                            <li><a class="dropdown-item @@blog" href="australia.html">Study in Australia</a></li>
+                            <li><a class="dropdown-item @@blogSingle" href="usa.html">Study in USA</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item @@contact">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <!--------
+				<li class="nav-item">
+					<a  class="nav-link" href="sign-in.html" style="color: #2e7eed;" data-toggle="modal" data-target="#login-form">Login</a>
+				</li>
+				--------->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                            <img src="images/invest4edu-user.png" class="img-fluid img-responsive" width="40%" alt="">
+                            <span><i class="ti-angle-down"></i></span>
+                        </a>
+                        <!-- Dropdown list -->
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item @@team" href=""
+                                    style="background-color: #00315d; color: #fff;">Complete Profile : 60%</a></li>
+                            <li><a class="dropdown-item @@team" href="">View Profile</a></li>
+                            <li><a class="dropdown-item @@team" href="">Change Password</a></li>
+                            <li><a class="dropdown-item @@team" href="">Help & Support</a></li>
+                            <li><a class="dropdown-item @@career" href="">Sign out</a></li>
+                        </ul>
+                    </li>
+                    <!-------
+				<li class="nav-item">
+					<a class="nav-link">
+					<img src="images/logout.png" class="img-fluid img-responsive" width="40%" alt="">
+					</a>
+				</li>
+                 ----------->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!------------- courses ---------------->
+
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-12 col-md-12 col-sm-12 order-0">
+                    <div id="MFTotalHoldings" class="mf-cart-hold mf-cart-hold-table  post-mf-dashbd">
+                        <ul>
+                            <li class="head">Total Holdings</li>
+                            <li><label>Investment (<span class="rupee d-inline-block"><i class="fa fa-rupee-sign"
+                                            aria-hidden="true"></i></span>)</label> <span class="">81.00K</span></li>
+                            <li><label>Current Value (<span class="rupee d-inline-block"><i class="fa fa-rupee-sign"
+                                            aria-hidden="true"></i></span>)</label> <span class="">1.15L</span></li>
+                            <li class="d-none d-lg-block"><label>Gain / Loss (<span class="rupee d-inline-block"><i
+                                            class="fa fa-rupee-sign" aria-hidden="true"></i></span>)</label><span
+                                    class="text-green">34.02K</span> </li>
+                            <li><label>Gain / Loss(%)</label><span class="text-green positive">42.00%</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Poftfolio Allocation given in it shown through pie chart ( By AMC / By Scheme / By Assets Class ) -->
+            <div class="row">
+                <!-- Feature 01-->
+                <div class="col-lg-12 col-sm-12 col-md-12 col-12">
+                    <div class="post-mf-dashbd">
+                        <div class="prtflio-content">
+                            <h2 class="prtflio-head-tab"> PortFolio Allocation</h2>
+                            <div class="prtflio-content-tabs">
+                                <div class="portfolio-tab prt-folio-tab-click active" data-id="A">By AMC</div>
+                                <div class="portfolio-tab prt-folio-tab-click" data-id="B">By Scheme</div>
+                                <div class="portfolio-tab prt-folio-tab-click" data-id="C">By Asset Class</div>
+                            </div>
+                            <div class="tab-divs">
+                                <div class="prtflio-pie-chrt">
+                                    <div id="A">
+                                        <div id="piechart-3d-amc" style="width: 100%; height: 500px;"></div>
+                                    </div>
+                                    <div id="B" class="d-none">
+                                        <div id="piechart-3d-sch" style="width: 100%; height: 500px;"></div>
+                                    </div>
+                                    <div id="C" class="d-none">
+                                        <div id="piechart-3d-asscls" style="width: 100%; height: 500px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Holdings given as how much funds are taken as per user in their Investment dashboard screen -->
+            <div class="row" style="">
+                <!-- Feature 02-->
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="content text-center mumBg post-mf-dashbd" style="border: none;">
+                        <div class="app-feature text-center">
+                            <!-- Heading -->
+                            <div style="display:flex; justify-content:space-between">
+                                <h3 class="mum-h3">HOLDINGS</h3>
+                                <div><button type="button" id="PortfolioExcel-btn" class="btn btn-sm text-primary"><i
+                                            class="fa fa-download" aria-hidden="true"></i>Export to Excel</button> /
+                                    <button type="button" id="PortfolioPDF-btn" class="btn btn-sm text-primary"><i
+                                            class="fa fa-download" aria-hidden="true"></i>Export to PDF</button></div>
+                            </div>
+                            <!-- Description -->
+                            <div class="table-wrap" style="overflow-x: scroll">
+                                <table class="table myaccordion table-hover" id="accordion">
+                                    <thead style="background: #8bc6f0;">
+                                        <tr>
+                                            <th>Scheme</th>
+                                            <th>Folio</th>
+                                            <th>Investment(<i class="fa fa-rupee-sign"></i>)</th>
+                                            <th>Current Value(<i class="fa fa-rupee-sign"></i>)</th>
+                                            <th>Div.Paid</th>
+                                            <th>Div.ReInvest</th>
+                                            <th>G/L Return(%)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
+                                            aria-controls="collapseOne" class="collapsed">
+                                            <th scope="row">Invest4Edu Equity Fund (G)</th>
+                                            <td>7878746528</td>
+                                            <td>81.00K</td>
+                                            <td>1.09L</td>
+                                            <td>Invest</td>
+                                            <td>Edu</td>
+                                            <td>21.08%</td>
+                                        </tr>
+                                        <tr id="collapseOne" class="acc collapse" data-parent="#accordion">
+                                            <td colspan="7" style="padding: 0px;">
+                                                <div class="app-feature text-center" style=" background: #aad2e9;">
+                                                    <div class="demo-btn text-center">
+                                                        <button type="button" class="btn" data-toggle="modal"
+                                                            data-target="#login-signup-form">
+                                                            <!-- onclick="location.href='lumpsum.html'" -->
+                                                            Lumpsum
+                                                        </button>
+                                                        <button type="button" class="btn" data-toggle="modal"
+                                                            data-target="#login-signup-form">
+                                                            <!-- onclick="location.href='sip.html'" -->
+                                                            SIP
+                                                        </button>
+                                                        <button type="button" class="btn" data-toggle="modal"
+                                                            data-target="#redeemModal">
+                                                            Redeem
+                                                        </button>
+                                                        <button type="button" class="btn goToSwitch" data-target="mutual-fund-switch.html" id="goToSwitch">
+                                                            Switch
+                                                        </button>
+                                                        <button type="button" class="btn" data-toggle="modal"
+                                                            data-target="#SWPModal">
+                                                            SWP
+                                                        </button>
+                                                    </div>
+                                                    <!-- Heading -->
+                                                    <div>
+                                                        <h5 style=" color: #646464;">Detail Transactions Report</h5>
+                                                    </div>
+                                                    <!-- Description -->
+                                                    <div class="table-wrap"
+                                                        style="overflow-x: scroll; margin: 0px 40px;">
+                                                        <table class="table myaccordion3" id="accordion3">
+                                                            <thead style="background: #8bc6f0;">
+                                                                <tr>
+                                                                    <th>Folio</th>
+                                                                    <th>Date</th>
+                                                                    <th>Order Type</th>
+                                                                    <th>Nav</th>
+                                                                    <th>Units</th>
+                                                                    <th>Amount</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>7878746528</td>
+                                                                    <th scope="row">28/02/22</th>
+                                                                    <td>Invest</td>
+                                                                    <td>21.09</td>
+                                                                    <td>Edu</td>
+                                                                    <td>21,080</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>7878746528</td>
+                                                                    <th scope="row">28/02/22</th>
+                                                                    <td>Invest</td>
+                                                                    <td>21.50</td>
+                                                                    <td>Edu</td>
+                                                                    <td>21,080</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>7878746528</td>
+                                                                    <th scope="row">28/02/22</th>
+                                                                    <td>Invest</td>
+                                                                    <td>23.10</td>
+                                                                    <td>Edu</td>
+                                                                    <td>21,080</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>7878746528</td>
+                                                                    <th scope="row">28/02/22</th>
+                                                                    <td>Invest</td>
+                                                                    <td>21.49</td>
+                                                                    <td>Edu</td>
+                                                                    <td>21,080</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <br />
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                            aria-controls="collapseTwo" class="collapsed">
+                                            <th scope="row">Invest4Edu Equity Fund (G)</th>
+                                            <td>7878746528</td>
+                                            <td>81.00K</td>
+                                            <td>1.09L</td>
+                                            <td>Invest</td>
+                                            <td>Edu</td>
+                                            <td>22.08%</td>
+                                        </tr>
+                                        <tr id="collapseTwo" class="acc collapse" data-parent="#accordion">
+                                            <td colspan="7" style="padding: 0px;">
+                                                <div class="app-feature text-center" style=" background: #aad2e9;">
+                                                    <div class="demo-btn text-center">
+                                                        <button type="button" class="btn" data-toggle="modal"
+                                                            data-target="#login-signup-form">
+                                                            <!-- onclick="location.href='lumpsum.html'" -->
+                                                            Lumpsum
+                                                        </button>
+                                                        <button type="button" class="btn" data-toggle="modal"
+                                                            data-target="#login-signup-form">
+                                                            <!-- onclick="location.href='sip.html'" -->
+                                                            SIP
+                                                        </button>
+                                                        <button type="button" class="btn" data-toggle="modal"
+                                                            data-target="#redeemModal">
+                                                            Redeem
+                                                        </button>
+                                                        <button type="button" class="btn goToSwitch" data-target="mutual-fund-switch.html" id="goToSwitch">
+                                                            Switch
+                                                        </button>
+                                                        <button type="button" class="btn" data-toggle="modal"
+                                                            data-target="#SWPModal">
+                                                            SWP
+                                                        </button>
+                                                    </div>
+                                                    <!-- Heading -->
+                                                    <div>
+                                                        <h5 style=" color: #646464;">Detail Transactions Report</h5>
+                                                    </div>
+                                                    <!-- Description -->
+                                                    <div class="table-wrap"
+                                                        style="overflow-x: scroll; margin: 0px 40px;">
+                                                        <table class="table myaccordion3" id="accordion3">
+                                                            <thead style="background: #8bc6f0;">
+                                                                <tr>
+                                                                    <th>Folio</th>
+                                                                    <th>Date</th>
+                                                                    <th>Order Type</th>
+                                                                    <th>Nav</th>
+                                                                    <th>Units</th>
+                                                                    <th>Amount</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>7878746528</td>
+                                                                    <th scope="row">28/02/22</th>
+                                                                    <td>Invest</td>
+                                                                    <td>21.09</td>
+                                                                    <td>Edu</td>
+                                                                    <td>21,080</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>7878746528</td>
+                                                                    <th scope="row">28/02/22</th>
+                                                                    <td>Invest</td>
+                                                                    <td>21.50</td>
+                                                                    <td>Edu</td>
+                                                                    <td>21,080</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>7878746528</td>
+                                                                    <th scope="row">28/02/22</th>
+                                                                    <td>Invest</td>
+                                                                    <td>23.10</td>
+                                                                    <td>Edu</td>
+                                                                    <td>21,080</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>7878746528</td>
+                                                                    <th scope="row">28/02/22</th>
+                                                                    <td>Invest</td>
+                                                                    <td>21.49</td>
+                                                                    <td>Edu</td>
+                                                                    <td>21,080</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <br />
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                            aria-controls="collapseThree" class="collapsed">
+                                            <th scope="row">Invest4Edu Equity Fund (G)</th>
+                                            <td>7878746528</td>
+                                            <td>81.00K</td>
+                                            <td>1.09L</td>
+                                            <td>Invest</td>
+                                            <td>Edu</td>
+                                            <td>22.08%</td>
+                                        </tr>
+                                        <tr id="collapseThree" class="acc collapse" data-parent="#accordion">
+                                            <td colspan="7" style="padding:0px">
+                                                <div class="app-feature text-center" style=" background: #aad2e9;">
+                                                    <div class="demo-btn text-center">
+                                                        <button type="button" class="btn" data-toggle="modal"
+                                                            data-target="#login-signup-form">
+                                                            <!-- onclick="location.href='lumpsum.html'" -->
+                                                            Lumpsum
+                                                        </button>
+                                                        <button type="button" class="btn" data-toggle="modal"
+                                                            data-target="#login-signup-form">
+                                                            <!-- onclick="location.href='sip.html'" -->
+                                                            SIP
+                                                        </button>
+                                                        <button type="button" class="btn" data-toggle="modal"
+                                                            data-target="#redeemModal">
+                                                            Redeem
+                                                        </button>
+                                                        <button type="button" class="btn goToSwitch" data-target="mutual-fund-switch.html" id="goToSwitch">
+                                                            Switch
+                                                        </button>
+                                                        <button type="button" class="btn" data-toggle="modal"
+                                                            data-target="#SWPModal">
+                                                            SWP
+                                                        </button>
+                                                    </div>
+                                                    <!-- Heading -->
+                                                    <div>
+                                                        <h5 style=" color: #646464;">Detail Transactions Report</h5>
+                                                    </div>
+                                                    <!-- Description -->
+                                                    <div class="table-wrap"
+                                                        style="overflow-x: scroll; margin: 0px 40px;">
+                                                        <table class="table myaccordion3" id="accordion3">
+                                                            <thead style="background: #8bc6f0;">
+                                                                <tr>
+                                                                    <th>Folio</th>
+                                                                    <th>Date</th>
+                                                                    <th>Order Type</th>
+                                                                    <th>Nav</th>
+                                                                    <th>Units</th>
+                                                                    <th>Amount</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>7878746528</td>
+                                                                    <th scope="row">28/02/22</th>
+                                                                    <td>Invest</td>
+                                                                    <td>21.09</td>
+                                                                    <td>Edu</td>
+                                                                    <td>21,080</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>7878746528</td>
+                                                                    <th scope="row">28/02/22</th>
+                                                                    <td>Invest</td>
+                                                                    <td>21.50</td>
+                                                                    <td>Edu</td>
+                                                                    <td>21,080</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>7878746528</td>
+                                                                    <th scope="row">28/02/22</th>
+                                                                    <td>Invest</td>
+                                                                    <td>23.10</td>
+                                                                    <td>Edu</td>
+                                                                    <td>21,080</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>7878746528</td>
+                                                                    <th scope="row">28/02/22</th>
+                                                                    <td>Invest</td>
+                                                                    <td>21.49</td>
+                                                                    <td>Edu</td>
+                                                                    <td>21,080</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <br />
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                                            aria-controls="collapseFour" class="collapsed">
+                                            <th scope="row">Invest4Edu Equity Fund (G)</th>
+                                            <td>7878746528</td>
+                                            <td>81.00K</td>
+                                            <td>1.09L</td>
+                                            <td>Invest</td>
+                                            <td>Edu</td>
+                                            <td>21.08%</td>
+                                        </tr>
+                                        <tr id="collapseFour" class="collapse acc" data-parent="#accordion">
+                                            <td colspan="7" style="padding:0px">
+                                                <div class="app-feature text-center" style=" background: #aad2e9;">
+                                                    <div class="demo-btn text-center">
+                                                        <button type="button" class="btn" data-toggle="modal"
+                                                            data-target="#login-signup-form">
+                                                            <!-- onclick="location.href='lumpsum.html'" -->
+                                                            Lumpsum
+                                                        </button>
+                                                        <button type="button" class="btn" data-toggle="modal"
+                                                            data-target="#login-signup-form">
+                                                            <!-- onclick="location.href='sip.html'" -->
+                                                            SIP
+                                                        </button>
+                                                        <button type="button" class="btn" data-toggle="modal"
+                                                            data-target="#redeemModal">
+                                                            Redeem
+                                                        </button>
+                                                        <button type="button" class="btn goToSwitch" data-target="mutual-fund-switch.html" id="goToSwitch">
+                                                            Switch
+                                                        </button>
+                                                        <button type="button" class="btn" data-toggle="modal"
+                                                            data-target="#SWPModal">
+                                                            SWP
+                                                        </button>
+                                                    </div>
+                                                    <!-- Heading -->
+                                                    <div>
+                                                        <h5 style=" color: #646464;">Detail Transactions Report</h5>
+                                                    </div>
+                                                    <!-- Description -->
+                                                    <div class="table-wrap"
+                                                        style="overflow-x: scroll; margin: 0px 40px;">
+                                                        <table class="table myaccordion3" id="accordion3">
+                                                            <thead style="background: #8bc6f0;">
+                                                                <tr>
+                                                                    <th>Folio</th>
+                                                                    <th>Date</th>
+                                                                    <th>Order Type</th>
+                                                                    <th>Nav</th>
+                                                                    <th>Units</th>
+                                                                    <th>Amount</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>7878746528</td>
+                                                                    <th scope="row">28/02/22</th>
+                                                                    <td>Invest</td>
+                                                                    <td>21.09</td>
+                                                                    <td>Edu</td>
+                                                                    <td>21,080</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>7878746528</td>
+                                                                    <th scope="row">28/02/22</th>
+                                                                    <td>Invest</td>
+                                                                    <td>21.50</td>
+                                                                    <td>Edu</td>
+                                                                    <td>21,080</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>7878746528</td>
+                                                                    <th scope="row">28/02/22</th>
+                                                                    <td>Invest</td>
+                                                                    <td>23.10</td>
+                                                                    <td>Edu</td>
+                                                                    <td>21,080</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>7878746528</td>
+                                                                    <th scope="row">28/02/22</th>
+                                                                    <td>Invest</td>
+                                                                    <td>21.49</td>
+                                                                    <td>Edu</td>
+                                                                    <td>21,080</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <br />
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <br />
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Recents transaction related to all funds every first transaction get display here -->
+            <div class="row" style="">
+                <!-- Feature 03-->
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="content text-center mumBg post-mf-dashbd" style="border: none;">
+                        <div class="app-feature text-center">
+                            <!-- Heading -->
+                            <div style="display:flex; justify-content:space-between">
+                                <h3 class="mum-h3">Recent Transactions</h3>
+                                <h4 class="mum-h4">Purchase / Redemption</h4>
+                            </div>
+                            <!-- Description -->
+                            <div class="table-wrap" style="overflow-x: scroll">
+                                <table class="table myaccordion2" id="accordion2">
+                                    <thead style="background: #8bc6f0;">
+                                        <tr>
+                                            <th>Trade Date</th>
+                                            <th>Scheme</th>
+                                            <th>Folio</th>
+                                            <th>TransType</th>
+                                            <th>Nav</th>
+                                            <th>Units</th>
+                                            <th>Amount</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">28/02/22</th>
+                                            <td>Invest4Edu Equity Fund (G)</td>
+                                            <td>7878746528</td>
+                                            <td>Invest</td>
+                                            <td>21.09</td>
+                                            <td>Edu</td>
+                                            <td>21,080</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">28/02/22</th>
+                                            <td>Invest4Edu Equity Fund (G)</td>
+                                            <td>7878746528</td>
+                                            <td>Invest</td>
+                                            <td>21.50</td>
+                                            <td>Edu</td>
+                                            <td>21,080</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">28/02/22</th>
+                                            <td>Invest4Edu Equity Fund (G)</td>
+                                            <td>7878746528</td>
+                                            <td>Invest</td>
+                                            <td>23.10</td>
+                                            <td>Edu</td>
+                                            <td>21,080</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">28/02/22</th>
+                                            <td>Invest4Edu Equity Fund (G)</td>
+                                            <td>7878746528</td>
+                                            <td>Invest</td>
+                                            <td>21.49</td>
+                                            <td>Edu</td>
+                                            <td>21,080</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <br />
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!------
+		<div class="row" style="text-align: center;">
+		<a href="404.html" id="tnc" style="margin: 0 auto;">Terms & conditions</a>
+		</div>
+		--------->
+        </div>
+    </section>
+
+    <!--====  End of weather Grid  ====-->
+    <section class="call-to-action-app section bg-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>It's time to secure your future </h2>
+                    <p>Download our trusted app. Get <a href="#">Invest4Edu App</a> & never miss an opportunity!
+                        <br>We promise - you won’t look back.
+                    </p>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <a href="" class="btn btn-rounded-icon">
+                                <i class="ti-apple"></i>
+                                Iphone
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="" class="btn btn-rounded-icon">
+                                <i class="ti-android"></i>
+                                Android
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--============================
+=            Footer            =
+=============================-->
+    <footer>
+        <div class="footer-main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-12 align-self-center">
+                        <div class="block">
+                            <a href="index.html"><img src="images/logo_footer.png" alt="footer-logo" class="img-fluid"
+                                    style="width: 50%;"></a>
+                            <p style="font-size: 14px !important;">303, A Wing,Gokul Arcade, <br />
+                                Near Garware House,<br />
+                                Sahar Road,Ville Parle (E), Mumbai - 400057<br />
+
+                                <br />
+                                Phone : +91 98995 75852<br />
+                                Email : info@invest4edu.com
+                            </p>
+                            <br />
+                            <br />
+
+                            <!-- Social Site Icons -->
+                            <ul class="social-icon list-inline">
+                                <li class="list-inline-item">
+                                    <a href="https://www.facebook.com/"><i class="ti-facebook"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="https://twitter.com/"><i class="ti-twitter"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="https://www.instagram.com/"><i class="ti-instagram"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-6 mt-5 mt-lg-0" style="text-align: center;">
+                        <div class="block-2">
+                            <!-- heading -->
+                            <h6>Products</h6>
+                            <!-- links -->
+                            <ul>
+                                <li><a href="mutual_funds.html">Mutual Funds</a></li>
+                                <li><a href="fixed_deposits.html">Fixed Deposit</a></li>
+                                <li><a href="gold_bonds.html">Gold Bond</a></li>
+
+                                <li><a href="edu_loans.html">Education Loan</a></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-6 mt-5 mt-lg-0" style="text-align: center;">
+                        <div class="block-2">
+                            <!-- heading -->
+                            <h6>Invest4Edu</h6>
+                            <!-- links -->
+                            <ul>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Education opportunities</a></li>
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="careers.html">Careers</a></li>
+                                <li><a href="#">Help & Support</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-6 mt-5 mt-lg-0" style="text-align: center;">
+                        <div class="block-2">
+                            <!-- heading -->
+                            <h6>Quick Links</h6>
+                            <!-- links -->
+                            <ul>
+                                
+                                <li><a href="contact.html">Contact us</a></li>
+                                <li><a href="404.html">FAQs</a></li>
+                                <li><a href="404.html">Terms & Conditions</a></li>
+                                <li><a href="404.html">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="text-center bg-dark py-4">
+            <small class="text-secondary">Copyright &copy;
+                <script>document.write(new Date().getFullYear())</script>. Invest4Edu Pvt Ltd.
+            </small class="text-secondary">
+        </div>
+    </footer>
+
+
+    <!-- To Top -->
+    <div class="scroll-top-to">
+        <i class="ti-angle-up"></i>
+    </div>
+    <!-------------------- redeem modal body---------------->
+
+    <!-- The Modal -->
+    <div class="modal fade" id="redeemModal">
+        <div class="modal-dialog modal-dialog-centered">
+
+
+
+            <div class="modal-content">
+                <section class="signup-step-container">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <div class="wizard">
+                                    <div class="wizard-inner">
+                                        <div class="connecting-line"></div>
+                                        <ul class="nav nav-tabs" role="tablist">
+                                            <li role="presentation" class="active">
+                                                <a href="#step1" data-toggle="tab" aria-controls="step1" role="tab"
+                                                    aria-expanded="true"><span class="round-tab">1 </span></a>
+                                            </li>
+                                            <li role="presentation" class="disabled">
+                                                <a href="#step2" data-toggle="tab" aria-controls="step2" role="tab"
+                                                    aria-expanded="false"><span class="round-tab">2</span></a>
+                                            </li>
+                                            <li role="presentation" class="disabled">
+                                                <a href="#step4" data-toggle="tab" aria-controls="step4"
+                                                    role="tab"><span class="round-tab">3</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <form role="form" action="index.html" class="login-box">
+                                        <div class="tab-content" id="main_form">
+                                            <div class="tab-pane active" role="tabpanel" id="step1">
+                                                <h4 class="text-left">Redeem</h4>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="scheme-name">
+                                                            <h6>Scheme Name</h6>
+                                                            <h3>SBI BlueChip Fund-Reg(G)</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="scheme-name">
+                                                            <h6>Folio No:</h6>
+                                                            <h2>14579091</h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="scheme-name">
+                                                            <h6>Current NAV (Unit)</h6>
+                                                            <h2>63.91</h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <form>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <label>Units</label>
+                                                            <input type="text" placeholder="Unit" class="form-control">
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label>Amount <sup>*</sup></label>
+                                                            <input type="text" placeholder="Enter Amount"
+                                                                class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <input type="checkbox" class="mt-3"> <label class="check">Redeem All
+                                                        Avilable Units: 2857783</label> <br>
+                                                    <input type="checkbox"> <label class="check">I Confirm that this
+                                                        transaction is done purely at my sole discretion on my
+                                                        own.</label>
+
+                                                    <p class="note">Note: Amount is Indicative as per latest avilabel
+                                                        NAV. Redemption would be processed by unit only. <sup>*</sup>
+                                                    </p>
+                                                </form>
+                                                <ul class="list-inline pull-right">
+                                                    <li><button type="button" class="default-btn next-step">Continue to
+                                                            Redeem</button></li>
+                                                </ul>
+                                            </div>
+                                            <div class="tab-pane" role="tabpanel" id="step2">
+                                                <h4 class="text-left">Please review your information below.</h4>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="scheme-name">
+                                                            <h6>Scheme Name</h6>
+                                                            <h3>SBI BlueChip Fund-Reg(G)</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="scheme-name">
+                                                            <h6>Folio No:</h6>
+                                                            <h2>14579091</h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="scheme-name">
+                                                            <h6>Current NAV (Unit)</h6>
+                                                            <h2>63.91</h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <form>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <label>Units</label>
+                                                            <input type="text" placeholder="Unit" class="form-control">
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label>Amount <sup>*</sup></label>
+                                                            <input type="text" placeholder="Enter Amount"
+                                                                class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <input type="checkbox" class="mt-3"> <label class="check">I Confirm
+                                                        that this transaction is done purely at my sole discretion on my
+                                                        own.</label>
+
+                                                    <p class="note">Note: Amount is Indicative as per latest avilabel
+                                                        NAV. Redemption would be processed by unit only. <sup>*</sup>
+                                                    </p>
+                                                </form>
+
+                                                <ul class="list-inline pull-right">
+                                                    <li><button type="button"
+                                                            class="default-btn prev-step">Back</button></li>
+                                                    <li><button type="button"
+                                                            class="default-btn next-step skip-btn">Skip</button></li>
+                                                    <li><button type="button"
+                                                            class="default-btn next-step">Continue</button></li>
+                                                </ul>
+                                            </div>
+                                            <div class="tab-pane" role="tabpanel" id="step4">
+                                                <div class="complete">
+                                                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                                                    <div class="complete-body">
+                                                        <h1>Payment Complete</h1>
+                                                        <p>Lorem Ipsum is simply dummy text of the printing and
+                                                            typesetting industry. Lorem Ipsum has been the industry's
+                                                            standard dummy.</p>
+                                                        <h2>Order Number:</h2>
+                                                        <h3>23485648365</h3>
+                                                    </div>
+                                                </div>
+
+                                                <!--<ul class="list-inline pull-right">
+                                                                    <li><button type="button" class="default-btn prev-step">Back</button></li>
+                                                                    <li><button type="button" class="default-btn next-step">Finish</button></li>
+                                                                </ul> -->
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div>
+
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </div>
+
+    <!------------------ redeem modal ends-------------->
+    <!--------- SWP modal start ---------->
+
+    <div class="modal fade show" id="SWPModal" aria-modal="true" role="dialog" style="padding-right: 16px">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <section class="signup-step-container">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <button type="button" class="close" data-dismiss="modal">
+                                    ×
+                                </button>
+                                <div class="wizard">
+                                    <form role="form" action="index.html" class="login-box">
+                                        <div class="tab-content" id="main_form">
+                                            <div class="" role="tabpanel" id="step1">
+                                                <h4 class="text-left">SWP</h4>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="scheme-name">
+                                                            <h6>Scheme Name</h6>
+                                                            <h3>SBI BlueChip Fund-Reg(G)</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="scheme-name">
+                                                            <h6>Folio No:</h6>
+                                                            <h2>14579091</h2>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="scheme-name">
+                                                            <h6>Target Scheme</h6>
+                                                            <h3>SBI FUND-Reg(G)</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row" style="margin-top: 20px">
+                                                    <div class="col-md-4">
+                                                        <div class="scheme-name">
+                                                            <h6>Withdraw / Transfer Date</h6>
+                                                            <input type="date" name="swp-start" value="2022-02-03"
+                                                                min="2022-01-01" max="2040-12-31"
+                                                                style="font-size: revert; color: #05499c" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="scheme-name">
+                                                            <h6>Withdraw / Transfer Freq</h6>
+                                                            <select class="form-control"
+                                                                style="padding: 5px; height: auto">
+                                                                <option value="">Select Frequency</option>
+                                                                <option value="Weekly">Weekly</option>
+                                                                <option value="Monthly">Monthly</option>
+                                                                <option value="Quarterly">Quarterly</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="scheme-name">
+                                                            <h6>Withdraw / Transfer End Date</h6>
+                                                            <input type="date" name="swp-end" value="2022-02-03"
+                                                                min="2022-01-01" max="2040-12-31"
+                                                                style="font-size: revert; color: #05499c" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row" style="margin-top: 20px">
+                                                    <div class="col-md-6">
+                                                        <label>Units</label>
+                                                        <input type="text" placeholder="Unit" class="form-control" />
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label>Amount <sup>*</sup></label>
+                                                        <input type="text" placeholder="Enter Amount"
+                                                            class="form-control" />
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <input type="checkbox" class="mt-3" />
+                                                    <label class="check">SWP All Avilable Units: 2857783</label>
+                                                </div>
+                                                <div>
+                                                    <input type="checkbox" />
+                                                    <label class="check">I Confirm that this transaction is done purely
+                                                        at my sole discretion on my own.</label>
+                                                </div>
+
+                                                <ul class="list-inline pull-right">
+                                                    <li>
+                                                        <button type="button" class="default-btn next-step">
+                                                            SUBMIT
+                                                        </button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+
+    <!--------- SWP modal ends --------->
+
+    <!------- MODAL - LOG-SIGN-FORM----START ------->
+
+    <div class="modal fade" id="login-signup-form" tabindex="-1" aria-labelledby="exampleModalCenterTitle"
+        aria-modal="true" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content"
+                style="/* background-color: #006bde; */ background-color: #eef6fe; border-radius: 20px; padding: 5%; background-size: cover;">
+                <div class="modal-header" style="display: block; border-bottom: 1px solid #000">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                    <ul class="nav nav-tabs" style="margin-bottom: 0px">
+                        <li class="nav-item">
+                            <a id="LogTab" data-toggle="tab" href="#Login-form" class="nav-link  active"
+                                onclick="SetTab('Login')" style="font-weight: bold; color: #2e7eed">Login</a>
+                        </li>
+                        <li class="nav-item" style="border-left: 2px solid #2e7eed; padding-left: 5%">
+                            <a id="SignTab" data-toggle="tab" href="#SignIn-form" onclick="SetTab('SignIn')"
+                                class="show nav-link" style="font-weight: bold; color: #2e7eed">New User SignUp</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-content clearfix pt-0 active">
+                    <div class="modal-body tab-pane fade active show" id="Login-form">
+                        <div class="user-login-icon" style="display: block; text-align: center; margin: 10px">
+                            <img src="images/user-icon.png" class="img-responsive" alt="" />
+                        </div>
+
+                        <form action="lumpsum.html">
+                            <!-- Username -->
+                            <input class="form-control main" type="text" placeholder="Username" required="" />
+                            <!-- Password -->
+                            <input class="form-control main" type="password" placeholder="Password" required="" />
+                            <!-- Submit Button -->
+                            <div class="form-row" style="text-align: center">
+                                <!-- Submit Button -->
+                                <button class="btn btn-main-sm" style="margin: 0 auto">
+                                    Log in
+                                </button>
+                            </div>
+                        </form>
+
+                        <form action="sip.html">
+                            <h5 class="modal-title" id="exampleModalCenterTitle"
+                                style=" color: #000; font-weight: bold; margin: 3.5% 0%; border-bottom: 1px solid #000; text-align: center; ">
+                                <i>OR</i>
+                            </h5>
+
+                            <!-- Username -->
+                            <input class="form-control main" type="text" placeholder="+91 xxxx xxxx xx" required="" />
+                            <!-- Password -->
+                            <input class="form-control main" type="text" placeholder="Secure OTP" required="" />
+                            <!-- Submit Button -->
+                            <div class="form-row" style="text-align: center">
+                                <!-- Submit Button -->
+                                <button class="btn btn-main-sm" style="margin: 0 auto">
+                                    Log in
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-body tab-pane fade in" id="SignIn-form">
+                        <h5 class="modal-title" id="exampleModalCenterTitle"
+                            style=" color: #fff; font-weight: bold; margin-bottom: 3.5%; padding-bottom: 4%; "></h5>
+
+                        <ul style=" list-style: none; position: absolute; text-align: center; padding-left: 0px; ">
+                            <li style="display: inline-block; width: 25%">
+                                <img src="images/social-media/google-2.png" class="img-responsive" alt=""
+                                    style="width: 50%" />
+                            </li>
+                            <li style="display: inline-block; width: 25%">
+                                <img src="images/social-media/facebook-2.png" class="img-responsive" alt=""
+                                    style="width: 50%" />
+                            </li>
+                            <li style="display: inline-block; width: 25%">
+                                <img src="images/social-media/linkedin-2.png" class="img-responsive" alt=""
+                                    style="width: 50%" />
+                            </li>
+                        </ul>
+
+                        <br /><br /><br /><br />
+
+                        <form action="mf-baskets-post-login.html">
+                            <h5 class="modal-title" id="exampleModalCenterTitle"
+                                style=" color: #000; border-bottom: 1px solid #000; margin-bottom: 3.5%; padding-bottom: 4%; text-align: center; ">
+                                <i>or</i>
+                            </h5>
+
+                            <div class="form-row" style="margin-bottom: 5%">
+                                <div class="col">
+                                    <input class="form-control" type="text" placeholder="First name" requi />
+                                </div>
+
+                                <div class="col">
+                                    <input class="form-control" type="text" placeholder="Last name" required="" />
+                                </div>
+                            </div>
+
+                            <div class="form-row" style="margin-bottom: 5%">
+                                <div class="col">
+                                    <input class="form-control" type="text" placeholder="Email" required="" />
+                                </div>
+
+                                <div class="col">
+                                    <input class="form-control" type="text" placeholder="Mobile number" required="" />
+                                </div>
+                            </div>
+
+                            <div class="form-row" style="margin-bottom: 5%">
+                                <div class="col">
+                                    <input class="form-control" type="password" placeholder="Password" required="" />
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck" />
+                                    <label class="form-check-label" for="gridCheck" style="color: #2e7eed">
+                                        By creating an account, you agree to our
+                                        <a href="" style="color: #ed2e2e">Terms &amp; conditions</a>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-row" style="text-align: center">
+                                <!-- Submit Button -->
+                                <button class="btn btn-main-sm" style="margin: 0 auto">
+                                    Sign up
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!------- MODAL - LOG-SIGN-FORM----END ------->
+
+
+    <!-- JAVASCRIPTS -->
+    <script src="plugins/slick/slick.min.js"></script>
+    <script src="plugins/fancybox/jquery.fancybox.min.js"></script>
+    <script src="plugins/syotimer/jquery.syotimer.min.js"></script>
+    <script src="plugins/aos/aos.js"></script>
+    <!-- google map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgeuuDfRlweIs7D6uo4wdIHVvJ0LonQ6g"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="plugins/google-map/gmap.js"></script>
+    <script src="js/script.js"></script>
+    <script type="text/javascript">
+        // document.getElementById("goToSwitch").onclick = function () {
+        //     location.href = "mutual-fund-switch.html";
+        // };
+
+        $('.goToSwitch').on('click', function(event) {
+            event.preventDefault(); 
+            var url = $(this).data('target');
+            location.href=url;
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // js for gmail like input //
+            $(function () {
+                $(".field-wrapper .field-placeholder").on("click", function () {
+                    $(this).closest(".field-wrapper").find("input").focus();
+                });
+                $(".field-wrapper input").on("keyup", function () {
+                    var value = $.trim($(this).val());
+                    if (value) {
+                        $(this).closest(".field-wrapper").addClass("hasValue");
+                    } else {
+                        $(this).closest(".field-wrapper").removeClass("hasValue");
+                    }
+                });
+            });
+
+            $(function () {
+                $(".prt-folio-tab-click").on("click", function () {
+                    // debugger;
+                    var id = $(this).attr('data-id');
+                    $("[data-id='" + id + "']").addClass("active").siblings().removeClass("active");
+                    $("#" + id).removeClass("d-none");
+                    $("#" + id).siblings().addClass("d-none");
+
+
+                });
+            });
+
+        });
+    </script>
+    <script>
+        google.charts.load("current", { packages: ["corechart"] });
+        google.charts.setOnLoadCallback(drawChartAmc);
+        function drawChartAmc() {
+            var data = google.visualization.arrayToDataTable([
+                ['List of Funds', 'Funds as user taken'],
+                ['Axis Mutual Fund', 3],
+                ['DSP Mutual Fund', 2],
+                ['ICICI Mutual Fund', 4],
+                ['SBI Mutual Fund', 5]
+            ]);
+
+            var options = {
+                //   is3D: true,
+                //   colors: ['#e0440e', '#e6693e', '#ec8f6e', '#f3b49f', '#f6c7b6'],
+                color: "#000",
+                fontName: "sans-serif",
+                fontSize: 20,
+                bold: true,
+                italic: false,
+                backgroundColor: '#edf4ff',
+                width: '100%',
+                height: '100%'
+            };
+
+
+            var chart = new google.visualization.PieChart(document.getElementById('piechart-3d-amc'));
+            chart.draw(data, options);
+        }
+    </script>
+
+
+    <script>
+        google.charts.load("current", { packages: ["corechart"] });
+        google.charts.setOnLoadCallback(drawChartSch);
+        function drawChartSch() {
+            var data = google.visualization.arrayToDataTable([
+                ['List of Funds', 'Funds as user taken'],
+                ['Axis Mutual Fund', 4],
+                ['ICICI Mutual Fund', 2],
+                ['SBI Mutual Fund', 7],
+                ['DSP Mutual Fund', 2]
+            ]);
+
+            var options = {
+                color: "#000",
+                fontName: "sans-serif",
+                fontSize: 20,
+                bold: true,
+                italic: false,
+                backgroundColor: '#edf4ff',
+                width: '100%',
+                height: '100%'
+            };
+
+
+            var chart = new google.visualization.PieChart(document.getElementById('piechart-3d-sch'));
+            chart.draw(data, options);
+        }
+    </script>
+    <script>
+        google.charts.load("current", { packages: ["corechart"] });
+        google.charts.setOnLoadCallback(drawChartAssCls);
+        function drawChartAssCls() {
+            var data = google.visualization.arrayToDataTable([
+                ['List of Funds', 'Funds as user taken'],
+                ['ICICI Mutual Fund', 2],
+                ['Axis Mutual Fund', 5],
+                ['SBI Mutual Fund', 7],
+                ['DSP Mutual Fund', 2]
+            ]);
+
+            var options = {
+                color: "#000",
+                fontName: "sans-serif",
+                fontSize: 20,
+                bold: true,
+                italic: false,
+                backgroundColor: '#edf4ff',
+                width: '100%',
+                height: '100%'
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('piechart-3d-asscls'));
+            chart.draw(data, options);
+        }
+    </script>
+
+    <script type="text/javascript">
+
+    </script>
+    <!-- custom pie chart js is here start -->
+
+    <!-- custom pie chart js is here end -->
+
+</body>
+
+</html>

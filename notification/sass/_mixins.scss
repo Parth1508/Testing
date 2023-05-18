@@ -1,0 +1,19 @@
+@mixin font-size($size) {
+	-webkit-font-size: $size;
+	-moz-font-size: $size;
+	-ms-font-size: $size;
+	font-size: $size;
+}
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-ms-border-radius: $radius;
+	border-radius: $radius;
+}
+
+ // for select
+ @mixin appearance($value){
+ 	-webkit-appearance: $value;
+ 	-moz-appearance: $value;
+ 	appearance: $value;
+ }

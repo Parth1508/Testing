@@ -1,0 +1,1362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  ================================================== -->
+  <meta charset="utf-8">
+  <title>Filter Mutual Funds | Invest4Edu</title>
+
+  <!-- Mobile Specific Metas
+  ================================================== -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="author" content="">
+  <meta name="generator" content="">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+  
+  <!-- PLUGINS CSS STYLE -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <link rel="stylesheet" href="plugins/slick/slick-theme.css">
+  <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="plugins/aos/aos.css">
+
+
+
+	<!------------- css edu abacus ----------------->
+
+	<link rel="stylesheet" type="text/css" href="iofrm-by-brandio/Template/css/fontawesome-all.min.css">
+	<link rel="stylesheet" type="text/css" href="iofrm-by-brandio/Template/css/iofrm-style.css">
+	<link rel="stylesheet" type="text/css" href="iofrm-by-brandio/Template/css/iofrm-theme5.css">
+
+
+
+  <!-- CUSTOM CSS -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/user.css" rel="stylesheet">
+
+	<!------- MWS JS ----------->
+	<script src="plugins/jquery/jquery.min.js"></script>
+	<script src="plugins/bootstrap/bootstrap.min.js"></script>
+
+
+	<!-- GOOGLE WEB FONT -->
+	<link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600" rel="stylesheet">
+
+
+
+	<!-- link for animation of MOdal, by Myduz Web Studio -->
+	<link href="notification/assets/css/animate.min.css" rel="stylesheet">
+	<link href="notification/assets/css/animate.css" rel="stylesheet">
+	<link href="notification/style.css" rel="stylesheet">
+
+	<style>
+
+		.top-mum {
+
+
+			margin-top: 5%;
+			background-color: #00315d;
+		}
+
+		.mum-h3 {
+
+			font-weight: bold;
+			color: #646464;
+			margin-bottom: 6%;
+
+		}
+
+
+		.main-nav {
+
+			background: #ebebeb;
+
+		}
+
+		.mumLabel {
+
+			font-size: 12px;
+			padding-left: 2%;
+			width: auto;
+			padding-right: 2%;
+			color: #fff;
+			margin-bottom: 0;
+
+		}
+
+		.mumBg {
+
+			background-color: #edf4ff;
+			border-radius: 20px;
+
+		}
+
+		.mumCircle {
+
+			border: 2px solid #2e7eed;
+			padding: 55% 30%;
+
+
+		}
+
+		.block {
+
+			text-align: center;
+			vertical-align: middle;
+		}
+		.circle {
+			background: #2e7eed;
+			border-radius: 200px;
+			color: white;
+			height: 200px;
+			font-weight: bold;
+			width: 200px;
+			display: table;
+			margin: 20px auto;
+		}
+		.circle p {
+			vertical-align: middle;
+			display: table-cell;
+			color: #fff;
+		}
+
+
+		/************ ======== form gmail like input ==========**********/
+
+		.field-wrapper{
+			position: relative;
+			margin-bottom: 15px;
+		}
+
+		.field-wrapper input, select{
+			border: 1px solid #DADCE0;
+			padding: 15px;
+			border-radius: 4px;
+			width: 100%;
+		}
+
+		.field-wrapper .field-placeholder{
+			font-size: 16px;
+			position: absolute;
+			/* background: #fff; */
+			bottom: 6px;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+			color: #80868b;
+			left: 8px;
+			padding: 0 8px;
+			-webkit-transition: transform 150ms cubic-bezier(0.4,0,0.2,1),opacity 150ms cubic-bezier(0.4,0,0.2,1);
+			transition: transform 150ms cubic-bezier(0.4,0,0.2,1),opacity 150ms cubic-bezier(0.4,0,0.2,1);
+			z-index: 1;
+			text-align: left;
+			width: 100%;
+		}
+
+		.field-wrapper .field-placeholder span{
+
+			color: #05499c;
+			font-size: 12px;
+			background-color: #fff;
+			padding: 0 5px;
+
+		}
+
+		.field-wrapper input:not([disabled]):focus~.field-placeholder
+		{
+			color:#1A73E8;
+
+		}
+
+		.field-wrapper input {
+
+			height: 10px;
+			font-size: 12px;
+			color:#1A73E8;
+
+		}
+
+		.form-control {
+
+			font-size: 12px;
+			color:#05499c;
+
+		}
+
+		.form-control select {
+
+			height: 10px;
+			font-size: 12px;
+			color:#05499c;
+
+		}
+
+		.field-wrapper input:not([disabled]):focus~.field-placeholder,
+		.field-wrapper.hasValue input:not([disabled])~.field-placeholder
+		{
+			-webkit-transform: scale(.75) translateY(-39px) translateX(-60px);
+			transform: scale(1) translateY(-15px) translateX(-5px);
+
+
+		}
+
+		.field-wrapper input:not([disabled]):focus{
+			border:1px solid #05499c;
+			background-color: #fff;
+			font-size: 12px;
+
+		}
+
+
+
+		.form-content input:hover, .form-content input:focus, .form-content .dropdown-toggle.btn-default:hover, .form-content .dropdown-toggle.btn-default:focus {
+			border: 0;
+			background-color: #fff;
+			color: #05499c;
+		}
+		.header-icons i {
+		    font-size: 18px;
+		    color: #2e7eed;
+		    margin: 0 12px;
+		}
+		.header-icons {
+		    margin-top: 19px;
+		}
+		/*.tabcontent {
+		    background: url('images/tab-bg.svg');
+		}*/
+
+		.btnck{
+			color: #fff !important;
+			padding: 5px 10px;
+			border-radius: 20px;
+			background-color: #032b5b;
+			margin-left: 110px !important;
+		}
+		.mutual-funds-body{
+			background-color: #f5f5f5;
+			border-radius: 20px !important;
+			border: none !important;
+			padding: 1em;
+		}
+
+		@media (min-width: 1200px){
+.cont1 {
+    max-width: 1440px !important;
+}
+}
+
+.pills-body{
+	background-color: #fff;
+    margin: 5px 15px !important;
+    border-radius: 20px;
+    border: 1px solid #808080;
+}
+
+.rtrn-txt h2{
+	font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 0;
+    line-height: 20px;
+	color: #fff;
+}
+.filter-headers{
+	align-items: center;
+    margin: 15px;
+    padding-left: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #032b5b;
+    border-radius: 0px 0px 20px 20px;
+}
+
+/* three dots css start */
+
+.three-dots:after {
+  cursor: pointer;
+  color: #000;
+  content: '\2807';
+  font-size: 20px;
+  /* padding: 0 5px; */
+}
+
+.tooltipcontain {
+  position: absolute;
+  right: 10px;
+  background-color: #6cbbe9;
+  outline: none;
+  opacity: 0;
+  z-index: -1;
+  max-height: 0;
+  transition: opacity 0.1s, z-index 0.1s, max-height 5s;
+  color: #fff;
+}
+
+.tooltip-container:focus {
+  outline: none;
+}
+
+.tooltip-container:focus .tooltipcontain {
+  opacity: 1;
+  z-index: 100;
+  max-height: 100vh;
+  transition: opacity 0.2s, z-index 0.2s, max-height 0.2s;
+}
+
+/* three dots css end */
+
+
+	</style>
+
+	<!-- Font Awesome -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+
+
+
+</head>
+
+
+<body class="body-wrapper" data-spy="scroll" data-target=".privacy-nav">
+<nav class="navbar main-nav navbar-expand-lg px-2 px-sm-0 py-2 py-lg-0  fixed-top" style="z-index:10;">
+	<div class="container">
+		<a class="navbar-brand" href="index.html" style="width: 20%;">
+			<img src="images/logo_3.png" alt="logo" style="width: 100%;"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="ti-menu"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
+
+				<!-- <li class="nav-item dropdown active">
+					<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">About us
+						<span><i class="ti-angle-down"></i></span>
+					</a>
+					 Dropdown list -->
+					<!-- <ul class="dropdown-menu">
+						<li><a class="dropdown-item active" href="why-us.html">Why invest4Edu</a></li>
+						<li><a class="dropdown-item" href="who-we-are.html">Who we are</a></li>
+						<li><a class="dropdown-item" href="how-it-works.html">How Invest4edu works</a></li>
+
+					</ul>
+				</li> --> 
+				<li class="nav-item dropdown @@pages">
+					<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Education opportunities
+						<span><i class="ti-angle-down"></i></span>
+					</a>
+					<!-- Dropdown list -->
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item @@team" href="india.html">Study in India</a></li>
+						<li><a class="dropdown-item @@team" href="canada.html">Study in Canada</a></li>
+						<li><a class="dropdown-item @@career" href="uk.html">Study in UK</a></li>
+						<li><a class="dropdown-item @@blog" href="australia.html">Study in Australia</a></li>
+						<li><a class="dropdown-item @@blogSingle" href="usa.html">Study in USA</a></li>
+					</ul>
+				</li>
+
+				<!-- <li class="nav-item @@contact">
+					<a class="nav-link" href="contact.html">Contact</a>
+				</li> -->
+
+
+				<!--------
+				<li class="nav-item">
+					<a  class="nav-link" href="sign-in.html" style="color: #2e7eed;" data-toggle="modal" data-target="#login-form">Login</a>
+				</li>
+				--------->
+
+				
+
+
+				
+
+				<!-------
+
+				<li class="nav-item">
+					<a class="nav-link">
+
+					<img src="images/logout.png" class="img-fluid img-responsive" width="40%" alt="">
+
+					</a>
+				</li>
+
+                 ----------->
+
+
+			</ul>
+
+			<div class="serch-box-header">
+				<form>
+					<input type="text" placeholder="Search..." classs="form-control">
+					<i class="fa fa-search"></i>
+				</form>
+			</div>
+
+			<ul class="navbar-nav ml-auto">
+				<li>
+					<div class="header-icons">
+						<i class="fa fa-bell"></i>
+						<i class="fa fa-shopping-cart"></i>
+					</div>
+				</li>
+
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+						<img src="images/invest4edu-user.png" class="img-fluid img-responsive" width="40%" alt="">
+						<span><i class="ti-angle-down"></i></span>
+					</a>
+					<!-- Dropdown list -->
+					<ul class="dropdown-menu">
+
+
+						<li><a class="dropdown-item @@team" href="" style="background-color: #00315d; color: #fff;">Complete Profile : 60%</a></li>
+
+						<li><a class="dropdown-item @@team" href="">View Profile</a></li>
+						<li><a class="dropdown-item @@team" href="">Change Password</a></li>
+						<li><a class="dropdown-item @@team" href="">Help & Support</a></li>
+						<li><a class="dropdown-item @@career" href="">Sign out</a></li>
+
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+
+
+<!-- === start-checkbox === --> 
+<section class="checkbox">
+	<div class="container cont1">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="Filter-Main">
+					<div class="Filter-Text">
+						<h1 >FILTERS <span class="btnck">Clear All</span></h1>
+						<!-- <button class="btnck">clear</button> -->
+					</div>
+					<!-- amc filter -->
+					<div class="row filter-box">
+						<div class="col-md-12">
+							<div class="container">
+								<a href="#" class="tabs-heading" data-toggle="collapse" data-target="#demo">AMC <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+									<div id="demo" class="collapse show">
+										<form>
+											<div class="search-box">
+											<input type="text" class="search_input"  placeholder="Search Mutual Fund Companies">
+											<i class="fa fa-search" aria-hidden="true"></i>
+											</div>
+											<div class="checkbox-list overflow-scrol">
+											<div class="form-group"><input type="checkbox" class="unck"> 	<span>Aditya Birla Sun Life Mutual Fund</span></div>
+											<div class="form-group"><input type="checkbox" class="unck"> 	<span>Axis Mutual Fund</span></div>
+											<div class="form-group"><input type="checkbox" class="unck"> 	<span>BNP Paribas Mutual Fund</span></div>
+											<div class="form-group"><input type="checkbox" class="unck"> 	<span>BOI AXA Mutual Fund</span></div>
+											<div class="form-group"><input type="checkbox" class="unck"> 	<span>Baroda Mutual Fund</span></div>
+											<div class="form-group"><input type="checkbox" class="unck"> 	<span>Canara Robeco Mutual Fund</span></div>
+											<div class="form-group"><input type="checkbox" class="unck"> 	<span>DSP Mutual Fund</span></div>
+											<div class="form-group"><input type="checkbox" class="unck"> 	<span>Edelweiss Mutual Fund</span></div>
+											<div class="form-group"><input type="checkbox" class="unck"> 	<span>Essel Mutual Fund</span></div>
+											<div class="form-group"><input type="checkbox" class="unck"> 	<span>Franklin Templeton Mutual Fund</span></div>
+											<div class="form-group"><input type="checkbox" class="unck"> 	<span>HDFC Mutual Fund</span></div>
+											<div class="form-group"><input type="checkbox" class="unck"> 	<span>HSBC Mutual Fund</span></div>
+											<div class="form-group"><input type="checkbox" class="unck"> 	<span>ICICI Prudential Mutual Fund</span></div>
+											<div class="form-group"><input type="checkbox" class="unck"> 	<span>IDBI Mutual Fund</span></div>
+											<div class="form-group"><input type="checkbox" class="unck"> 	<span>IDFC Mutual Fund</span></div>
+											<div class="form-group"><input type="checkbox" class="unck"> 	<span>IIFL Mutual Fund</span></div>
+											<div class="form-group"><input type="checkbox" class="unck"> 	<span>ITI Mutual Fund</span></div>
+											<div class="form-group"><input type="checkbox" class="unck"> 	<span>Indiabulls Mutual Fund</span></div>
+											</div>
+										</form>
+									</div>
+							</div>
+						</div>
+					</div>
+					
+					<!-- Category -->
+					<div class="row filter-box">
+						<div class="col-md-12">
+							<div class="container">
+								<a href="#" class="tabs-heading" data-toggle="collapse" data-target="#category">Category <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+									<div id="category" class="collapse show">
+										<form>
+											<div class="checkbox-list">
+											<div class="form-group"><input type="checkbox" class="unck"> 	<span>Debt</span></div>
+											<div class="form-group"><input type="checkbox" class="unck"> 	<span>Equity</span></div>
+											<div class="form-group"><input type="checkbox" class="unck"> 	<span>Hybrid</span></div>
+											<div class="form-group"><input type="checkbox" class="unck"> 	<span>Other</span></div>
+											<div class="form-group"><input type="checkbox" class="unck"> 	<span>Solution Oriented</span></div>
+											</div>
+										</form>
+									</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Risk -->
+					<div class="row filter-box">
+						<div class="col-md-12">
+							<div class="container">
+								<a href="#" class="tabs-heading" data-toggle="collapse" data-target="#risk">Risk <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+									<div id="risk" class="collapse show">
+										<form>
+											<div class="checkbox-list">
+											<div class="form-group"><input type="checkbox" class="unck"> 	<span>Low</span></div>
+											<div class="form-group"><input type="checkbox" class="unck"> 	<span>Moderately Low</span></div>
+											<div class="form-group"><input type="checkbox" class="unck"> 	<span>Moderate</span></div>
+											<div class="form-group"><input type="checkbox" class="unck"> 	<span>Moderately High</span></div>
+											<div class="form-group"><input type="checkbox" class="unck"> 	<span>High</span></div>
+											<div class="form-group"><input type="checkbox" class="unck"> 	<span>Very High</span></div>
+											</div>
+										</form>
+									</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Fund Size -->
+					<div class="row filter-box">
+						<div class="col-md-12">
+							<div class="container">
+								<a href="#" class="tabs-heading" data-toggle="collapse" data-target="#fund">Fund Size <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+									<div id="fund" class="collapse show">
+										<form>
+											<div class="checkbox-list">
+											<div class="form-group"><input type="checkbox" class="unck"> 	<span>Upto 1,000Cr</span></div>
+											<div class="form-group"><input type="checkbox" class="unck"> 	<span>Upto 2,000Cr</span></div>
+											<div class="form-group"><input type="checkbox" class="unck"> 	<span>Upto 5,000Cr</span></div>
+											<div class="form-group"><input type="checkbox" class="unck"> 	<span>Upto 10,000Cr</span></div>
+											</div>
+										</form>
+									</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Available To Invest -->
+					<!-- <div class="row filter-box">
+						<div class="col-md-12">
+							<div class="container">
+								<a href="#" class="tabs-heading" data-toggle="collapse" data-target="#invest">Available To Investe <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+									<div id="invest" class="collapse show">
+										<form>
+											<div class="checkbox-list">
+											<div class="form-group"><input type="checkbox" class="unck"> 	<span>SIP</span></div>
+											<div class="form-group"><input type="checkbox" class="unck"> 	<span>ONE-TIME</span></div>
+											</div>
+										</form>
+									</div>
+							</div>
+						</div>
+					</div> -->
+
+						
+				</div>
+				
+			</div>
+
+
+			<!-- right-side -->
+			<div class="col-md-9 pl-0">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="search-box">
+							<input type="text" class="search_input"  placeholder="Search Mutual Fund Companies">
+							<i class="fa fa-search" aria-hidden="true"></i>
+						</div>
+					</div>
+					<div class="col-md-6"></div>
+				</div>
+				<div class="mutual-funds-body">
+					<div class="growth">
+						<div class="row">
+							<div class="col-md-6">
+								<p style="color: #000; padding-left: 20px;">Showing Result <span style="font-weight: bold; color: #000;">850</span> Mutual Funds</p>
+							</div>
+							<div class="col-md-6"></div>
+						</div>
+
+						<div class="row filter-headers">
+							<div class="col-md-5 text-center">
+								<div class="plan">
+									<div class="plan-body" style="float: none !important;">
+										<h2 class="tech" style="color: #fff; font-size: 18px !important;">Scheme Name</h2>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-7">
+								<div class="row" style="align-items: center;">
+									<div class="col-3">
+										<div class="plan-body text-center">
+											<h2 style="color: #fff; font-size: 18px !important;">Rating</h2>
+										</div>
+									</div>
+									<div class="col-9">
+										<div class="row">
+											<div class="col-12">
+												<div class="rtrn-txt text-center">
+													<h2>Returns</h2>
+												</div>
+											</div>
+											<div class="col-md-4">
+												<div class="plan-body text-center" style="float: none !important;">
+													<p style="color: #fff;">1Y</p>
+												</div>
+											</div>
+											<div class="col-md-4">
+												<div class="plan-body text-center" style="float: none !important;">
+													<p style="color: #fff;">3Y</p>
+												</div>
+											</div>
+											<div class="col-md-4">
+												<div class="plan-body text-center" style="float: none !important;">
+													<p style="color: #fff;">5Y</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- 1st row -->
+						<div class="row pills-body">
+							<div class="col-md-5">
+								<div class="plan" style="display: flex;">
+									<div>
+										<img src="images/icici_groww.svg">
+									</div>
+									<div class="plan-body">
+										<h2 class="tech">ICICI Prudential Technology Direct Plan Growth</h2>
+										<p>Very High Risk <span>.</span> <span> Equity </span>  <span>.</span></p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-7">
+								<div class="row">
+									<div class="col-md-2">
+										<div class="plan-body text-center">
+											<h2>★★★★★</h2>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="plan-body text-center" style="float: right !important;">
+											<h2>0.39%</h2>
+											<!-- <p>1Y</p> -->
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="plan-body text-center" style="float: right !important;">
+											<h2>97.12%</h2>
+											<!-- <p>3Y</p> -->
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="plan-body text-center" style="float: right !important;">
+											<h2>44.78%</h2>
+											<!-- <p>5Y</p> -->
+										</div>
+									</div>
+									<div class="col-1">
+										<div class="tooltip-container" tabindex="-1">
+											<div class="three-dots"></div>
+											<div class="tooltipcontain">
+											  <a href="#"><div>Watchlist</div></a>
+											  <a href="#"><div>Share</div></a>
+											</div>
+										  </div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- 2nd row -->
+						<div class="row pills-body">
+							<div class="col-md-5">
+								<div class="plan" style="display: flex;">
+									<div>
+										<img src="images/icici_groww.svg">
+									</div>
+									<div class="plan-body">
+										<h2 class="tech">ICICI Prudential Technology Direct Plan Growth</h2>
+										<p>Very High Risk <span>.</span> <span> Equity </span>  <span>.</span></p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-7">
+								<div class="row">
+									<div class="col-md-2">
+										<div class="plan-body text-center">
+											<h2>★★★★★</h2>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="plan-body text-center" style="float: right !important;">
+											<h2>0.39%</h2>
+											<!-- <p>1Y</p> -->
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="plan-body text-center" style="float: right !important;">
+											<h2>97.12%</h2>
+											<!-- <p>3Y</p> -->
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="plan-body text-center" style="float: right !important;">
+											<h2>44.78%</h2>
+											<!-- <p>5Y</p> -->
+										</div>
+									</div>
+									<div class="col-1">
+										<div class="tooltip-container" tabindex="-1">
+											<div class="three-dots"></div>
+											<div class="tooltipcontain">
+											  <a href="#"><div>Watchlist</div></a>
+											  <a href="#"><div>Share</div></a>
+											</div>
+										  </div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- 3rd row -->
+						<div class="row pills-body">
+							<div class="col-md-5">
+								<div class="plan" style="display: flex;">
+									<div>
+										<img src="images/icici_groww.svg">
+									</div>
+									<div class="plan-body">
+										<h2 class="tech">ICICI Prudential Technology Direct Plan Growth</h2>
+										<p>Very High Risk <span>.</span> <span> Equity </span>  <span>.</span></p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-7">
+								<div class="row">
+									<div class="col-md-2">
+										<div class="plan-body text-center">
+											<h2>★★★★★</h2>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="plan-body text-center" style="float: right !important;">
+											<h2>0.39%</h2>
+											<!-- <p>1Y</p> -->
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="plan-body text-center" style="float: right !important;">
+											<h2>97.12%</h2>
+											<!-- <p>3Y</p> -->
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="plan-body text-center" style="float: right !important;">
+											<h2>44.78%</h2>
+											<!-- <p>5Y</p> -->
+										</div>
+									</div>
+									<div class="col-1">
+										<div class="tooltip-container" tabindex="-1">
+											<div class="three-dots"></div>
+											<div class="tooltipcontain">
+											  <a href="#"><div>Watchlist</div></a>
+											  <a href="#"><div>Share</div></a>
+											</div>
+										  </div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- 4rth row -->
+						<div class="row pills-body">
+							<div class="col-md-5">
+								<div class="plan" style="display: flex;">
+									<div>
+										<img src="images/icici_groww.svg">
+									</div>
+									<div class="plan-body">
+										<h2 class="tech">ICICI Prudential Technology Direct Plan Growth</h2>
+										<p>Very High Risk <span>.</span> <span> Equity </span>  <span>.</span></p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-7">
+								<div class="row">
+									<div class="col-md-2">
+										<div class="plan-body text-center">
+											<h2>★★★★★</h2>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="plan-body text-center" style="float: right !important;">
+											<h2>0.39%</h2>
+											<!-- <p>1Y</p> -->
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="plan-body text-center" style="float: right !important;">
+											<h2>97.12%</h2>
+											<!-- <p>3Y</p> -->
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="plan-body text-center" style="float: right !important;">
+											<h2>44.78%</h2>
+											<!-- <p>5Y</p> -->
+										</div>
+									</div>
+									<div class="col-1">
+										<div class="tooltip-container" tabindex="-1">
+											<div class="three-dots"></div>
+											<div class="tooltipcontain">
+											  <a href="#"><div>Watchlist</div></a>
+											  <a href="#"><div>Share</div></a>
+											</div>
+										  </div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</section>
+<!-- === end-checkbox === --> 
+
+
+
+
+
+
+
+
+<!--====  End of weather Grid  ====-->
+
+
+
+<section class="call-to-action-app section bg-blue">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<h2>It's time to secure your future </h2>
+				<p>Download our trusted app. Get <a href="#">Invest4Edu App</a> & never miss an opportunity!
+					<br>We promise - you won’t look back.</p>
+				<ul class="list-inline">
+					<li class="list-inline-item">
+						<a href="" class="btn btn-rounded-icon">
+							<i class="ti-apple"></i>
+							Iphone
+						</a>
+					</li>
+					<li class="list-inline-item">
+						<a href="" class="btn btn-rounded-icon">
+							<i class="ti-android"></i>
+							Android
+						</a>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--============================
+=            Footer            =
+=============================-->
+<footer>
+  <div class="footer-main">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-12 align-self-center">
+          <div class="block">
+            <a href="index.html"><img src="images/logo_footer.png" alt="footer-logo" class="img-fluid" style="width: 50%;"></a>
+			  <p style="font-size: 14px !important;">308, A Wing,Gokul Arcade, <br/>
+				  Near Garware House,<br/>
+				  Sahar Road,Ville Parle (E), Mumbai - 400057<br />
+
+				  <br />
+				  Phone : +91 98995 75852<br />
+				  Email : info@invest4edu.com</p>
+			  <br />
+			  <br />
+
+            <!-- Social Site Icons -->
+            <ul class="social-icon list-inline">
+              <li class="list-inline-item">
+                <a href="https://www.facebook.com/"><i class="ti-facebook"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://twitter.com/"><i class="ti-twitter"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.instagram.com/"><i class="ti-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-6 mt-5 mt-lg-0" style="text-align: center;">
+          <div class="block-2">
+            <!-- heading -->
+            <h6>Products</h6>
+            <!-- links -->
+            <ul>
+				<li><a href="mutual_funds.html">Mutual Funds</a></li>
+				<li><a href="fixed_deposits.html">Fixed Deposit</a></li>
+				<li><a href="gold_bonds.html">Gold Bond</a></li>
+
+				<li><a href="edu_loans.html">Education Loan</a></li>
+				<li></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-6 mt-5 mt-lg-0" style="text-align: center;">
+          <div class="block-2">
+            <!-- heading -->
+            <h6>Invest4Edu</h6>
+            <!-- links -->
+            <ul>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Education opportunities</a></li>
+             <li><a href="blog.html">Blog</a></li>
+				<li><a href="careers.html">Careers</a></li>
+				<li><a href="#">Help & Support</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-6 mt-5 mt-lg-0" style="text-align: center;">
+          <div class="block-2">
+            <!-- heading -->
+            <h6>Quick Links</h6>
+            <!-- links -->
+            <ul>
+              
+              <li><a href="contact.html">Contact us</a></li>
+              <li><a href="faq.html">FAQs</a></li>
+              <li><a href="404.html">Terms & Conditions</a></li>
+				<li><a href="404.html">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="text-center bg-dark py-4">
+    <small class="text-secondary">Copyright &copy; <script>document.write(new Date().getFullYear())</script>. Invest4Edu Pvt Ltd.</small class="text-secondary">
+  </div>
+</footer>
+
+
+  <!-- To Top -->
+  <div class="scroll-top-to">
+    <i class="ti-angle-up"></i>
+  </div>
+
+
+<!----------- MODAL - LOGIN ---------->
+
+<!-- Modal -->
+<div class="modal fade" id="login-form" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content" style="background: url('images/loginbg.jpg') fixed no-repeat;
+		background-size: cover;">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalCenterTitle" style="color: #fff;
+font-weight: bold;
+text-align: center;">Login Form</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+
+
+				<form action="user-dashboard.html">
+					<!-- Username -->
+					<input class="form-control main" type="text" placeholder="Username" required="">
+					<!-- Password -->
+					<input class="form-control main" type="password" placeholder="Password" required="">
+					<!-- Submit Button -->
+                    <div class="form-row" style="text-align: center;">
+                        <!-- Submit Button -->
+                        <button class="btn btn-main-sm" style="margin: 0 auto;">Log in</button>
+                    </div>
+				</form>
+
+				Or
+
+
+				<form action="user-dashboard.html">
+					<h5 class="modal-title" id="exampleModalCenterTitle" style="color: #fff;
+font-weight: bold;
+
+border-bottom: 1px solid #fff;
+margin-bottom: 3.5%; padding-bottom: 4%;"><i>or</i> &nbsp; Login with OTP</h5>
+
+					<!-- Username -->
+					<input class="form-control main" type="text" placeholder="+91 xxxx xxxx xx" required="">
+					<!-- Password -->
+					<input class="form-control main" type="text" placeholder="Secure OTP" required="">
+					<!-- Submit Button -->
+                    <div class="form-row" style="text-align: center;">
+                        <!-- Submit Button -->
+                        <button class="btn btn-main-sm" style="margin: 0 auto;">Login</button>
+                    </div>
+				</form>
+
+
+
+
+
+			</div>
+
+		</div>
+	</div>
+</div>
+
+<!------------- MODAL - SIGN UP --------------->
+
+<div class="modal fade" id="edu-goals-add-detail-form" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 800px;">
+		<div class="modal-content" style="background-color: #05499c;">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalCenterTitle" style="color: #fff;
+font-weight: bold;
+text-align: center;">Add education goal details</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: #fff;">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+
+
+
+				<form id="edu_abacus_form_parent" style="padding: 5% 7%; background-color: #05499c;">
+
+
+
+					<div class="row">
+
+						<!-------left column form ---------->
+
+						<div class="col-md-6 col-lg-6 col-12">
+
+							<h5 class="modal-title" id="exampleModalCenterTitle" style="color: #fff;
+font-weight: bold;
+margin-bottom: 10%;
+padding-bottom: 4%;
+text-align: center;
+margin-top: 5%;">Add details :</h5>
+
+
+							<div class="form-group field-wrapper">
+
+								<select name="study_user" id="study_user" class="form-control">
+
+									<option value="" selected>Select user</option>
+
+										<option value="">Daughter</option>
+										<option value="">Son</option>
+										<option value="">Self</option>
+										<option value="">Spouse</option>
+										<option value="">Other</option>
+									</select>
+
+
+							</div>
+
+							<div class="form-group field-wrapper">
+
+								<input type="text" class="form-control textfield" id="user_fullname" placeholder="">
+
+								<div class="field-placeholder"><span>Enter your fullname</span></div>
+
+							</div>
+
+							<div class="form-group">
+
+								<fieldset class="p-2 mr-auto">
+
+									<legend class="mumLabel">Date of birth</legend>
+
+
+									<div class="row">
+
+
+										<div class="col-md-4 col-lg-4 col-12">
+
+											<select name="day" id="" class="form-control">
+
+												<option value="" selected="">Day</option>
+												<option value="01">1</option>
+												<option value="02">2</option>
+												<option value="03">3</option>
+												<option value="04">4</option>
+												<option value="05">5</option>
+												<option value="06">6</option>
+												<option value="07">7</option>
+												<option value="08">8</option>
+												<option value="09">9</option>
+												<option value="10">10</option>
+												<option value="11">11</option>
+												<option value="12">12</option>
+												<option value="13">13</option>
+												<option value="14">14</option>
+												<option value="15">15</option>
+												<option value="16">16</option>
+												<option value="17">17</option>
+												<option value="18">18</option>
+												<option value="19">19</option>
+												<option value="20">20</option>
+												<option value="21">21</option>
+												<option value="22">22</option>
+												<option value="23">23</option>
+												<option value="24">24</option>
+												<option value="25">25</option>
+												<option value="26">26</option>
+												<option value="27">27</option>
+												<option value="28">28</option>
+												<option value="29">29</option>
+												<option value="30">30</option>
+												<option value="31">31</option>
+											</select>
+
+										</div>
+
+
+										<div class="col-md-4 col-lg-4 col-12">
+
+											<select name="month" class="form-control">
+												<option value="" selected="">Month</option>
+												<option value="01">January</option>
+												<option value="02">February</option>
+												<option value="03">March</option>
+												<option value="04">April</option>
+												<option value="05">May</option>
+												<option value="06">June</option>
+												<option value="07">July</option>
+												<option value="08">August</option>
+												<option value="09">September</option>
+												<option value="10">October</option>
+												<option value="11">November</option>
+												<option value="12">December</option>
+											</select>
+
+
+
+										</div>
+
+
+										<div class="col-md-4 col-lg-4 col-12">
+
+											<input type="text" class="form-control" name="dob_year" placeholder="Year">
+
+
+
+										</div>
+
+
+
+									</div>
+
+								</fieldset>
+
+
+							</div>
+
+
+
+
+
+
+						</div>
+
+
+						<!----------right column form -------->
+
+						<div class="col-md-6 col-lg-6 col-12">
+
+
+							<h5 class="modal-title" id="exampleModalCenterTitle" style="color: #fff;
+font-weight: bold;
+margin-bottom: 10%;
+padding-bottom: 4%;
+text-align: center;
+margin-top: 5%;">Edit details :</h5>
+
+
+
+							<div class="form-group">
+
+								<fieldset class="p-2 mr-auto">
+
+									<legend class="mumLabel">Amount</legend>
+
+									<input type="text" class="form-control" id="amount" placeholder="" value="&#8377; 50,00,000">
+
+								</fieldset>
+
+							</div>
+
+							<div class="form-group">
+
+								<fieldset class="p-2 mr-auto">
+
+									<legend class="mumLabel">Destination</legend>
+
+
+									<select name="study_destination" id="study_destination" class="form-control">
+
+										<option value="">India</option>
+										<option value="" selected>Canada</option>
+										<option value="">UK</option>
+										<option value="">Australia</option>
+										<option value="">New zealand</option>
+									</select>
+
+								</fieldset>
+							</div>
+
+							<div class="form-group">
+
+								<fieldset class="p-2 mr-auto">
+
+									<legend class="mumLabel">Planning to begin in</legend>
+
+
+									<select name="course" id="course" class="form-control">
+
+										<option value="">2021</option>
+										<option value="">2022</option>
+										<option value="" selected>2023</option>
+										<option value="">2024</option>
+										<option value="">2025</option>
+
+									</select>
+
+								</fieldset>
+
+
+							</div>
+
+
+
+
+
+						</div>
+
+
+
+					</div> <!-------row ends here ------->
+
+
+
+
+
+
+					<div class="form-button" style="text-align: center;">
+
+						<a type="submit" href="edu_abacus_result.html" class="btn btn-rounded-icon" style="border: 1px solid #fff;
+padding: 13px 50px;
+border-radius: 100px;
+margin-top: 10%;">
+							<i class="ti-new-window"></i>
+							UPDATE DETAILS						</a>
+
+
+					</div>
+
+					<div class="form-group" style="text-align: center; margin-top: 5%;
+color: #c2f8fb;">
+
+										 <span>
+
+										 <a href="#">Need help?</a>
+
+									 </span>
+
+
+					</div>
+
+
+
+				</form>
+
+
+
+
+
+			</div>
+
+		</div>
+	</div>
+</div>
+  
+  <!-- JAVASCRIPTS -->
+
+
+
+  <script src="plugins/slick/slick.min.js"></script>
+  <script src="plugins/fancybox/jquery.fancybox.min.js"></script>
+  <script src="plugins/syotimer/jquery.syotimer.min.js"></script>
+  <script src="plugins/aos/aos.js"></script>
+
+  <!-- google map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgeuuDfRlweIs7D6uo4wdIHVvJ0LonQ6g"></script>
+  <script src="plugins/google-map/gmap.js"></script>
+  
+  <script src="js/script.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+              // js for gmail like input //
+
+        $(function () {
+
+            $(".field-wrapper .field-placeholder").on("click", function () {
+                $(this).closest(".field-wrapper").find("input").focus();
+            });
+            $(".field-wrapper input").on("keyup", function () {
+                var value = $.trim($(this).val());
+                if (value) {
+                    $(this).closest(".field-wrapper").addClass("hasValue");
+                } else {
+                    $(this).closest(".field-wrapper").removeClass("hasValue");
+                }
+            });
+
+        });
+
+     
+
+          $(".btnck").click(function(){
+// $('.unck').removeAttr("checked", "checked");
+ $(".unck").prop("checked", false);
+        });
+
+
+        // js ends for gmail //
+
+    });
+</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+@import 'mixins';
+@import 'variable';
+
+body{
+	font-family: $font-stack1;
+}
+a{
+	outline: 0 !important;
+	&:hover{
+		text-decoration: none !important;
+		color: #fff;
+	}
+}
+ul{
+	list-style: none;
+}
+.noti-section-one{
+	content: "";
+	display: inline-block;
+	left: 20%;
+	position: absolute;
+	top: 100px;
+	z-index: 999;
+
+}
+.noti-section-two{
+	bottom: 140px;
+	position: absolute;
+	right: 66px;
+	content: "";
+	z-index: 999;
+}
+.layout{
+	display: none;
+}
+
+
+.noti-hide{
+	display: none;
+}

@@ -1,0 +1,142 @@
+@media only screen and (max-width: 992px){
+	.notification-wrapper{
+		// background-image: none;
+		overflow-y: scroll; 
+		&:after{
+			content: none;
+		}
+
+		.side-menu{
+			width: 100%;
+			display: none;
+
+		}
+		.mobile-view-sidebar{
+			background: #fff none repeat scroll 0 0;
+			border: 1px solid #bababa;
+			border-radius: 0;
+			display: block;
+			margin: 0 auto;
+			padding: 9px;
+			position: relative;
+			width: 90%;
+			z-index: 99999;
+
+		}
+		&__link{
+			color: #000 !important;
+		}
+		
+
+
+		// notification
+
+		.notification-page{
+			width: 100%;
+			padding: 0 15px;
+
+			.noti-section-one {
+				
+				margin: 40px 0;
+				position: static !important;
+
+				display: inline-block;
+				
+			}
+
+			.noti-section-two{
+				
+				margin: 40px 0;
+				position: static !important;
+
+				display: inline-block;
+
+			}
+			.active_class {
+				padding-top: 30px;
+			}
+
+			// for layout eight
+			.noti-layout-eight{
+				&__cross-btn {		
+					height: 28px;
+					width: 28px;
+					&:before{
+						width: 16px;
+
+					}
+					&:after{
+						width: 16px;
+
+					}
+				}
+				&__heading{
+					font-size: 22px;
+				}
+
+			}
+			// for layput one
+
+			.noti-layout-one{
+				&__icon {
+					img {
+						width: auto;
+					}
+
+				}
+				&__content{
+					&:after{
+						content: none;
+					}
+				}
+			}
+			// for layout two
+			.noti-layout-two{
+				&__message-wrap{
+					.minute-span {
+						display: block;
+					}
+
+				} 
+			}
+			// for layout four
+			.noti-layout-four{
+				&__cross-btn {				
+					margin-top: 25px;
+				}
+			}
+
+
+
+		}
+		&__mobile-heading{
+			display: block !important;
+			margin-top: 40px;
+			margin-bottom: 40px;
+			color: #fff;
+			font-size: 30px;
+		}
+	}
+}
+
+@media only screen and (max-width: 992px) and (min-width: 800px){
+	.notification-wrapper{
+		.notification-page {
+			.noti-section-one {				
+				margin: 40px 28px;				
+			}
+		}
+
+	} 
+}
+
+@media only screen and (max-width:576px) {
+	.noti-layout-fourteen__overlay  {
+		left: 10px;
+	}
+}
+
+
+
+
+

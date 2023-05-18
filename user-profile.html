@@ -1,0 +1,1345 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  ================================================== -->
+  <meta charset="utf-8">
+  <title>User Profile | Invest4Edu</title>
+
+  <!-- Mobile Specific Metas
+  ================================================== -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="author" content="">
+  <meta name="generator" content="">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+  
+  <!-- PLUGINS CSS STYLE -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <link rel="stylesheet" href="plugins/slick/slick-theme.css">
+  <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="plugins/aos/aos.css">
+
+
+
+	<!------------- css edu abacus ----------------->
+
+	<link rel="stylesheet" type="text/css" href="iofrm-by-brandio/Template/css/fontawesome-all.min.css">
+	<link rel="stylesheet" type="text/css" href="iofrm-by-brandio/Template/css/iofrm-style.css">
+	<link rel="stylesheet" type="text/css" href="iofrm-by-brandio/Template/css/iofrm-theme5.css">
+
+
+
+  <!-- CUSTOM CSS -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/user.css" rel="stylesheet">
+
+	<!------- MWS JS ----------->
+	<script src="plugins/jquery/jquery.min.js"></script>
+	<script src="plugins/bootstrap/bootstrap.min.js"></script>
+
+
+	<!-- GOOGLE WEB FONT -->
+	<link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600" rel="stylesheet">
+
+
+
+	<!-- link for animation of MOdal, by Myduz Web Studio -->
+	<link href="notification/assets/css/animate.min.css" rel="stylesheet">
+	<link href="notification/assets/css/animate.css" rel="stylesheet">
+	<link href="notification/style.css" rel="stylesheet">
+
+	<style>
+
+		.top-mum {
+
+
+			margin-top: 5%;
+			background-color: #00315d;
+		}
+
+		.mum-h3 {
+
+			font-weight: bold;
+			color: #646464;
+			margin-bottom: 6%;
+
+		}
+
+
+		.main-nav {
+
+			background: #ebebeb;
+
+		}
+
+		.mumLabel {
+
+			font-size: 12px;
+			padding-left: 2%;
+			width: auto;
+			padding-right: 2%;
+			color: #fff;
+			margin-bottom: 0;
+
+		}
+
+		.mumBg {
+
+			background-color: #edf4ff;
+			border-radius: 20px;
+
+		}
+
+		.mumCircle {
+
+			border: 2px solid #2e7eed;
+			padding: 55% 30%;
+
+
+		}
+
+		.block {
+
+			text-align: center;
+			vertical-align: middle;
+		}
+		.circle {
+			background: #2e7eed;
+			border-radius: 200px;
+			color: white;
+			height: 200px;
+			font-weight: bold;
+			width: 200px;
+			display: table;
+			margin: 20px auto;
+		}
+		.circle p {
+			vertical-align: middle;
+			display: table-cell;
+			color: #fff;
+		}
+
+
+		/************ ======== form gmail like input ==========**********/
+
+		.field-wrapper{
+			position: relative;
+			margin-bottom: 15px;
+		}
+
+		.field-wrapper input, select{
+			border: 1px solid #DADCE0;
+			padding: 15px;
+			border-radius: 4px;
+			width: 100%;
+		}
+
+		.field-wrapper .field-placeholder{
+			font-size: 16px;
+			position: absolute;
+			/* background: #fff; */
+			bottom: 6px;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+			color: #80868b;
+			left: 8px;
+			padding: 0 8px;
+			-webkit-transition: transform 150ms cubic-bezier(0.4,0,0.2,1),opacity 150ms cubic-bezier(0.4,0,0.2,1);
+			transition: transform 150ms cubic-bezier(0.4,0,0.2,1),opacity 150ms cubic-bezier(0.4,0,0.2,1);
+			z-index: 1;
+			text-align: left;
+			width: 100%;
+		}
+
+		.field-wrapper .field-placeholder span{
+
+			color: #05499c;
+			font-size: 12px;
+			background-color: #fff;
+			padding: 0 5px;
+
+		}
+
+		.field-wrapper input:not([disabled]):focus~.field-placeholder
+		{
+			color:#1A73E8;
+
+		}
+
+		.field-wrapper input {
+
+			height: 10px;
+			font-size: 12px;
+			color:#1A73E8;
+
+		}
+
+		.form-control {
+
+			font-size: 12px;
+			color:#05499c;
+
+		}
+
+		.form-control select {
+
+			height: 10px;
+			font-size: 12px;
+			color:#05499c;
+
+		}
+
+		.field-wrapper input:not([disabled]):focus~.field-placeholder,
+		.field-wrapper.hasValue input:not([disabled])~.field-placeholder
+		{
+			-webkit-transform: scale(.75) translateY(-39px) translateX(-60px);
+			transform: scale(1) translateY(-15px) translateX(-5px);
+
+
+		}
+
+		.field-wrapper input:not([disabled]):focus{
+			border:1px solid #05499c;
+			background-color: #fff;
+			font-size: 12px;
+
+		}
+
+
+
+		.form-content input:hover, .form-content input:focus, .form-content .dropdown-toggle.btn-default:hover, .form-content .dropdown-toggle.btn-default:focus {
+			border: 0;
+			background-color: #fff;
+			color: #05499c;
+		}
+		.header-icons i {
+		    font-size: 18px;
+		    color: #2e7eed;
+		    margin: 0 12px;
+		}
+		.header-icons {
+		    margin-top: 19px;
+		}
+		/*.tabcontent {
+		    background: url('images/tab-bg.svg');
+		}*/
+
+	</style>
+
+	<!-- Font Awesome -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+
+
+
+</head>
+
+
+<body class="body-wrapper" data-spy="scroll" data-target=".privacy-nav">
+<nav class="navbar main-nav navbar-expand-lg px-2 px-sm-0 py-2 py-lg-0  fixed-top" style="z-index:10;">
+	<div class="container">
+		<a class="navbar-brand" href="index.html" style="width: 20%;">
+			<img src="images/logo_3.png" alt="logo" style="width: 100%;"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="ti-menu"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
+
+				<!-- <li class="nav-item dropdown active">
+					<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">About us
+						<span><i class="ti-angle-down"></i></span>
+					</a>
+					 Dropdown list -->
+					<!-- <ul class="dropdown-menu">
+						<li><a class="dropdown-item active" href="why-us.html">Why invest4Edu</a></li>
+						<li><a class="dropdown-item" href="who-we-are.html">Who we are</a></li>
+						<li><a class="dropdown-item" href="how-it-works.html">How Invest4edu works</a></li>
+
+					</ul>
+				</li> --> 
+				<li class="nav-item dropdown @@pages">
+					<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Education opportunities
+						<span><i class="ti-angle-down"></i></span>
+					</a>
+					<!-- Dropdown list -->
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item @@team" href="india.html">Study in India</a></li>
+						<li><a class="dropdown-item @@team" href="canada.html">Study in Canada</a></li>
+						<li><a class="dropdown-item @@career" href="uk.html">Study in UK</a></li>
+						<li><a class="dropdown-item @@blog" href="australia.html">Study in Australia</a></li>
+						<li><a class="dropdown-item @@blogSingle" href="usa.html">Study in USA</a></li>
+					</ul>
+				</li>
+
+				<!-- <li class="nav-item @@contact">
+					<a class="nav-link" href="contact.html">Contact</a>
+				</li> -->
+
+
+				<!--------
+				<li class="nav-item">
+					<a  class="nav-link" href="sign-in.html" style="color: #2e7eed;" data-toggle="modal" data-target="#login-form">Login</a>
+				</li>
+				--------->
+
+				
+
+
+				
+
+				<!-------
+
+				<li class="nav-item">
+					<a class="nav-link">
+
+					<img src="images/logout.png" class="img-fluid img-responsive" width="40%" alt="">
+
+					</a>
+				</li>
+
+                 ----------->
+
+
+			</ul>
+
+			<div class="serch-box-header">
+				<form>
+					<input type="text" placeholder="Search..." classs="form-control">
+					<i class="fa fa-search"></i>
+				</form>
+			</div>
+
+			<ul class="navbar-nav ml-auto">
+				<li>
+					<div class="header-icons">
+						<i class="fa fa-bell"></i>
+						<i class="fa fa-shopping-cart"></i>
+					</div>
+				</li>
+
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+						<img src="images/invest4edu-user.png" class="img-fluid img-responsive" width="40%" alt="">
+						<span><i class="ti-angle-down"></i></span>
+					</a>
+					<!-- Dropdown list -->
+					<ul class="dropdown-menu">
+
+
+						<li><a class="dropdown-item @@team" href="" style="background-color: #00315d; color: #fff;">Complete Profile : 60%</a></li>
+
+						<li><a class="dropdown-item @@team" href="">View Profile</a></li>
+						<li><a class="dropdown-item @@team" href="">Change Password</a></li>
+						<li><a class="dropdown-item @@team" href="">Help &amp; Support</a></li>
+						<li><a class="dropdown-item @@career" href="">Sign out</a></li>
+
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+
+
+<!------------- courses ---------------->
+
+<section class="user">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="user-left" style="padding: 20px 10%;">
+					<div class="profile">
+						<img src="images/udb-user.png" class="img-responsive">
+						<h4>Manoj Sharma</h4>
+					</div>
+					<div class="tab">
+					  <button class="tablinks" onclick="openCity(event, 'basic')" id="defaultOpen">Basic Details <span class="details"><i class="fa fa-chevron-right" aria-hidden="true"></i></span></button>
+					  <button class="tablinks" onclick="openCity(event, 'Report')">Reports <span class="details"><i class="fa fa-chevron-right" aria-hidden="true"></i></span></button>
+					  <button class="tablinks" onclick="openCity(event, 'Password')">Change Password <span class="details"><i class="fa fa-chevron-right" aria-hidden="true"></i></span></button>
+					  <button class="tablinks" onclick="openCity(event,'pin')">Change PIN <span class="details" style="margin-left: 10px;"><i class="fa fa-chevron-right"
+																													aria-hidden="true"></i></span></button>
+					  <button class="tablinks" onclick="openCity(event,'Nominee')">Nominee details <span class="details"><i class="fa fa-chevron-right" aria-hidden="true"></i></span></button>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-9">
+				<div class="user-right">
+					<div id="basic" class="tabcontent">
+						<form>
+							 <div class="row">
+							 	<div class="col-lg-6">
+							 		<div class="form-group">
+							 			<label>NAME</label>
+							 			<input type="text" name="name" placeholder="-" class="form-control">
+							 		</div>								 
+							 	</div>
+							 	<div class="col-lg-6">
+							 		<div class="form-group">
+							 			<label>PAN</label>
+							 			<input type="text" name="name" placeholder="-" class="form-control">
+							 		</div>								 
+							 	</div>
+							 	<div class="col-lg-6">
+							 		<div class="form-group">
+							 			<label>DATE OF BIRTH (MM/DD/YYYY)</label>
+							 			<input type="date" name="name" placeholder="-" class="form-control">
+							 		</div>								 
+							 	</div>
+							 	<div class="col-lg-6">
+							 		<div class="form-group">
+							 			<label>GENDER</label>
+							 			<input type="text" name="name" placeholder="-" class="form-control">
+							 		</div>								 
+							 	</div>
+							 	<div class="col-lg-6">
+							 		<div class="form-group">
+							 			<label>MOBILE NUMBER</label>
+							 			<input type="number" name="name" placeholder="-" class="form-control">
+							 		</div>								 
+							 	</div>
+							 	<div class="col-lg-6">
+							 		<div class="form-group">
+							 			<label>MARITAL STATUS</label>
+							 			<input type="text" name="name" placeholder="-" class="form-control">
+							 		</div>								 
+							 	</div>
+							 	<div class="col-lg-6">
+							 		<div class="form-group">
+							 			<label>EMAIL</label>
+							 			<input type="email" name="name" placeholder="-" class="form-control">
+							 		</div>								 
+							 	</div>
+							 	<div class="col-lg-6">
+							 		<div class="form-group">
+							 			<label>UNIQUE CLIENT CODE</label>
+							 			<input type="number" name="name" placeholder="-" class="form-control">
+							 		</div>								 
+							 	</div>
+							 </div>
+						</form>
+					</div>
+
+					<div id="Report" class="tabcontent">
+						<div class="filing">
+							<div class="container">
+								<h3>Tax Filing</h3>
+								<div class="accordion" id="accordionExample">
+								  <div class="item">
+								     <div class="item-header" id="headingOne">
+								        <h2 class="mb-0 collapse-heading" data-toggle="collapse"
+								              data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+								              Tax Proof - 80C ELSS Statement
+								           <i class="fa fa-angle-down"></i>
+								        </h2>
+								     </div>
+								     <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+								        data-parent="#accordionExample">
+								        <div class="row">
+								        	<div class="col-lg-5">
+								     			<div class="year">
+								     				<h6>Choose Financial Year</h6>
+								     			</div>
+								        	</div>
+								        	<div class="col-lg-7">
+								        		<div class="row">
+								        			<div class="col-lg-6">
+								        				<div class="dated">
+								        					<form>
+								        						<div class="form-group">
+								        							<select class="form-control">
+								        								<option class="form-control">Apr 2018 - Mar 2019</option>
+								        								<option class="form-control">Apr 2020 - Mar 2021</option>
+								        								<option class="form-control">Apr 2017 - Mar 2018</option>
+								        								<option class="form-control">Apr 2019 - Mar 2020</option>
+								        							</select>
+								        						</div>
+								        					</form>
+								        				</div>
+								        			</div>
+								        			<div class="col-lg-6">
+								        				<div class="download">
+								        					<a href="#">Download</a>
+								        				</div>
+								        			</div>
+								        		</div>
+								        	</div>
+								        </div>
+								     </div>
+								  </div>
+								  
+								</div>
+
+								<!-- 2nd Collaps -->
+								<div class="accordion" id="accordionExample">
+								  <div class="item">
+								     <div class="item-header" id="headingOne">
+								        <h2 class="mb-0 collapse-heading" data-toggle="collapse"
+								              data-target="#collapsetwo" aria-expanded="true" aria-controls="collapsetwo">
+								              Capital Gains - Mutual Funds
+								           <i class="fa fa-angle-down"></i>
+								        </h2>
+								     </div>
+								     <div id="collapsetwo" class="collapse" aria-labelledby="headingOne"
+								        data-parent="#accordionExample">
+								        <div class="row">
+								        	<div class="col-lg-5">
+								     			<div class="year">
+								     				<h6>Choose Financial Year</h6>
+								     			</div>
+								        	</div>
+								        	<div class="col-lg-7">
+								        		<div class="row">
+								        			<div class="col-lg-6">
+								        				<div class="dated">
+								        					<form>
+								        						<div class="form-group">
+								        							<select class="form-control">
+								        								<option class="form-control">Apr 2018 - Mar 2019</option>
+								        								<option class="form-control">Apr 2020 - Mar 2021</option>
+								        								<option class="form-control">Apr 2017 - Mar 2018</option>
+								        								<option class="form-control">Apr 2019 - Mar 2020</option>
+								        							</select>
+								        						</div>
+								        					</form>
+								        				</div>
+								        			</div>
+								        			<div class="col-lg-6">
+								        				<div class="download">
+								        					<a href="#">Download</a>
+								        				</div>
+								        			</div>
+								        		</div>
+								        	</div>
+								        </div>
+								     </div>
+								  </div>
+								  
+								</div>
+
+								<!-- 3nd Collaps -->
+								<div class="accordion" id="accordionExample">
+								  <div class="item">
+								     <div class="item-header" id="headingOne">
+								        <h2 class="mb-0 collapse-heading" data-toggle="collapse"
+								              data-target="#collapsetthree" aria-expanded="true" aria-controls="collapsetthree">
+								              Capital Gains - Stocks
+								           <i class="fa fa-angle-down"></i>
+								        </h2>
+								     </div>
+								     <div id="collapsetthree" class="collapse" aria-labelledby="headingOne"
+								        data-parent="#accordionExample">
+								        <div class="row">
+								        	<div class="col-lg-5">
+								     			<div class="year">
+								     				<h6>Choose Financial Year</h6>
+								     			</div>
+								        	</div>
+								        	<div class="col-lg-7">
+								        		<div class="row">
+								        			<div class="col-lg-6">
+								        				<div class="dated">
+								        					<form>
+								        						<div class="form-group">
+								        							<select class="form-control">
+								        								<option class="form-control">Apr 2018 - Mar 2019</option>
+								        								<option class="form-control">Apr 2020 - Mar 2021</option>
+								        								<option class="form-control">Apr 2017 - Mar 2018</option>
+								        								<option class="form-control">Apr 2019 - Mar 2020</option>
+								        							</select>
+								        						</div>
+								        					</form>
+								        				</div>
+								        			</div>
+								        			<div class="col-lg-6">
+								        				<div class="download">
+								        					<a href="#">Download</a>
+								        				</div>
+								        			</div>
+								        		</div>
+								        	</div>
+								        </div>
+								     </div>
+								  </div>
+								  
+								</div>
+
+
+
+							</div>
+						</div>
+
+						<!-- Mutual Funds -->
+						<div class="filing">
+							<div class="container">
+								<h3>Mutual Funds</h3>
+								<div class="accordion" id="accordionExample">
+								  <div class="item">
+								     <div class="item-header" id="headingOne">
+								        <h2 class="mb-0 collapse-heading" data-toggle="collapse"
+								              data-target="#m1" aria-expanded="true" aria-controls="m1">
+								              Order History
+								           <i class="fa fa-angle-down"></i>
+								        </h2>
+								     </div>
+								     <div id="m1" class="collapse" aria-labelledby="headingOne"
+								        data-parent="#accordionExample">
+								        <div class="row">
+								        	<div class="col-lg-5">
+								     			<div class="year">
+								     				<h6>Choose Financial Year</h6>
+								     			</div>
+								        	</div>
+								        	<div class="col-lg-7">
+								        		<div class="row">
+								        			<div class="col-lg-6">
+								        				<div class="dated">
+								        					<form>
+								        						<div class="form-group">
+								        							<select class="form-control">
+								        								<option class="form-control">Apr 2018 - Mar 2019</option>
+								        								<option class="form-control">Apr 2020 - Mar 2021</option>
+								        								<option class="form-control">Apr 2017 - Mar 2018</option>
+								        								<option class="form-control">Apr 2019 - Mar 2020</option>
+								        							</select>
+								        						</div>
+								        					</form>
+								        				</div>
+								        			</div>
+								        			<div class="col-lg-6">
+								        				<div class="download">
+								        					<a href="#">Download</a>
+								        				</div>
+								        			</div>
+								        		</div>
+								        	</div>
+								        </div>
+								     </div>
+								  </div>
+								  
+								</div>
+
+
+							</div>
+						</div>
+
+						<!-- Stocks -->
+						<div class="filing">
+							<div class="container">
+								<h3>Stocks</h3>
+								<div class="accordion" id="accordionExample">
+								  <div class="item">
+								     <div class="item-header" id="headingOne">
+								        <h2 class="mb-0 collapse-heading" data-toggle="collapse"
+								              data-target="#s1" aria-expanded="true" aria-controls="s1">
+								              P&L Report
+								           <i class="fa fa-angle-down"></i>
+								        </h2>
+								     </div>
+								     <div id="s1" class="collapse" aria-labelledby="headingOne"
+								        data-parent="#accordionExample">
+								        <div class="row">
+								        	<div class="col-lg-5">
+								     			<div class="year">
+								     				<h6>Choose Financial Year</h6>
+								     			</div>
+								        	</div>
+								        	<div class="col-lg-7">
+								        		<div class="row">
+								        			<div class="col-lg-6">
+								        				<div class="dated">
+								        					<form>
+								        						<div class="form-group">
+								        							<select class="form-control">
+								        								<option class="form-control">Apr 2018 - Mar 2019</option>
+								        								<option class="form-control">Apr 2020 - Mar 2021</option>
+								        								<option class="form-control">Apr 2017 - Mar 2018</option>
+								        								<option class="form-control">Apr 2019 - Mar 2020</option>
+								        							</select>
+								        						</div>
+								        					</form>
+								        				</div>
+								        			</div>
+								        			<div class="col-lg-6">
+								        				<div class="download">
+								        					<a href="#">Download</a>
+								        				</div>
+								        			</div>
+								        		</div>
+								        	</div>
+								        </div>
+								     </div>
+								  </div>
+								  
+								</div>
+
+								<!-- 2nd Collaps -->
+								<div class="accordion" id="accordionExample">
+								  <div class="item">
+								     <div class="item-header" id="headingOne">
+								        <h2 class="mb-0 collapse-heading" data-toggle="collapse"
+								              data-target="#s2" aria-expanded="true" aria-controls="s2">
+								              Contract Note
+								           <i class="fa fa-angle-down"></i>
+								        </h2>
+								     </div>
+								     <div id="s2" class="collapse" aria-labelledby="headingOne"
+								        data-parent="#accordionExample">
+								        <div class="row">
+								        	<div class="col-lg-5">
+								     			<div class="year">
+								     				<h6>Choose Financial Year</h6>
+								     			</div>
+								        	</div>
+								        	<div class="col-lg-7">
+								        		<div class="row">
+								        			<div class="col-lg-6">
+								        				<div class="dated">
+								        					<form>
+								        						<div class="form-group">
+								        							<select class="form-control">
+								        								<option class="form-control">Apr 2018 - Mar 2019</option>
+								        								<option class="form-control">Apr 2020 - Mar 2021</option>
+								        								<option class="form-control">Apr 2017 - Mar 2018</option>
+								        								<option class="form-control">Apr 2019 - Mar 2020</option>
+								        							</select>
+								        						</div>
+								        					</form>
+								        				</div>
+								        			</div>
+								        			<div class="col-lg-6">
+								        				<div class="download">
+								        					<a href="#">Download</a>
+								        				</div>
+								        			</div>
+								        		</div>
+								        	</div>
+								        </div>
+								     </div>
+								  </div>
+								  
+								</div>
+
+								<!-- 3nd Collaps -->
+								<div class="accordion" id="accordionExample">
+								  <div class="item">
+								     <div class="item-header" id="headingOne">
+								        <h2 class="mb-0 collapse-heading" data-toggle="collapse"
+								              data-target="#s3" aria-expanded="true" aria-controls="s3">
+								             Demat Report
+								           <i class="fa fa-angle-down"></i>
+								        </h2>
+								     </div>
+								     <div id="s3" class="collapse" aria-labelledby="headingOne"
+								        data-parent="#accordionExample">
+								        <div class="row">
+								        	<div class="col-lg-5">
+								     			<!-- <div class="year">
+								     				<h6>Choose Financial Year</h6>
+								     			</div> -->
+								        	</div>
+								        	<div class="col-lg-7">
+								        		<div class="row">
+								        			<div class="col-lg-6">
+								        				<div class="dated">
+								        					<form>
+								        						<div class="form-group">
+								        							<select class="form-control">
+								        								<option class="form-control">Apr 2018 - Mar 2019</option>
+								        								<option class="form-control">Apr 2020 - Mar 2021</option>
+								        								<option class="form-control">Apr 2017 - Mar 2018</option>
+								        								<option class="form-control">Apr 2019 - Mar 2020</option>
+								        							</select>
+								        						</div>
+								        					</form>
+								        				</div>
+								        			</div>
+								        			<div class="col-lg-6">
+								        				<div class="download">
+								        					<a href="#">Download</a>
+								        				</div>
+								        			</div>
+								        		</div>
+								        	</div>
+								        </div>
+								     </div>
+								  </div>
+								  
+								</div>
+
+
+
+							</div>
+						</div>
+
+						<!-- US Stocks -->
+						<div class="filing">
+							<div class="container">
+								<h3>US Stocks</h3>
+								<div class="accordion" id="accordionExample">
+								  <div class="item">
+								     <div class="item-header" id="headingOne">
+								        <h2 class="mb-0 collapse-heading" data-toggle="collapse"
+								              data-target="#us" aria-expanded="true" aria-controls="us">
+								              Account statement
+								           <i class="fa fa-angle-down"></i>
+								        </h2>
+								     </div>
+								     <div id="us" class="collapse" aria-labelledby="headingOne"
+								        data-parent="#accordionExample">
+								        <div class="row">
+								        	<div class="col-lg-5">
+								     			<div class="year">
+								     				<h6>Choose Financial Year</h6>
+								     			</div>
+								        	</div>
+								        	<div class="col-lg-7">
+								        		<div class="row">
+								        			<div class="col-lg-6">
+								        				<div class="dated">
+								        					<form>
+								        						<div class="form-group">
+								        							<select class="form-control">
+								        								<option class="form-control">Apr 2018 - Mar 2019</option>
+								        								<option class="form-control">Apr 2020 - Mar 2021</option>
+								        								<option class="form-control">Apr 2017 - Mar 2018</option>
+								        								<option class="form-control">Apr 2019 - Mar 2020</option>
+								        							</select>
+								        						</div>
+								        					</form>
+								        				</div>
+								        			</div>
+								        			<div class="col-lg-6">
+								        				<div class="download">
+								        					<a href="#">Download</a>
+								        				</div>
+								        			</div>
+								        		</div>
+								        	</div>
+								        </div>
+								     </div>
+								  </div>
+								  
+								</div>
+
+
+							</div>
+						</div>
+
+
+					</div>
+
+					<div id="Password" class="tabcontent">
+					 	<form>
+							 <div class="row">
+							 	<div class="col-lg-6">
+							 		<div class="form-group">
+							 			<label>NEW PASSWORD</label>
+							 			<input type="password" name="name" placeholder="Password" class="form-control">
+							 		</div>								 
+							 	</div>
+							 	<div class="col-lg-6"></div>
+							 	<div class="col-lg-6">
+							 		<div class="form-group">
+							 			<label>CONFIRM NEW PASSWORD</label>
+							 			<input type="password" name="name" placeholder="Password" class="form-control">
+							 		</div>								 
+							 	</div>
+							 	<div class="col-lg-6"></div>
+							 	<div class="col-lg-6">
+							 		<div class="form-group">
+							 			<input type="submit" name="submit" value="Update Password" class="form-control submit-btn">
+							 		</div>		
+							  	</div>
+							 	
+							 </div>
+						</form>
+					</div>
+
+					<div id="pin" class="tabcontent">
+						<form>
+							 <div class="row">
+							 	<div class="col-lg-6">
+							 		<div class="form-group">
+							 			<label>NEW PIN</label>
+							 			<input type="password" name="name" placeholder="Enter Pin" class="form-control">
+							 		</div>								 
+							 	</div>
+							 	<div class="col-lg-6"></div>
+							 	<div class="col-lg-6">
+							 		<div class="form-group">
+							 			<label>CONFIRM NEW PIN</label>
+							 			<input type="password" name="name" placeholder="Enter Pin" class="form-control">
+							 		</div>								 
+							 	</div>
+							 	<div class="col-lg-6"></div>
+							 	<div class="col-lg-6">
+							 		<div class="form-group">
+							 			<input type="submit" name="submit" value="Change Pin" class="form-control submit-btn">
+							 		</div>		
+							  	</div>
+							 	
+							 </div>
+						</form>
+					</div>
+
+					<div id="Nominee" class="tabcontent">
+					  <img src="images/nominee.jpg" class="img-responsive">
+					  <h5>Oops! Unable to fetch data.</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+<section class="app-features section" id="courses">
+
+	<div class="container">
+		<div class="row" style="background-color: #edf4ff; border-radius: 20px; padding: 5% 2% 2%; margin-bottom: 3%;">
+
+
+
+
+		</div>
+
+
+
+		<div class="row">
+
+			<!-- Feature 01-->
+			<div class="col-lg-6 col-md-6 col-12">
+
+				<ul class="watchlist list-group-horizontal " style="position: absolute; left: 77%;
+top: 2%;">
+
+					<li class="list-group-item" style="display: inline-block; background-color: #eef6fe;
+border: none;">
+
+
+						<a href="" data-toggle="modal" data-target="#edu-goals-add-detail-form">
+
+							<i class="fa fa-plus-square" style="font-size: 25px; color: #6d6d6d; cursor: pointer;" aria-hidden="true" title="add a goal"></i>
+
+
+						</a>
+
+
+
+					</li>
+
+				</ul>
+
+
+				<div class="content text-center mumBg" style="padding: 10% 5% 20%;">
+				<div class="app-feature text-center">
+					<!-- Heading -->
+					<h3 class="mum-h3">Education Goal</h3>
+					<!-- Description -->
+					<p>Pellentesque in ipsum id orci porta dapibus. Nulla porttitor accumsan tincidunt. Nulla porttitor accumsan tincidunt.</p>
+					<br>
+
+
+					<table class="table table-responsive-md table-responsive-lg table-responsive-sm">
+
+						<tbody>
+						<tr>
+
+							<td><a href="" data-toggle="modal" data-target="#edu-goals-add-detail-form">Taksh</a></td>
+							<td>2.0 Lac</td>
+							<td>Canada</td>
+							<td>2021</td>
+
+
+							<td>
+								<a class="rounded-circle" href="" style="text-decoration: underline;" data-toggle="modal"
+								   data-target="#edu-goals-add-detail-form"><i class="fa fa-edit" title="edit goal"></i></a>
+							</td>
+
+
+							<td>
+								<a class="rounded-circle" href="mutual_funds.html" target="_blank" style="text-decoration: underline;">
+									<i class="fa fa-rupee-sign" title="invest now"></i></a>
+							</td>
+
+						</tr>
+
+						<tr>
+
+							<td><a href="" data-toggle="modal" data-target="#edu-goals-add-detail-form">Inaya</a></td>
+							<td>3.0 Lac</td>
+							<td>India</td>
+							<td>2025</td>
+
+
+							<td>
+								<a class="rounded-circle" href="" style="text-decoration: underline;" data-toggle="modal"
+								   data-target="#edu-goals-add-detail-form"><i class="fa fa-edit" title="edit goal"></i></a>
+							</td>
+
+
+							<td>
+								<a class="rounded-circle" href="mutual_funds.html" target="_blank" style="text-decoration: underline;">
+									<i class="fa fa-rupee-sign" title="invest now"></i></a>
+							</td>
+
+						</tr>
+
+
+						</tbody>
+
+					</table>
+
+
+				</div></div>
+			</div>
+
+
+
+			<!-- Feature 02-->
+			<div class="col-lg-6 col-md-6 col-12">
+				<div class="content text-center mumBg" style="border: none;
+border-radius: 4px;
+padding: 20% 10%;">
+					<div class="app-feature text-center">
+						<!-- Heading -->
+						<h3 class="mum-h3">Investment Products</h3>
+						<!-- Description -->
+						<p>Pellentesque in ipsum id orci porta dapibus. Nulla porttitor accumsan tincidunt. Nulla porttitor accumsan tincidunt.Pellentesque in ipsum id orci porta dapibus. Nulla porttitor accumsan tincidunt. Nulla porttitor accumsan tincidunt.</p>
+						<br>
+
+
+
+
+					</div></div>
+			</div>
+
+		</div>
+
+		<div class="row" style="margin-top: 4%;">
+
+			<!-- Feature 02-->
+			<div class="col-lg-6 col-md-6 col-12">
+				<div class="content text-center mumBg" style="border: none;
+border-radius: 4px;
+padding: 20% 10%;">
+					<div class="app-feature text-center">
+						<!-- Heading -->
+						<h3 class="mum-h3">Protection</h3>
+						<!-- Description -->
+						<p>Pellentesque in ipsum id orci porta dapibus. Nulla porttitor accumsan tincidunt. Nulla porttitor accumsan tincidunt.</p>
+						<br>
+
+
+
+
+					</div></div>
+			</div>
+
+
+
+
+			<div class="col-lg-6 col-md-6 col-12">
+				<div class="content text-center mumBg" style="border: none;
+border-radius: 4px;
+padding: 20% 10%;">
+					<div class="app-feature text-center">
+						<!-- Heading -->
+						<h3 class="mum-h3">Education Loan</h3>
+						<!-- Description -->
+						<p>Pellentesque in ipsum id orci porta dapibus. Nulla porttitor accumsan tincidunt. Nulla porttitor accumsan tincidunt.</p>
+						<br>
+
+
+
+					</div>
+
+				</div>
+			</div>
+
+
+
+
+		</div>
+
+
+		<br> <br>
+
+		<!------
+
+		<div class="row" style="text-align: center;">
+
+		<a href="404.html" id="tnc" style="margin: 0 auto;">Terms & conditions</a>
+
+		</div>
+
+		--------->
+
+
+	</div>
+</section>
+
+
+
+
+
+<!--====  End of weather Grid  ====-->
+
+
+
+<section class="call-to-action-app section bg-blue">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<h2>It's time to secure your future </h2>
+				<p>Download our trusted app. Get <a href="#">Invest4Edu App</a> & never miss an opportunity!
+					<br>We promise - you won’t look back.</p>
+				<ul class="list-inline">
+					<li class="list-inline-item">
+						<a href="" class="btn btn-rounded-icon">
+							<i class="ti-apple"></i>
+							Iphone
+						</a>
+					</li>
+					<li class="list-inline-item">
+						<a href="" class="btn btn-rounded-icon">
+							<i class="ti-android"></i>
+							Android
+						</a>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--============================
+=            Footer            =
+=============================-->
+<footer>
+  <div class="footer-main">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-12 align-self-center">
+          <div class="block">
+            <a href="index.html"><img src="images/logo_footer.png" alt="footer-logo" class="img-fluid" style="width: 50%;"></a>
+			  <p style="font-size: 14px !important;">303, A Wing,Gokul Arcade, <br/>
+				  Near Garware House,<br/>
+				  Sahar Road,Ville Parle (E), Mumbai - 400057<br />
+
+				  <br />
+				  Phone : +91 98995 75852<br />
+				  Email : info@invest4edu.com</p>
+			  <br />
+			  <br />
+
+            <!-- Social Site Icons -->
+            <ul class="social-icon list-inline">
+              <li class="list-inline-item">
+                <a href="https://www.facebook.com/"><i class="ti-facebook"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://twitter.com/"><i class="ti-twitter"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.instagram.com/"><i class="ti-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-6 mt-5 mt-lg-0" style="text-align: center;">
+          <div class="block-2">
+            <!-- heading -->
+            <h6>Products</h6>
+            <!-- links -->
+            <ul>
+				<li><a href="mutual_funds.html">Mutual Funds</a></li>
+				<li><a href="fixed_deposits.html">Fixed Deposit</a></li>
+				<li><a href="gold_bonds.html">Gold Bond</a></li>
+
+				<li><a href="edu_loans.html">Education Loan</a></li>
+				<li></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-6 mt-5 mt-lg-0" style="text-align: center;">
+          <div class="block-2">
+            <!-- heading -->
+            <h6>Invest4Edu</h6>
+            <!-- links -->
+            <ul>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Education opportunities</a></li>
+             <li><a href="blog.html">Blog</a></li>
+				<li><a href="careers.html">Careers</a></li>
+				<li><a href="#">Help & Support</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-6 mt-5 mt-lg-0" style="text-align: center;">
+          <div class="block-2">
+            <!-- heading -->
+            <h6>Quick Links</h6>
+            <!-- links -->
+            <ul>
+              
+              <li><a href="contact.html">Contact us</a></li>
+              <li><a href="404.html">FAQs</a></li>
+              <li><a href="404.html">Terms & Conditions</a></li>
+				<li><a href="404.html">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="text-center bg-dark py-4">
+    <small class="text-secondary">Copyright &copy; <script>document.write(new Date().getFullYear())</script>. Invest4Edu Pvt Ltd.</small class="text-secondary">
+  </div>
+</footer>
+
+
+  <!-- To Top -->
+  <div class="scroll-top-to">
+    <i class="ti-angle-up"></i>
+  </div>
+
+
+<!----------- MODAL - LOGIN ---------->
+
+<!-- Modal -->
+<div class="modal fade" id="login-form" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content" style="background: url('images/loginbg.jpg') fixed no-repeat;
+		background-size: cover;">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalCenterTitle" style="color: #fff;
+font-weight: bold;
+text-align: center;">Login Form</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+
+
+				<form action="user-dashboard.html">
+					<!-- Username -->
+					<input class="form-control main" type="text" placeholder="Username" required="">
+					<!-- Password -->
+					<input class="form-control main" type="password" placeholder="Password" required="">
+					<!-- Submit Button -->
+                    <div class="form-row" style="text-align: center;">
+                        <!-- Submit Button -->
+                        <button class="btn btn-main-sm" style="margin: 0 auto;">Log in</button>
+                    </div>
+				</form>
+
+				Or
+
+
+				<form action="user-dashboard.html">
+					<h5 class="modal-title" id="exampleModalCenterTitle" style="color: #fff;
+font-weight: bold;
+
+border-bottom: 1px solid #fff;
+margin-bottom: 3.5%; padding-bottom: 4%;"><i>or</i> &nbsp; Login with OTP</h5>
+
+					<!-- Username -->
+					<input class="form-control main" type="text" placeholder="+91 xxxx xxxx xx" required="">
+					<!-- Password -->
+					<input class="form-control main" type="text" placeholder="Secure OTP" required="">
+					<!-- Submit Button -->
+                    <div class="form-row" style="text-align: center;">
+                        <!-- Submit Button -->
+                        <button class="btn btn-main-sm" style="margin: 0 auto;">Login</button>
+                    </div>
+				</form>
+
+
+
+
+
+			</div>
+
+		</div>
+	</div>
+</div>
+
+<!------------- MODAL - SIGN UP --------------->
+
+
+  <!-- JAVASCRIPTS -->
+
+
+
+  <script src="plugins/slick/slick.min.js"></script>
+  <script src="plugins/fancybox/jquery.fancybox.min.js"></script>
+  <script src="plugins/syotimer/jquery.syotimer.min.js"></script>
+  <script src="plugins/aos/aos.js"></script>
+
+  <!-- google map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgeuuDfRlweIs7D6uo4wdIHVvJ0LonQ6g"></script>
+  <script src="plugins/google-map/gmap.js"></script>
+  
+  <script src="js/script.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+              // js for gmail like input //
+
+        $(function () {
+
+            $(".field-wrapper .field-placeholder").on("click", function () {
+                $(this).closest(".field-wrapper").find("input").focus();
+            });
+            $(".field-wrapper input").on("keyup", function () {
+                var value = $.trim($(this).val());
+                if (value) {
+                    $(this).closest(".field-wrapper").addClass("hasValue");
+                } else {
+                    $(this).closest(".field-wrapper").removeClass("hasValue");
+                }
+            });
+
+        });
+
+        // js ends for gmail //
+
+    });
+</script>
+
+
+</body>
+
+</html>

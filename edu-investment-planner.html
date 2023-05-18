@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic Page Needs
+  ================================================== -->
+    <meta charset="utf-8">
+    <title>Mutual Funds Category List | Invest4Edu</title>
+
+    <!-- Mobile Specific Metas
+  ================================================== -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="author" content="">
+    <meta name="generator" content="">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+
+    <!-- PLUGINS CSS STYLE -->
+    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="plugins/slick/slick.css">
+    <link rel="stylesheet" href="plugins/slick/slick-theme.css">
+    <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="plugins/aos/aos.css">
+    <link rel="stylesheet" href="./css/ion.rangeSlider.css">
+    <link rel="stylesheet" href="./css/ion.rangeSlider.min.css">
+
+
+    <!------------- css edu abacus ----------------->
+
+    <link rel="stylesheet" type="text/css" href="iofrm-by-brandio/Template/css/fontawesome-all.min.css">
+    <link rel="stylesheet" type="text/css" href="iofrm-by-brandio/Template/css/iofrm-style.css">
+    <link rel="stylesheet" type="text/css" href="iofrm-by-brandio/Template/css/iofrm-theme5.css">
+
+
+
+    <!-- CUSTOM CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <!------- MWS JS ----------->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <script src="plugins/bootstrap/bootstrap.min.js"></script>
+
+
+    <!-- GOOGLE WEB FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600" rel="stylesheet">
+
+
+
+    <!-- link for animation of MOdal, by Myduz Web Studio -->
+    <link href="notification/assets/css/animate.min.css" rel="stylesheet">
+    <link href="notification/assets/css/animate.css" rel="stylesheet">
+    <link href="notification/style.css" rel="stylesheet">
+
+    <style>
+        @media (max-width: 640px) {
+
+            .mum1 {
+                padding: 10% 3% 8% 3.5%;
+            }
+
+        }
+
+        @media (min-width:641px) {
+
+            .mum1 {
+                padding: 2%;
+            }
+
+            .mum2 {
+                padding: 10%;
+            }
+
+        }
+
+        @media (min-width: 769px) {
+
+            .navbar-brand {
+                width: 40% !important;
+
+            }
+
+            .mumImage {
+
+                width: 40% !important;
+            }
+
+        }
+
+        @media (max-width: 768px) {
+
+
+            .navbar-brand {
+                width: 100%;
+                z-index: 9;
+            }
+
+            .navbar-toggler {
+
+                z-index: 10;
+                position: absolute;
+
+            }
+
+            .mumImage {
+
+                margin-left: 25%;
+                width: 60% !important;
+                padding: .75rem;
+            }
+
+
+        }
+
+        .equal {
+            display: flex;
+            display: -webkit-flex;
+            flex-wrap: wrap;
+        }
+
+        .main_section {
+            padding: 30px 0px;
+            margin: 20px 0px;
+        }
+
+        .search_mfund {
+            background-color: white;
+            width: 80%;
+            border: #2e7eed solid 2px;
+            border-left-color: #2e7eed;
+            border-left-style: solid;
+            border-left-width: 2px;
+            padding: 10px 20px;
+            outline: none;
+            border-left: none;
+        }
+
+
+        /*================== css for  ====================*/
+        .nav-tabs .nav-item .nav-link.active::before {
+            height: 3px;
+            background-color: #2e7eed !important;
+        }
+
+        .btn-blue {
+            font-size: 16px;
+            background: #2e7eed;
+            color: #fff;
+            padding: 9px 30px;
+            border-radius: 20px;
+        }
+
+        .fieldblock {
+            border-bottom: 1px solid #d3d2d2;
+            margin-bottom: .5rem;
+            padding: .5rem 0 .8rem 0;
+        }
+
+        .fieldblock .last {
+            border: 0;
+        }
+
+        .field-align {
+            align-items: baseline;
+        }
+
+        .flex-grow-2 {
+            flex-grow: 2;
+        }
+
+        .flex-grow-8 {
+            flex-grow: 8;
+        }
+
+        .flex-basis-1 {
+            flex-basis: 150px;
+        }
+
+        .planner-input-div {
+            max-width: 170px;
+            font-size: 1.25rem;
+            position: relative;
+        }
+
+        .edu-invest-calc .planner-input-div input {
+            color: #000;
+            font-size: 20px;
+            width: 100%;
+            background: transparent;
+            font-weight: 400;
+            padding: 0.1rem 0.8rem;
+            border: 1px solid #d3d1c9;
+            border-radius: 5px;
+        }
+
+        .edu-invest-calc .planner-input-div.rupee-input-div input {
+            padding-left: 25px;
+        }
+
+        .edu-invest-calc .planner-input-div span.input-label {
+            position: absolute;
+            white-space: nowrap;
+            left: 100%;
+            top: 20%;
+            margin-left: 7px;
+            font-size: 12px;
+            color: rgb(164, 164, 164);
+        }
+
+        .edu-invest-calc .planner-input-div i.fa-rupee-sign {
+            font-size: 1.3rem;
+            padding: 6px 0px;
+            position: absolute;
+            left: 10px;
+            color: #9e9e9e;
+        }
+
+        .js-slider-design span.irs-min {
+            top: 46px;
+            visibility: visible !important;
+        }
+
+        .js-slider-design span.irs-max {
+            top: 46px;
+            visibility: visible !important;
+        }
+
+        .js-slider-design .irs-single {
+            visibility: hidden !important;
+        }
+
+        /* .js-slider-design span.irs-handle {
+            top: 29px;
+            width: 15px;
+            height: 15px;
+        } */
+        .js-slider-design span.js-grid-text-0 {
+            visibility: hidden;
+        }
+        .js-slider-design span.js-grid-text-4 {
+            visibility: hidden;
+        }
+
+        .back-btn-planner {
+            border-radius: 18px;
+            padding: 5px 15px;
+            border: 1px solid #000;
+        }
+
+        .btn-planner-blue {
+            background: #0b3dee;
+            color: #fff;
+            padding: .375rem 1.2rem;
+            font-size: 1rem;
+            line-height: 1.5;
+            position: relative;
+        }
+        .month-invst-input i.fa-rupee-sign{
+            font-size: 1.3rem;
+            padding: 6px;
+            position: absolute;
+            color: #9e9e9e;
+        }
+        .month-invst-input input{
+            color: #000;
+            font-size: 20px;
+            background: transparent;
+            font-weight: 400;
+            padding: 1px 24px;
+            border: 1px solid #d3d1c9;
+            border-radius: 5px;
+        }
+        .access-invest-skyblue{
+            text-transform: none;
+            border-radius: 18px;
+            padding: 5px 15px;
+            border: 1px solid #000;
+            background-color: #6cbbe9;
+        }
+        .invst-planner-cont{
+            background: #fff;
+            padding: 24px;
+            background-color: #eef6fe;
+            border-radius: 20px;
+            border: 1px solid transparent;
+            box-shadow: 1px 1px 10px;
+        }
+        .dsp-none{
+			display: none;
+		}
+    </style>
+
+    <script src="https://kit.fontawesome.com/1284f2b4c6.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+
+
+<body class="body-wrapper" data-spy="scroll" data-target=".privacy-nav">
+
+    <nav class="navbar main-nav navbar-expand-lg px-2 px-sm-0 py-2 py-lg-0 fixed-top"
+        style="z-index:10; background: #ebebeb;">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo_3.png" class="mumImage img-fluid img-responsive" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="ti-menu"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">About us
+                            <span><i class="ti-angle-down"></i></span>
+                        </a>
+                        <!-- Dropdown list -->
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item active" href="why-us.html">Why invest4Edu</a></li>
+                            <li><a class="dropdown-item" href="who-we-are.html">Who we are</a></li>
+                            <li><a class="dropdown-item" href="who-we-are.html">How Invest4edu works</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown @@pages">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Education opportunities
+                            <span><i class="ti-angle-down"></i></span>
+                        </a>
+                        <!-- Dropdown list -->
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item @@team" href="india.html">Study in India</a></li>
+                            <li><a class="dropdown-item @@team" href="canada.html">Study in Canada</a></li>
+                            <li><a class="dropdown-item @@career" href="uk.html">Study in UK</a></li>
+                            <li><a class="dropdown-item @@blog" href="australia.html">Study in Australia</a></li>
+                            <li><a class="dropdown-item @@blogSingle" href="usa.html">Study in USA</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item @@contact">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="sign-in.html" style="color: #2e7eed;" data-toggle="modal"
+                            data-target="#login-form">Login</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="sign-up.html" style="color: #2e7eed" data-toggle="modal"
+                            data-target="#signup-form">Sign-up</a>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--====================================
+=            Hero Section            =
+=====================================-->
+
+    <!-- SIP and Lumpsum start -->
+
+
+
+    <section class="edu-invest-planner" style="margin-bottom: 5%; margin-top: 8%;">
+
+        <div class="container invst-planner-cont">
+            <div class="row invst-planner-wrapper">
+
+                <div class="col-12 col-lg-12 align-self-start">
+                    <div id="invest-sip-cal" class="edu-invest-calc" style="display: block;">
+
+                        <div class="fieldblock">
+                            <label id="lblgoaltxt">For how many years would you like to invest to build wealth ?</label>
+                            <div class="field-align d-flex">
+                                <div class="flex-grow-2 flex-basis-1">
+                                    <div class="planner-input-div">
+                                        <input type="text" name="" placeholder="" value="0" id="inputYear">
+                                        <span class="input-label">Years</span>
+                                    </div>
+                                </div>
+                                <div class="flex-grow-8 js-slider-design">
+                                    <!-- <div id="sliderYear" class="common-slider slider loan-range-slider ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"> <div class="ui-slider-range ui-corner-all ui-widget-header ui-slider-range-min" style="width: 0%;"></div><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 0%;"></span></div>
+                                <div class="steps-2" id=""> <span class="tick" style="left: 0%;">1 <small>year</small></span> <span class="tick" style="right:0;"> 40 <small>years</small></span> </div> -->
+                                    <input type="text" class="js-slider-input1">
+                                </div>
+                            </div>
+                            <span id="massage-tenure" class="massage-txt"></span>
+                        </div>
+
+                        <div class="fieldblock">
+                            <label id="labletarget">How much money would you need?</label>
+                            <div class="field-align d-flex">
+                                <div class="flex-grow-2 flex-basis-1">
+
+                                    <div class="planner-input-div rupee-input-div">
+                                        <i class="fa fa-rupee-sign"></i>
+                                        <input type="text" placeholder="" value="0" id="inputGoal">
+
+                                    </div>
+                                </div>
+                                <div class="flex-grow-8 js-slider-design">
+                                    <!-- <div id="sliderFinacialgoalInvest" class="common-slider slider loan-range-slider ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"><div class="ui-slider-range ui-corner-all ui-widget-header ui-slider-range-min" style="width: 0%;"></div><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 0%;"></span></div>
+                                <div class="steps-2"> <span class="tick mintickMonth" style="left:0"><i class="rupee" style="font-style:inherit">`</i> 50,000</span><span class="tick maxtickMonth" style="right:0"><i class="rupee" style="font-style:inherit">`</i> 50 <small>Crores</small></span> </div> -->
+                                    <input type="text" class="js-slider-input2">
+                                </div>
+                            </div>
+                            <span id="massage-finacialgoal" class="massage-txt"></span>
+                        </div>
+
+                        <div class="fieldblock last">
+                            <label id="lablesavegoal">Amount I can invest one time (Lumpsum) (Min <i class="rupee"
+                                    style="font-style:inherit">`</i>5000)</label>
+                            <div class="field-align last d-flex">
+                                <div class="flex-grow-2 flex-basis-1">
+
+                                    <div class="planner-input-div rupee-input-div">
+                                        <i class="fa fa-rupee-sign"></i>
+                                        <input type="text" value="0" id="inputSaveGoal">
+                                        <span class="input-label input-txt"></span>
+                                    </div>
+                                </div>
+                                <div class="flex-grow-8 js-slider-design">
+                                    <!-- <div id="slidersavegoal" class="common-slider slider loan-range-slider ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"><div class="ui-slider-range ui-corner-all ui-widget-header ui-slider-range-min" style="width: 0%;"></div><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 0%;"></span></div>
+                                <div class="steps-2" id="loan_ten1"> <span class="tick" style="left:0"><i class="rupee" style="font-style:inherit">`</i> 5,000</span><span class="tick" style="right:0"><i class="rupee" style="font-style:inherit">`</i> 10 <small>Crores</small></span> </div> -->
+                                    <input type="text" class="js-slider-input3">
+                                </div>
+                            </div>
+                            <span id="massage-savegoal" class="massage-txt"></span>
+                        </div>
+
+                        <!-- <div id="AmtSip"></div>
+                    <div id="AmtLumpsum"></div>
+                    <div class="clearfix"></div> -->
+                        <div class="text-center mt-4 mb-4 col-12">
+
+
+
+                            <button class="back-btn-planner btn"
+                                onclick="location.href='edu_abacus_result.html'">Back</button>
+                            <button type="button" onclick="SaveGoal()" id="btnsavegoal"
+                                class="btn btn-planner-blue ml-2 invest-planner-next-form calc-btn-hmevt">Calulate</button>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="row sip-row-amt sip-dummy-use dsp-none">
+                <div class="col-12 col-lg-12">
+                    <div class="col-12 mt-4 mb-4 text-center">
+                        <label class="month-invest-need">Monthly Investment Needed(SIP)</label>
+                        <div class="month-invst-input">
+                            <i class="fa fa-rupee-sign" aria-hidden="true"></i>
+                            <input type="text" value="4000" id="inputMonthlyGoal">
+                            <span class="input-label input-txt"></span>
+                        </div>
+                    </div>
+                    <div class="text-center mt-4 mb-4 col-12">
+
+                        <button class="btn access-invest-skyblue" onclick="location.href='mf-category-fund-list.html'">Invest Your Own</button>
+                        <button type="button" onclick="location.href='mf-baskets-post-login.html'" id="" class="btn access-invest-skyblue ml-2">Invest-via Suggested Basket</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!--====  End of Hero Section  ====-->
+
+
+    <section class="call-to-action-app section bg-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>It's time to secure your future </h2>
+                    <p>Download our trusted app. Get <a href="#">Invest4Edu App</a> & never miss an opportunity!
+                        <br>We promise - you won’t look back.
+                    </p>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <a href="" class="btn btn-rounded-icon">
+                                <i class="ti-apple"></i>
+                                Iphone
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="" class="btn btn-rounded-icon">
+                                <i class="ti-android"></i>
+                                Android
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--============================
+=            Footer            =
+=============================-->
+    <footer>
+        <div class="footer-main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-12 align-self-center">
+                        <div class="block">
+                            <a href="index.html"><img src="images/logo_footer.png" alt="footer-logo" class="img-fluid"
+                                    style="width: 50%;"></a>
+                            <p style="font-size: 14px !important;">303, A Wing,Gokul Arcade, <br />
+                                Near Garware House,<br />
+                                Sahar Road,Ville Parle (E), Mumbai - 400057<br />
+
+                                <br />
+                                Phone : +91 98995 75852<br />
+                                Email : info@invest4edu.com
+                            </p>
+                            <br />
+                            <br />
+
+                            <!-- Social Site Icons -->
+                            <ul class="social-icon list-inline">
+                                <li class="list-inline-item">
+                                    <a href="https://www.facebook.com/"><i class="ti-facebook"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="https://twitter.com/"><i class="ti-twitter"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="https://www.instagram.com/"><i class="ti-instagram"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-6 mt-5 mt-lg-0" style="text-align: center;">
+                        <div class="block-2">
+                            <!-- heading -->
+                            <h6>Products</h6>
+                            <!-- links -->
+                            <ul>
+                                <li><a href="mutual_funds.html">Mutual Funds</a></li>
+                                <li><a href="fixed_deposits.html">Fixed Deposit</a></li>
+                                <li><a href="gold_bonds.html">Gold Bond</a></li>
+
+                                <li><a href="edu_loans.html">Education Loan</a></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-6 mt-5 mt-lg-0" style="text-align: center;">
+                        <div class="block-2">
+                            <!-- heading -->
+                            <h6>Invest4Edu</h6>
+                            <!-- links -->
+                            <ul>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Education opportunities</a></li>
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="careers.html">Careers</a></li>
+                                <li><a href="#">Help & Support</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-6 mt-5 mt-lg-0" style="text-align: center;">
+                        <div class="block-2">
+                            <!-- heading -->
+                            <h6>Quick Links</h6>
+                            <!-- links -->
+                            <ul>
+                                
+                                <li><a href="contact.html">Contact us</a></li>
+                                <li><a href="faq.html">FAQs</a></li>
+                                <li><a href="tnc-2.html">Terms & Conditions</a></li>
+                                <li><a href="privacy-policy-2.html">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="text-center bg-dark py-4">
+            <small class="text-secondary">Copyright &copy;
+                <script>document.write(new Date().getFullYear())</script>. Invest4Edu Pvt Ltd.
+            </small class="text-secondary">
+        </div>
+    </footer>
+
+
+    <!-- To Top -->
+    <div class="scroll-top-to">
+        <i class="ti-angle-up"></i>
+    </div>
+
+
+    <!----------- MODAL - LOGIN ---------->
+
+    <!-- Modal -->
+    <div class="modal fade" id="login-form" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content" style="background-color: #006bde;
+		background-size: cover;">
+                <div class="modal-header" style="border-bottom: none;">
+                    <h5 class="modal-title" id="exampleModalCenterTitle" style="color: #fff;
+font-weight: bold;
+text-align: center;">Log in</h5>
+
+
+                    <div class="user-login-icon" style="margin: 0 auto;
+display: block;">
+
+                        <img src="images/user-icon.png" class="img-responsive" alt="">
+
+                    </div>
+
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="padding-left: 0;
+margin-left: 6%;">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+
+                    <form action="user-dashboard.html">
+                        <!-- Username -->
+                        <input class="form-control main" type="text" placeholder="Username" required="">
+                        <!-- Password -->
+                        <input class="form-control main" type="password" placeholder="Password" required="">
+                        <!-- Submit Button -->
+                        <div class="form-row" style="text-align: center;">
+                            <!-- Submit Button -->
+                            <button class="btn btn-main-sm" style="margin: 0 auto;">Log in</button>
+                        </div>
+                    </form>
+
+
+
+                    <form action="user-dashboard.html">
+                        <h5 class="modal-title" id="exampleModalCenterTitle" style="color: #fff;
+font-weight: bold;
+
+
+margin-bottom: 3.5%; padding-bottom: 4%;"><i>or</i></h5>
+
+                        <!-- Username -->
+                        <input class="form-control main" type="text" placeholder="+91 xxxx xxxx xx" required="">
+                        <!-- Password -->
+                        <input class="form-control main" type="text" placeholder="Secure OTP" required="">
+                        <!-- Submit Button -->
+                        <div class="form-row" style="text-align: center;">
+                            <!-- Submit Button -->
+                            <button class="btn btn-main-sm" style="margin: 0 auto;">Login</button>
+                        </div>
+                    </form>
+
+
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!------------- MODAL - SIGN UP --------------->
+
+    <div class="modal fade" id="signup-form" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content" style="background-color: #006bde;
+		background-size: cover;">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle" style="color: #fff;
+font-weight: bold;
+text-align: center;">Sign-up to discover more</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <h5 class="modal-title" id="exampleModalCenterTitle" style="color: #fff;
+font-weight: bold;
+margin-bottom: 3.5%; padding-bottom: 4%;"></h5>
+
+
+                    <ul style="list-style: none; position: absolute; text-align: center; padding-left: 0px;">
+                        <li style="display: inline-block; width:25%;">
+                            <img src="images/social-media/google-2.png" class="img-responsive" alt=""
+                                style="width: 50%;">
+                        </li>
+                        <li style="display: inline-block; width:25%;"><img src="images/social-media/facebook-2.png"
+                                class="img-responsive" alt="" style="width:
+							50%;"></li>
+                        <li style="display: inline-block; width:25%;">
+                            <img src="images/social-media/linkedin-2.png" class="img-responsive" alt=""
+                                style="width: 50%;">
+                        </li>
+                    </ul>
+
+                    <br><br><br><br>
+
+
+
+
+                    <form action="user-dashboard.html">
+                        <h5 class="modal-title" id="exampleModalCenterTitle" style="color: #fff;
+
+
+border-bottom: 1px solid #fff;
+margin-bottom: 3.5%; padding-bottom: 4%; text-align: center;"><i>or</i></h5>
+
+
+
+                        <div class="form-row" style="margin-bottom: 5%;">
+
+                            <div class="col">
+                                <input class="form-control" type="text" placeholder="First name" required="">
+
+                            </div>
+
+                            <div class="col">
+                                <input class="form-control" type="text" placeholder="Last name" required="">
+
+                            </div>
+
+                        </div>
+
+                        <div class="form-row" style="margin-bottom: 5%;">
+
+
+
+                            <div class="col">
+                                <input class="form-control" type="text" placeholder="Email" required="">
+
+                            </div>
+
+                            <div class="col">
+                                <input class="form-control" type="text" placeholder="Mobile number" required="">
+
+                            </div>
+
+
+
+
+
+                        </div>
+
+                        <div class="form-row" style="margin-bottom: 5%;">
+
+                            <div class="col">
+
+                                <input class="form-control" type="password" placeholder="Password" required="">
+
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck" style="color: #fff;">
+                                    By creating an account, you agree to our <a href="" style="color: #ed2e2e;">Terms &
+                                        conditions</a>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-row" style="text-align: center;">
+                            <!-- Submit Button -->
+                            <button class="btn btn-main-sm" style="margin: 0 auto;">Sign up</button>
+                        </div>
+
+                    </form>
+
+
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPTS -->
+
+    <script>
+        $(document).ready(function(){
+            $(".calc-btn-hmevt").on("click" , function(){
+                if($(this).parents(".invst-planner-wrapper").siblings(".sip-row-amt").hasClass("sip-dummy-use")){
+                    $(this).parents(".invst-planner-wrapper").siblings(".sip-row-amt").removeClass("sip-dummy-use");
+                    $(this).parents(".invst-planner-wrapper").siblings(".sip-row-amt").removeClass("dsp-none");
+                }else{
+                    $(this).parents(".invst-planner-wrapper").siblings(".sip-row-amt").addClass("sip-dummy-use");
+                    $(this).parents(".invst-planner-wrapper").siblings(".sip-row-amt").addClass("dsp-none");
+                }
+            });
+        });
+    </script>
+
+
+
+    <script src="plugins/slick/slick.min.js"></script>
+    <script src="plugins/fancybox/jquery.fancybox.min.js"></script>
+    <script src="plugins/syotimer/jquery.syotimer.min.js"></script>
+    <script src="plugins/aos/aos.js"></script>
+    <script src="./js/ion.rangeSlider.js"></script>
+    <script src="./js/ion.rangeSlider.min.js"></script>
+
+    <!-- google map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgeuuDfRlweIs7D6uo4wdIHVvJ0LonQ6g"></script>
+    <script src="plugins/google-map/gmap.js"></script>
+
+    <script src="js/script.js"></script>
+    <script src="js/SIP-CALCULATOR.JS"></script>
+
+    <script type="text/javascript">
+    // document.getElementById("goToSwitch").onclick = function () {
+    //     location.href = "mutual-fund-switch.html";
+    // };
+    </script>
+
+
+
+</body>
+
+</html>

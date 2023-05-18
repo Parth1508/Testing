@@ -1,0 +1,2198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Compare Mutual Funds | Invest4Edu</title>
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+	<meta name="author" content="">
+	<meta name="generator" content="">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+
+	<!-- PLUGINS CSS STYLE -->
+	<link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+	<link rel="stylesheet" href="plugins/slick/slick.css">
+	<link rel="stylesheet" href="plugins/slick/slick-theme.css">
+	<link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="plugins/aos/aos.css">
+
+
+
+	<!------------- css edu abacus ----------------->
+
+	<link rel="stylesheet" type="text/css" href="iofrm-by-brandio/Template/css/fontawesome-all.min.css">
+	<link rel="stylesheet" type="text/css" href="iofrm-by-brandio/Template/css/iofrm-style.css">
+	<link rel="stylesheet" type="text/css" href="iofrm-by-brandio/Template/css/iofrm-theme5.css">
+
+
+
+	<!-- CUSTOM CSS -->
+	<link href="css/style.css" rel="stylesheet">
+
+	<!------- MWS JS ----------->
+	<script src="plugins/jquery/jquery.min.js"></script>
+	<script src="plugins/bootstrap/bootstrap.min.js"></script>
+
+
+	<!-- GOOGLE WEB FONT -->
+	<link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600" rel="stylesheet">
+
+
+
+	<!-- link for animation of MOdal, by Myduz Web Studio -->
+	<link href="notification/assets/css/animate.min.css" rel="stylesheet">
+	<link href="notification/assets/css/animate.css" rel="stylesheet">
+	<link href="notification/style.css" rel="stylesheet">
+
+	<style>
+		@media (max-width: 640px) {
+
+			.mum1 {
+				padding: 10% 3% 8% 3.5%;
+			}
+
+		}
+
+		@media (min-width:641px) {
+
+			.mum1 {
+				padding: 2%;
+			}
+
+			.mum2 {
+				padding: 10%;
+			}
+
+		}
+
+		@media (min-width: 769px) {
+
+			.navbar-brand {
+				width: 40% !important;
+
+			}
+
+			.mumImage {
+
+				width: 40% !important;
+			}
+
+		}
+
+		@media (max-width: 768px) {
+
+
+			.navbar-brand {
+				width: 100%;
+				z-index: 9;
+			}
+
+			.navbar-toggler {
+
+				z-index: 10;
+				position: absolute;
+
+			}
+
+			.mumImage {
+
+				margin-left: 25%;
+				width: 60% !important;
+				padding: .75rem;
+			}
+
+
+		}
+
+		.equal {
+			display: flex;
+			display: -webkit-flex;
+			flex-wrap: wrap;
+		}
+
+		.main_section {
+			padding: 30px 0px;
+			margin: 20px 0px;
+		}
+
+		.search_mfund {
+			background-color: white;
+			width: 80%;
+			border: #2e7eed solid 2px;
+			border-left-color: #2e7eed;
+			border-left-style: solid;
+			border-left-width: 2px;
+			padding: 10px 20px;
+			outline: none;
+			border-left: none;
+		}
+	</style>
+
+
+	<style type="text/css">
+		.normal {
+			color: WindowText;
+		}
+
+		.ui-autocomplete {
+			max-height: 500px;
+			/*overflow-y: auto;*/
+			/* prevent horizontal scrollbar */
+			overflow-x: hidden;
+			z-index: 9999;
+			/* add padding to account for vertical scrollbar */
+			/*padding-right: 20px;*/
+		}
+
+		.compare-table tr td {
+			position: relative;
+		}
+
+		span.button.b-close {
+			position: absolute;
+			top: 5px;
+			right: 8px;
+			cursor: pointer;
+			color: #fff;
+		}
+
+
+		.glyphicon {
+			position: relative;
+			top: 1px;
+			display: inline-block;
+			font-family: 'Glyphicons Halflings';
+			font-style: normal;
+			font-weight: normal;
+			line-height: 1;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+		}
+
+
+		.explore-fund ul li {
+			color: #02225b;
+			display: block;
+			padding: 9px 0;
+			font-weight: 600;
+			font-size: 18px;
+		}
+
+		.b-tab {
+			display: none;
+		}
+
+		.b-tab.active {
+			display: block;
+		}
+
+		.b-nav-tab {
+			display: inline-block;
+			padding: 12px 20px;
+			margin: 4% 0%;
+			font-weight: 600;
+		}
+
+		.b-nav-tab.active {
+			color: #fff;
+		}
+		.b-nav-tab:focus{
+			box-shadow: none;
+		}
+
+		button.btn.btn-rounded-icon.b-nav-tab.active {
+			background: #032b5b !important;
+			color: #fff !important;
+		}
+
+
+		.btn:hover {
+			color: #a7a7a7;
+		}
+
+		.ti-search {
+			display: none;
+		}
+		.btn-main-md:hover{
+			color: black !important;
+		}
+		.btn-comm {
+			color: #fff !important;
+			border: 1px solid #2e7eed;
+		}
+
+		.btn-comm:hover {
+			background-color: #fff;
+			color: #2e7eed !important;
+		}
+
+		/* product css start */
+
+.bg-light-blue{
+	background-color: #e3f2ff;
+}	
+.prods-head{
+	font-size: 35px;
+	margin-bottom: 13px;
+	font-weight: 300;
+	line-height: 50px;
+}	
+.prods-desc{
+	width: 39%;
+	margin: 0 auto;
+	font-size: 16px;
+	line-height: 25px;
+	color: grey;
+}
+.prod-invsttimely-img{
+	width: 90%;
+	margin-top: 25px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.prods-container {
+	padding: 20px!important;
+	background-color: #032b5b!important;
+	border-radius: 60px;
+	box-shadow: 0 7px 20px 0 rgb(0 0 0 / 8%);
+}
+.prods-img-cont {
+	margin: 35px 0!important;
+	padding: 10px!important;
+	text-align: center;
+}
+.product-circle {
+	padding: 0!important;
+	height: 80px;
+	width: auto;
+}
+.prods-name {
+	font-size: 20px;
+	line-height: 30px;
+	font-weight: 400;
+	color: #fff !important;
+}
+
+/* product css end */
+.cmpre-table-row td{
+	width: 124px;
+}
+.cmpre-table-row td:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.cmpre-table-row:nth-child(odd) {
+  background-color: #fff !important;
+}
+
+
+
+	</style>
+
+
+</head>
+
+
+
+<body class="body-wrapper" data-spy="scroll" data-target=".privacy-nav">
+
+	<nav class="navbar main-nav navbar-expand-lg px-2 px-sm-0 py-2 py-lg-0 fixed-top"
+		style="z-index:10; background: #ebebeb;">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">
+				<img src="images/logo_3.png" class="mumImage img-fluid img-responsive" alt="logo"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="ti-menu"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ml-auto">
+
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">About us
+							<span><i class="ti-angle-down"></i></span>
+						</a>
+						<!-- Dropdown list -->
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item active" href="why-us.html">Why invest4Edu</a></li>
+							<li><a class="dropdown-item" href="who-we-are.html">Who we are</a></li>
+							<li><a class="dropdown-item" href="who-we-are.html">How Invest4edu works</a></li>
+
+						</ul>
+					</li>
+					<li class="nav-item dropdown @@pages">
+						<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Education opportunities
+							<span><i class="ti-angle-down"></i></span>
+						</a>
+						<!-- Dropdown list -->
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item @@team" href="india.html">Study in India</a></li>
+							<li><a class="dropdown-item @@team" href="canada.html">Study in Canada</a></li>
+							<li><a class="dropdown-item @@career" href="uk.html">Study in UK</a></li>
+							<li><a class="dropdown-item @@blog" href="australia.html">Study in Australia</a></li>
+							<li><a class="dropdown-item @@blogSingle" href="usa.html">Study in USA</a></li>
+						</ul>
+					</li>
+
+					<li class="nav-item @@contact">
+						<a class="nav-link" href="contact.html">Contact</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" href="sign-in.html" style="color: #2e7eed;" data-toggle="modal"
+							data-target="#login-form">Login</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" href="sign-up.html" style="color: #2e7eed" data-toggle="modal"
+							data-target="#signup-form">Sign-up</a>
+					</li>
+
+
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!--====================================
+=            Hero Section            =
+=====================================-->
+	<section class="section" style="padding-top: 7%;">
+
+
+		<div class="container">
+
+
+			<!---------------- explore fund category ----------------->
+
+			<section class=" page-title" style="padding-bottom: 20px;">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-8 m-auto">
+							<!-- Page Title -->
+							<h1>Compare Mutual Funds</h1>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!--====  End of Page Title  ====-->
+			<!------------ row-3 starts ------------->
+			<div class="row">
+				<!---------- compare funds table ------------->
+				<div class="container main-container">
+					<div >
+						<div >
+							<div style="background-color: #032b5b; border-radius: 20px 20px 0px 0px;">
+								<div style="text-align: center; padding: 4% 0%;">
+										<ul class="list-inline" style="margin: 0px; background-color: #fff;">
+											<li class="list-inline-item">
+												<button class="btn btn-rounded-icon b-nav-tab active"
+													data-tab="orange" style="background-color: #fff; color: #032b5b; border: 1px solid #032b5b;">
+													<i class="ti-time"></i>
+													Overview
+												</button>
+											</li>
+											<li class="list-inline-item">
+												<button id="btnHolding" class="btn btn-rounded-icon b-nav-tab"
+													data-tab="green" style="background-color: #fff; color: #032b5b; border: 1px solid #032b5b;">
+													<i class="ti-layout-grid3-alt"></i>
+													Scheme Holding
+												</button>
+											</li>
+
+											<li class="list-inline-item">
+												<button class="btn btn-rounded-icon b-nav-tab" data-tab="blue" style="background-color: #fff; color: #032b5b; border: 1px solid #032b5b;">
+													<i class="ti-layout-media-right"></i>
+													Performance
+												</button>
+											</li>
+										</ul>
+								</div>
+							</div>
+							<div class="compare-content">
+								<div class="comp-fund-select">
+									<table class="table table-bordered table-stripped">
+										<tbody>
+											<tr>
+												<td style="width: 124px;">
+													
+												</td>
+												<td colspan="4" style="text-align: center;">
+													<span>Scheme Name</span>
+												</td>
+											</tr>
+											<tr class="cmpre-table-row">
+												<td></td>
+												<td id="td_Title_1">
+													<span id="reset_1" class="button b-close reset"
+														style="display:none"><span>×</span></span>
+													<div id="div_Addscheme_1">
+														<div class="input-group compare-search-form" id="div_SearchScheme_1">
+															<input type="text"
+																class="form-control txtScheme globalSearchValidation ui-autocomplete-input"
+																placeholder="Type Fund name here" id="txt_SearchScheme_1"
+																autocomplete="off">
+															<span class="input-group-btn">
+																<button class="btn" type="button">
+																	<i class="ti-search"></i>
+		
+																</button>
+															</span>
+														</div>
+		
+													</div>
+													<div id="div_Header_1" style="display: none;">
+														<input type="hidden" name="hdnSchemCode_1" value="" id="hdnSchemCode_1">
+														<input type="hidden" name="hdnSchemPlan_1" value="" id="hdnSchemPlan_1">
+														<input type="hidden" name="hdnSchemCode" value="" id="flag">
+														<div class="ct-title dvSchemeName" id="div_Title_1"></div>
+														<div class="ct-rate" id="div_Rate_1">Exp: <span id="lblExp1"></span>% |
+															1Y Rt:<span id="lbl1yrRt1"></span>%</div>
+														<div id="">
+															<input type="button" id="loginbtninvestment_1"
+																class="btn btn-default smallgreybtnform btn-white btn-InvestScheme"
+																onclick="InvestNoSignIn('1');" value="Invest Now"
+																data-dismiss="modal" data-toggle="modal"
+																data-target="#NOSingIN">
+															<input type="button" id="btnAddwatch_1"
+																class="btn btn-watch-list white-btn" value="addwatchlist"
+																onclick="WatchListNoSignIn();" data-dismiss="modal"
+																data-toggle="modal" data-target="#NOSingIN">
+														</div>
+		
+													</div>
+												</td>
+		
+												<td id="td_Title_2">
+													<span id="reset_2" class="button b-close reset"
+														style="display:none"><span>×</span></span>
+													<div id="div_Addscheme_2">
+														<div class="input-group compare-search-form" id="div_SearchScheme_2">
+															<input type="text"
+																class="form-control txtScheme globalSearchValidation ui-autocomplete-input"
+																placeholder="Type Fund name here" id="txt_SearchScheme_2"
+																autocomplete="off">
+															<span class="input-group-btn">
+																<button class="btn" type="button">
+																	<i class="ti-search"></i>
+																</button>
+															</span>
+														</div>
+		
+													</div>
+													<div id="div_Header_2" style="display: none;">
+														<input type="hidden" name="hdnSchemCode_2" value="" id="hdnSchemCode_2">
+														<input type="hidden" name="hdnSchemPlan_2" value="" id="hdnSchemPlan_2">
+														<div class="ct-title dvSchemeName" id="div_Title_2"></div>
+		
+														<div class="ct-rate" id="div_Rate_2">Exp: <span id="lblExp2"></span>% |
+															1Y Rt:<span id="lbl1yrRt2"></span>%</div>
+		
+		
+		
+														<div id="">
+															<input type="button" id="loginbtninvestment_2"
+																class="btn btn-default smallgreybtnform btn-white btn-InvestScheme"
+																onclick="InvestNoSignIn('2');" value="Invest Now"
+																data-dismiss="modal" data-toggle="modal"
+																data-target="#NOSingIN">
+															<input type="button" id="btnAddwatch_2"
+																class="btn btn-watch-list white-btn" value="addwatchlist"
+																data-dismiss="modal" onclick="WatchListNoSignIn();"
+																data-toggle="modal" data-target="#NOSingIN">
+														</div>
+		
+													</div>
+												</td>
+												<td id="td_Title_3">
+													<span id="reset_3" class="button b-close reset"
+														style="display:none;"><span>×</span></span>
+													<div id="div_Addscheme_3">
+														<div class="input-group compare-search-form" id="div_SearchScheme_3">
+															<input type="text"
+																class="form-control txtScheme globalSearchValidation ui-autocomplete-input"
+																placeholder="Type Fund name here" id="txt_SearchScheme_3"
+																autocomplete="off">
+															<span class="input-group-btn">
+																<button class="btn" type="button">
+																	<i class="ti-search"></i>
+																</button>
+															</span>
+														</div>
+		
+													</div>
+													<div id="div_Header_3" style="display: none;">
+														<input type="hidden" name="hdnSchemCode_3" value="" id="hdnSchemCode_3">
+														<input type="hidden" name="hdnSchemPlan_3" value="" id="hdnSchemPlan_3">
+														<div class="ct-title dvSchemeName" id="div_Title_3"></div>
+		
+														<div class="ct-rate" id="div_Rate_3">
+															Exp: <span id="lblExp3"></span>% | 1Y Rt:
+															<span id="lbl1yrRt3"></span>
+															%
+														</div>
+														<div id="">
+															<input type="button" id="loginbtninvestment_3"
+																class="btn btn-default smallgreybtnform btn-white btn-InvestScheme"
+																onclick="InvestNoSignIn('3');" value="Invest Now"
+																data-dismiss="modal" data-toggle="modal"
+																data-target="#NOSingIN">
+															<input type="button" id="btnAddwatch_3"
+																class="btn btn-watch-list white-btn" value="addwatchlist"
+																onclick="WatchListNoSignIn();" data-dismiss="modal"
+																data-toggle="modal" data-target="#NOSingIN">
+														</div>
+		
+													</div>
+												</td>
+												<td id="td_Title_4">
+													<span id="reset_4" class="button b-close reset"
+														style="display:none;"><span>×</span></span>
+													<div id="div_Addscheme_4">
+														<div class="input-group compare-search-form" id="div_SearchScheme">
+															<input type="text"
+																class="form-control txtScheme globalSearchValidation ui-autocomplete-input"
+																placeholder="Type Fund name here" id="txt_SearchScheme_4"
+																autocomplete="off">
+															<span class="input-group-btn">
+																<button class="btn" type="button">
+																	<i class="ti-search"></i>
+																</button>
+															</span>
+														</div>
+		
+													</div>
+													<div id="div_Header_4" style="display: none">
+														<input type="hidden" name="hdnSchemCode_4" value="" id="hdnSchemCode_4">
+														<input type="hidden" name="hdnSchemPlan_4" value="" id="hdnSchemPlan_4">
+														<div class="ct-title dvSchemeName" id="div_Title_4"></div>
+		
+														<div class="ct-rate" id="div_Rate_4">
+															Exp: <span id="lblExp4"></span>% | 1Y Rt:
+															<span id="lbl1yrRt4"></span>
+															%
+														</div>
+														<div id="">
+															<input type="button" id="loginbtninvestment_4"
+																class="btn btn-default smallgreybtnform btn-white btn-InvestScheme"
+																onclick="InvestNoSignIn('4');" value="Invest Now"
+																data-dismiss="modal" data-toggle="modal"
+																data-target="#NOSingIN">
+															<input type="button" id="btnAddwatch_4"
+																class="btn btn-watch-list white-btn" value="addwatchlist"
+																onclick="WatchListNoSignIn();" data-dismiss="modal"
+																data-toggle="modal" data-target="#NOSingIN">
+														</div>
+		
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="compare-content">
+								<div id="orange" class="b-tab active">
+									<table class="table table-bordered table-striped">
+
+										<tbody>
+											<tr class="cmpre-table-row">
+												<td>Scheme AUM</td>
+												<td id="tdSchemeAUM_OV_1"></td>
+												<td id="tdSchemeAUM_OV_2"></td>
+												<td id="tdSchemeAUM_OV_3"></td>
+												<td id="tdSchemeAUM_OV_4"></td>
+											</tr>
+											<tr class="cmpre-table-row">
+												<td>Scheme Age</td>
+												<td id="tdSchemeAge_OV_1"></td>
+												<td id="tdSchemeAge_OV_2"></td>
+												<td id="tdSchemeAge_OV_3"></td>
+												<td id="tdSchemeAge_OV_4"></td>
+											</tr>
+											<tr class="cmpre-table-row">
+												<td>Scheme Asset Type</td>
+												<td id="tdSchemeAssetType_OV_1"></td>
+												<td id="tdSchemeAssetType_OV_2"></td>
+												<td id="tdSchemeAssetType_OV_3"></td>
+												<td id="tdSchemeAssetType_OV_4"></td>
+											</tr>
+											<tr class="cmpre-table-row">
+												<td>Scheme Category</td>
+												<td id="tdSchemeCategory_OV_1"></td>
+												<td id="tdSchemeCategory_OV_2"></td>
+												<td id="tdSchemeCategory_OV_3"></td>
+												<td id="tdSchemeCategory_OV_4"></td>
+											</tr>
+											<tr class="cmpre-table-row">
+												<td>Scheme Horizon</td>
+												<td id="tdSchemeHorizon_OV_1"></td>
+												<td id="tdSchemeHorizon_OV_2"></td>
+												<td id="tdSchemeHorizon_OV_3"></td>
+												<td id="tdSchemeHorizon_OV_4"></td>
+											</tr>
+											<tr class="cmpre-table-row">
+												<td>Scheme Nature</td>
+												<td id="tdSchemeNature_OV_1"></td>
+												<td id="tdSchemeNature_OV_2"></td>
+												<td id="tdSchemeNature_OV_3"></td>
+												<td id="tdSchemeNature_OV_4"></td>
+											</tr>
+											<tr class="cmpre-table-row">
+												<td>Scheme Risk</td>
+												<td><span class="mode-low" id="sapnSchemeRisk_OV_1"></span></td>
+												<td><span class="high" id="sapnSchemeRisk_OV_2"></span></td>
+												<td><span class="mode-low" id="sapnSchemeRisk_OV_3"></span></td>
+												<td><span class="mode-low" id="sapnSchemeRisk_OV_4"></span></td>
+											</tr>
+											<tr class="cmpre-table-row">
+												<td>Scheme NAV</td>
+												<td id="tdSchemeNAV_OV_1"></td>
+												<td id="tdSchemeNAV_OV_2"></td>
+												<td id="tdSchemeNAV_OV_3"></td>
+												<td id="tdSchemeNAV_OV_4"></td>
+											</tr>
+											<tr class="cmpre-table-row">
+												<td>52 W High Low</td>
+												<td id="td52WHighLow_OV_1"></td>
+												<td id="td52WHighLow_OV_2"></td>
+												<td id="td52WHighLow_OV_3"></td>
+												<td id="td52WHighLow_OV_4"></td>
+											</tr>
+											<tr class="cmpre-table-row">
+												<td>Benchmark index</td>
+												<td id="tdBenchmarkindex_OV_1"></td>
+												<td id="tdBenchmarkindex_OV_2"></td>
+												<td id="tdBenchmarkindex_OV_3"></td>
+												<td id="tdBenchmarkindex_OV_4"></td>
+											</tr>
+											<tr class="cmpre-table-row">
+												<td>Fund Manager</td>
+												<td id="tdFundManager_OV_1"></td>
+												<td id="tdFundManager_OV_2"></td>
+												<td id="tdFundManager_OV_3"></td>
+												<td id="tdFundManager_OV_4"></td>
+											</tr>
+											<tr class="cmpre-table-row">
+												<td>AMC</td>
+												<td id="tdAMC_OV_1"></td>
+												<td id="tdAMC_OV_2"></td>
+												<td id="tdAMC_OV_3"></td>
+												<td id="tdAMC_OV_4"></td>
+											</tr>
+											<tr class="cmpre-table-row">
+												<td>Min. SIP/SWP Amount</td>
+												<td id="tdMinSipAmt_OV_1"></td>
+												<td id="tdMinSipAmt_OV_2"></td>
+												<td id="tdMinSipAmt_OV_3"></td>
+												<td id="tdMinSipAmt_OV_4"></td>
+											</tr>
+											<tr class="cmpre-table-row">
+												<td>Min. Lumpsum Amount</td>
+												<td id="tdMinLumpsumAmt_OV_1"></td>
+												<td id="tdMinLumpsumAmt_OV_2"></td>
+												<td id="tdMinLumpsumAmt_OV_3"></td>
+												<td id="tdMinLumpsumAmt_OV_4"></td>
+											</tr>
+											<tr class="cmpre-table-row">
+												<td>Min. Incremental SIP </td>
+												<td id="tdIncrementalSipAmt_OV_1"></td>
+												<td id="tdIncrementalSipAmt_OV_2"></td>
+												<td id="tdIncrementalSipAmt_OV_3"></td>
+												<td id="tdIncrementalSipAmt_OV_4"></td>
+											</tr>
+											<tr class="cmpre-table-row">
+												<td>Min. Incremental Lumpsum </td>
+												<td id="tdIncrementalAmt_OV_1"></td>
+												<td id="tdIncrementalAmt_OV_2"></td>
+												<td id="tdIncrementalAmt_OV_3"></td>
+												<td id="tdIncrementalAmt_OV_4"></td>
+											</tr>
+											<tr class="cmpre-table-row">
+												<td>SIP Dates</td>
+												<td id="tdSipDates_OV_1"></td>
+												<td id="tdSipDates_OV_2"></td>
+												<td id="tdSipDates_OV_3"></td>
+												<td id="tdSipDates_OV_4"></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div id="green" class="b-tab">
+									<table class="table table-bordered table-striped">
+
+										<tbody>
+											<tr class="cmpre-table-row">
+												<td>Asset Allocation</td>
+												<td>
+
+													<div id="div_AssetChart_1" class="chart-wh"></div>
+												</td>
+												<td>
+
+													<div id="div_AssetChart_2" class="chart-wh"></div>
+												</td>
+												<td>
+
+													<div id="div_AssetChart_3" class="chart-wh"></div>
+												</td>
+												<td>
+													<div id="div_AssetChart_4" class="chart-wh"></div>
+												</td>
+											</tr>
+											<tr class="cmpre-table-row">
+												<td id="">Sector Allocation</td>
+												<td>
+													<div class="progress">
+													</div>
+												</td>
+												<td>
+													<div class="progress">
+													</div>
+												</td>
+												<td>
+													<div class="progress">
+													</div>
+												</td>
+												<td>
+													<div class="progress">
+													</div>
+												</td>
+											</tr>
+											<tr class="cmpre-table-row">
+												<td id="span_Sector_1"></td>
+												<td>
+													<div class="progress">
+														<div id="div_Sector_1_1" class="progress-bar pro-lightyellow"
+															role="progressbar" aria-valuenow="60" aria-valuemin="0"
+															aria-valuemax="100" style="width: 0%">
+															<span class="progress-percent" id="span_Sector_1_1"></span>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div class="progress">
+														<div id="div_Sector_1_2" class="progress-bar pro-lightyellow"
+															role="progressbar" aria-valuenow="60" aria-valuemin="0"
+															aria-valuemax="100" style="width: 0%">
+															<span class="progress-percent" id="span_Sector_1_2"></span>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div class="progress">
+														<div id="div_Sector_1_3" class="progress-bar pro-lightyellow"
+															role="progressbar" aria-valuenow="60" aria-valuemin="0"
+															aria-valuemax="100" style="width: 0%">
+															<span class="progress-percent" id="span_Sector_1_3"></span>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div class="progress">
+														<div id="div_Sector_1_4" class="progress-bar pro-lightyellow"
+															role="progressbar" aria-valuenow="60" aria-valuemin="0"
+															aria-valuemax="100" style="width: 0%">
+															<span class="progress-percent" id="span_Sector_1_4"></span>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr class="cmpre-table-row">
+												<td id="span_Sector_2"></td>
+												<td>
+													<div class="progress">
+														<div id="div_Sector_2_1" class="progress-bar pro-lightyellow"
+															role="progressbar" aria-valuenow="30" aria-valuemin="0"
+															aria-valuemax="100" style="width: 0%">
+															<span class="progress-percent" id="span_Sector_2_1"></span>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div class="progress">
+														<div id="div_Sector_2_2" class="progress-bar pro-lightyellow"
+															role="progressbar" aria-valuenow="30" aria-valuemin="0"
+															aria-valuemax="100" style="width: 0%">
+															<span class="progress-percent" id="span_Sector_2_2"></span>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div class="progress">
+														<div id="div_Sector_2_3" class="progress-bar pro-lightyellow"
+															role="progressbar" aria-valuenow="30" aria-valuemin="0"
+															aria-valuemax="100" style="width: 0%">
+															<span class="progress-percent" id="span_Sector_2_3"></span>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div class="progress">
+														<div id="div_Sector_2_4" class="progress-bar pro-lightyellow"
+															role="progressbar" aria-valuenow="30" aria-valuemin="0"
+															aria-valuemax="100" style="width: 0%">
+															<span class="progress-percent" id="span_Sector_2_4"></span>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr class="cmpre-table-row">
+												<td id="span_Sector_3"></td>
+												<td>
+													<div class="progress">
+														<div id="div_Sector_3_1" class="progress-bar pro-lightyellow"
+															role="progressbar" aria-valuenow="8" aria-valuemin="0"
+															aria-valuemax="100" style="width: 0%">
+															<span class="progress-percent" id="span_Sector_3_1"></span>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div class="progress">
+														<div id="div_Sector_3_2" class="progress-bar pro-lightyellow"
+															role="progressbar" aria-valuenow="8" aria-valuemin="0"
+															aria-valuemax="100" style="width: 0%">
+															<span class="progress-percent" id="span_Sector_3_2"></span>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div class="progress">
+														<div id="div_Sector_3_3" class="progress-bar pro-lightyellow"
+															role="progressbar" aria-valuenow="8" aria-valuemin="0"
+															aria-valuemax="100" style="width: 0%">
+															<span class="progress-percent" id="span_Sector_3_3"></span>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div class="progress">
+														<div id="div_Sector_3_4" class="progress-bar pro-lightyellow"
+															role="progressbar" aria-valuenow="8" aria-valuemin="0"
+															aria-valuemax="100" style="width: 0%">
+															<span class="progress-percent" id="span_Sector_3_4"></span>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr class="cmpre-table-row">
+												<td id="span_Sector_4"></td>
+												<td>
+													<div class="progress">
+														<div id="div_Sector_4_1" class="progress-bar pro-lightyellow"
+															role="progressbar" aria-valuenow="30.12" aria-valuemin="0"
+															aria-valuemax="100" style="width: 0%">
+															<span class="progress-percent" id="span_Sector_4_1"></span>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div class="progress">
+														<div id="div_Sector_4_2" class="progress-bar pro-lightyellow"
+															role="progressbar" aria-valuenow="30.12" aria-valuemin="0"
+															aria-valuemax="100" style="width: 0%">
+															<span class="progress-percent" id="span_Sector_4_2"></span>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div class="progress">
+														<div id="div_Sector_4_3" class="progress-bar pro-lightyellow"
+															role="progressbar" aria-valuenow="30.12" aria-valuemin="0"
+															aria-valuemax="100" style="width: 0%">
+															<span class="progress-percent" id="span_Sector_4_3"></span>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div class="progress">
+														<div id="div_Sector_4_4" class="progress-bar pro-lightyellow"
+															role="progressbar" aria-valuenow="30.12" aria-valuemin="0"
+															aria-valuemax="100" style="width: 0%">
+															<span class="progress-percent" id="span_Sector_4_4"></span>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr class="cmpre-table-row">
+												<td id="span_Sector_5"></td>
+												<td>
+													<div class="progress">
+														<div id="div_Sector_5_1" class="progress-bar pro-lightyellow"
+															role="progressbar" aria-valuenow="12.80" aria-valuemin="0"
+															aria-valuemax="100" style="width: 0%">
+															<span class="progress-percent" id="span_Sector_5_1"></span>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div class="progress">
+														<div id="div_Sector_5_2" class="progress-bar pro-lightyellow"
+															role="progressbar" aria-valuenow="12.80" aria-valuemin="0"
+															aria-valuemax="100" style="width: 0%">
+															<span class="progress-percent" id="span_Sector_5_2"></span>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div class="progress">
+														<div id="div_Sector_5_3" class="progress-bar pro-lightyellow"
+															role="progressbar" aria-valuenow="12.80" aria-valuemin="0"
+															aria-valuemax="100" style="width: 0%">
+															<span class="progress-percent" id="span_Sector_5_3"></span>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div class="progress">
+														<div id="div_Sector_5_4" class="progress-bar pro-lightyellow"
+															role="progressbar" aria-valuenow="12.80" aria-valuemin="0"
+															aria-valuemax="100" style="width: 0%">
+															<span class="progress-percent" id="span_Sector_5_4"></span>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr class="cmpre-table-row">
+												<td id="span_Sector_6"></td>
+												<td>
+													<div class="progress">
+														<div id="div_Sector_6_1" class="progress-bar pro-lightyellow"
+															role="progressbar" aria-valuenow="0.80" aria-valuemin="0"
+															aria-valuemax="100" style="width: 0%">
+															<span class="progress-percent" id="span_Sector_6_1"></span>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div class="progress">
+														<div id="div_Sector_6_2" class="progress-bar pro-lightyellow"
+															role="progressbar" aria-valuenow="0.80" aria-valuemin="0"
+															aria-valuemax="100" style="width: 0%">
+															<span class="progress-percent" id="span_Sector_6_2"></span>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div class="progress">
+														<div id="div_Sector_6_3" class="progress-bar pro-lightyellow"
+															role="progressbar" aria-valuenow="0.80" aria-valuemin="0"
+															aria-valuemax="100" style="width: 0%">
+															<span class="progress-percent" id="span_Sector_6_3"></span>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div class="progress">
+														<div id="div_Sector_6_4" class="progress-bar pro-lightyellow"
+															role="progressbar" aria-valuenow="0.80" aria-valuemin="0"
+															aria-valuemax="100" style="width: 0%">
+															<span class="progress-percent" id="span_Sector_6_4"></span>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr class="cmpre-table-row">
+												<td id="span_Sector_7"></td>
+												<td>
+													<div class="progress">
+														<div id="div_Sector_7_1" class="progress-bar pro-lightyellow"
+															role="progressbar" aria-valuenow="0" aria-valuemin="0"
+															aria-valuemax="100" style="width: 0%">
+															<span class="progress-percent" id="span_Sector_7_1"></span>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div class="progress">
+														<div id="div_Sector_7_2" class="progress-bar pro-lightyellow"
+															role="progressbar" aria-valuenow="0" aria-valuemin="0"
+															aria-valuemax="100" style="width: 0%">
+															<span class="progress-percent" id="span_Sector_7_2"></span>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div class="progress">
+														<div id="div_Sector_7_3" class="progress-bar pro-lightyellow"
+															role="progressbar" aria-valuenow="0" aria-valuemin="0"
+															aria-valuemax="100" style="width: 0%">
+															<span class="progress-percent" id="span_Sector_7_3"></span>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div class="progress">
+														<div id="div_Sector_7_4" class="progress-bar pro-lightyellow"
+															role="progressbar" aria-valuenow="0" aria-valuemin="0"
+															aria-valuemax="100" style="width: 0%">
+															<span class="progress-percent" id="span_Sector_7_4"></span>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr class="cmpre-table-row">
+												<td id="span_Sector_8"></td>
+												<td>
+													<div class="progress">
+														<div id="div_Sector_8_1" class="progress-bar pro-lightyellow"
+															role="progressbar" aria-valuenow="0.10" aria-valuemin="0"
+															aria-valuemax="100" style="width: 0%">
+															<span class="progress-percent" id="span_Sector_8_1"></span>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div class="progress">
+														<div id="div_Sector_8_2" class="progress-bar pro-lightyellow"
+															role="progressbar" aria-valuenow="0.10" aria-valuemin="0"
+															aria-valuemax="100" style="width: 0%">
+															<span class="progress-percent" id="span_Sector_8_2"></span>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div class="progress">
+														<div id="div_Sector_8_3" class="progress-bar pro-lightyellow"
+															role="progressbar" aria-valuenow="0.10" aria-valuemin="0"
+															aria-valuemax="100" style="width: 0%">
+															<span class="progress-percent" id="span_Sector_8_3"></span>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div class="progress">
+														<div id="div_Sector_8_4" class="progress-bar pro-lightyellow"
+															role="progressbar" aria-valuenow="0.10" aria-valuemin="0"
+															aria-valuemax="100" style="width: 0%">
+															<span class="progress-percent" id="span_Sector_8_4"></span>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr class="cmpre-table-row">
+												<td id="span_Sector_9"></td>
+												<td>
+													<div class="progress">
+														<div id="div_Sector_9_1" class="progress-bar pro-lightyellow"
+															role="progressbar" aria-valuenow="0" aria-valuemin="0"
+															aria-valuemax="100" style="width: 0%">
+															<span class="progress-percent" id="span_Sector_9_1"></span>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div class="progress">
+														<div id="div_Sector_9_2" class="progress-bar pro-lightyellow"
+															role="progressbar" aria-valuenow="0" aria-valuemin="0"
+															aria-valuemax="100" style="width: 0%">
+															<span class="progress-percent" id="span_Sector_9_2"></span>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div class="progress">
+														<div id="div_Sector_9_3" class="progress-bar pro-lightyellow"
+															role="progressbar" aria-valuenow="0" aria-valuemin="0"
+															aria-valuemax="100" style="width: 0%">
+															<span class="progress-percent" id="span_Sector_9_3"></span>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div class="progress">
+														<div id="div_Sector_9_4" class="progress-bar pro-lightyellow"
+															role="progressbar" aria-valuenow="0" aria-valuemin="0"
+															aria-valuemax="100" style="width: 0%">
+															<span class="progress-percent" id="span_Sector_9_4"></span>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr class="cmpre-table-row">
+												<td id="span_Sector_10"></td>
+												<td>
+													<div class="progress">
+														<div id="div_Sector_10_1" class="progress-bar pro-lightyellow"
+															role="progressbar" aria-valuenow="0" aria-valuemin="0"
+															aria-valuemax="100" style="width: 0%">
+															<span class="progress-percent" id="span_Sector_10_1"></span>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div class="progress">
+														<div id="div_Sector_10_2" class="progress-bar pro-lightyellow"
+															role="progressbar" aria-valuenow="0" aria-valuemin="0"
+															aria-valuemax="100" style="width: 0%">
+															<span class="progress-percent" id="span_Sector_10_2"></span>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div class="progress">
+														<div id="div_Sector_10_3" class="progress-bar pro-lightyellow"
+															role="progressbar" aria-valuenow="0" aria-valuemin="0"
+															aria-valuemax="100" style="width: 0%">
+															<span class="progress-percent" id="span_Sector_10_3"></span>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div class="progress">
+														<div id="div_Sector_10_4" class="progress-bar pro-lightyellow"
+															role="progressbar" aria-valuenow="0" aria-valuemin="0"
+															aria-valuemax="100" style="width: 0%">
+															<span class="progress-percent" id="span_Sector_10_4"></span>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr class="cmpre-table-row">
+												<td id="span_Sector_11"></td>
+												<td>
+													<div class="progress">
+														<div id="div_Sector_11_1" class="progress-bar pro-lightyellow"
+															role="progressbar" aria-valuenow="0.25" aria-valuemin="0"
+															aria-valuemax="100" style="width: 0%">
+															<span class="progress-percent" id="span_Sector_11_1"></span>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div class="progress">
+														<div id="div_Sector_11_2" class="progress-bar pro-lightyellow"
+															role="progressbar" aria-valuenow="0.25" aria-valuemin="0"
+															aria-valuemax="100" style="width: 0%">
+															<span class="progress-percent" id="span_Sector_11_2"></span>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div class="progress">
+														<div id="div_Sector_11_3" class="progress-bar pro-lightyellow"
+															role="progressbar" aria-valuenow="0.25" aria-valuemin="0"
+															aria-valuemax="100" style="width: 0%">
+															<span class="progress-percent" id="span_Sector_11_3"></span>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div class="progress">
+														<div id="div_Sector_11_4" class="progress-bar pro-lightyellow"
+															role="progressbar" aria-valuenow="0.25" aria-valuemin="0"
+															aria-valuemax="100" style="width: 0%">
+															<span class="progress-percent" id="span_Sector_11_4"></span>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr class="cmpre-table-row">
+												<td id="span_Sector_12"></td>
+												<td>
+													<div class="progress">
+														<div id="div_Sector_12_1" class="progress-bar pro-lightyellow"
+															role="progressbar" aria-valuenow="0" aria-valuemin="0"
+															aria-valuemax="100" style="width: 0%">
+															<span class="progress-percent" id="span_Sector_12_1"></span>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div class="progress">
+														<div id="div_Sector_12_2" class="progress-bar pro-lightyellow"
+															role="progressbar" aria-valuenow="0" aria-valuemin="0"
+															aria-valuemax="100" style="width: 0%">
+															<span class="progress-percent" id="span_Sector_12_2"></span>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div class="progress">
+														<div id="div_Sector_12_3" class="progress-bar pro-lightyellow"
+															role="progressbar" aria-valuenow="0" aria-valuemin="0"
+															aria-valuemax="100" style="width: 0%">
+															<span class="progress-percent" id="span_Sector_12_3"></span>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div class="progress">
+														<div id="div_Sector_12_4" class="progress-bar pro-lightyellow"
+															role="progressbar" aria-valuenow="0" aria-valuemin="0"
+															aria-valuemax="100" style="width: 0%">
+															<span class="progress-percent" id="span_Sector_12_4"></span>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr class="cmpre-table-row">
+												<td id="span_Sector_13">Misc</td>
+												<td>
+													<div class="progress">
+														<div id="div_Sector_13_1" class="progress-bar pro-lightyellow"
+															role="progressbar" aria-valuenow="0" aria-valuemin="0"
+															aria-valuemax="100" style="width: 0%">
+															<span class="progress-percent" id="span_Sector_13_1"></span>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div class="progress">
+														<div id="div_Sector_13_2" class="progress-bar pro-lightyellow"
+															role="progressbar" aria-valuenow="0" aria-valuemin="0"
+															aria-valuemax="100" style="width: 0%">
+															<span class="progress-percent" id="span_Sector_13_2"></span>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div class="progress">
+														<div id="div_Sector_13_3" class="progress-bar pro-lightyellow"
+															role="progressbar" aria-valuenow="0" aria-valuemin="0"
+															aria-valuemax="100" style="width: 0%">
+															<span class="progress-percent" id="span_Sector_13_3"></span>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div class="progress">
+														<div id="div_Sector_13_4" class="progress-bar pro-lightyellow"
+															role="progressbar" aria-valuenow="0" aria-valuemin="0"
+															aria-valuemax="100" style="width: 0%">
+															<span class="progress-percent" id="span_Sector_13_4"></span>
+														</div>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div id="blue" class="b-tab">
+									<table class="table table-bordered table-striped">
+										<tbody>
+											<tr class="cmpre-table-row">
+												<td id="td3Months_Preformance_">3 months</td>
+												<td id="td3Months_Preformance_1"></td>
+												<td id="td3Months_Preformance_2"></td>
+												<td id="td3Months_Preformance_3"></td>
+												<td id="td3Months_Preformance_4"></td>
+											</tr>
+											<tr class="cmpre-table-row">
+												<td id="td6Months_Preformance_">6 months</td>
+												<td id="td6Months_Preformance_1"></td>
+												<td id="td6Months_Preformance_2"></td>
+												<td id="td6Months_Preformance_3"></td>
+												<td id="td6Months_Preformance_4"></td>
+											</tr>
+											<tr class="cmpre-table-row">
+												<td id="td1Year_Preformance_">1 year</td>
+												<td id="td1Year_Preformance_1"></td>
+												<td id="td1Year_Preformance_2"></td>
+												<td id="td1Year_Preformance_3"></td>
+												<td id="td1Year_Preformance_4"></td>
+											</tr>
+											<tr class="cmpre-table-row">
+												<td id="td3Year_Preformance_">3 years</td>
+												<td id="td3Year_Preformance_1"></td>
+												<td id="td3Year_Preformance_2"></td>
+												<td id="td3Year_Preformance_3"></td>
+												<td id="td3Year_Preformance_4"></td>
+											</tr>
+											<tr class="cmpre-table-row">
+												<td id="td5Year_Preformance_">5 years</td>
+												<td id="td5Year_Preformance_1"></td>
+												<td id="td5Year_Preformance_2"></td>
+												<td id="td5Year_Preformance_3"></td>
+												<td id="td5Year_Preformance_4"></td>
+											</tr>
+											<tr class="cmpre-table-row">
+												<td id="tdIllustration_Preformance_">Illustration</td>
+												<td id="tdIllustration_Preformance_1">
+													<div id="divIllustration_Preformance_1" class="high-chart chart-wh">
+													</div>
+												</td>
+												<td id="tdIllustration_Preformance_2">
+													<div id="divIllustration_Preformance_2" class="high-chart chart-wh">
+													</div>
+												</td>
+												<td id="tdIllustration_Preformance_3">
+													<div id="divIllustration_Preformance_3" class="high-chart chart-wh">
+													</div>
+												</td>
+												<td id="tdIllustration_Preformance_4">
+													<div id="divIllustration_Preformance_4" class="high-chart chart-wh">
+													</div>
+												</td>
+											</tr>
+											<tr class="cmpre-table-row">
+												<td id="tdSchemeBeta_Preformance_">Scheme Beta</td>
+												<td id="tdSchemeBeta_Preformance_1"></td>
+												<td id="tdSchemeBeta_Preformance_2"></td>
+												<td id="tdSchemeBeta_Preformance_3"></td>
+												<td id="tdSchemeBeta_Preformance_4"></td>
+											</tr>
+											<tr class="cmpre-table-row">
+												<td id="tdSchemeSharp_Preformance_">Scheme Sharpe</td>
+												<td id="tdSchemeSharp_Preformance_1"></td>
+												<td id="tdSchemeSharp_Preformance_2"></td>
+												<td id="tdSchemeSharp_Preformance_3"></td>
+												<td id="tdSchemeSharp_Preformance_4"></td>
+											</tr>
+											<tr class="cmpre-table-row">
+												<td id="tdSchemeAlpha_Preformance_">Scheme Alpha</td>
+												<td id="tdSchemeAlpha_Preformance_1"></td>
+												<td id="tdSchemeAlpha_Preformance_2"></td>
+												<td id="tdSchemeAlpha_Preformance_3"></td>
+												<td id="tdSchemeAlpha_Preformance_4"></td>
+											</tr>
+											<tr class="cmpre-table-row">
+												<td id="tdSchemeVolatility_Preformance_">Scheme volatility</td>
+												<td id="tdSchemeVolatility_Preformance_1"></td>
+												<td id="tdSchemeVolatility_Preformance_2"></td>
+												<td id="tdSchemeVolatility_Preformance_3"></td>
+												<td id="tdSchemeVolatility_Preformance_4"></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+
+						<script>
+							function Tabs() {
+								var bindAll = function () {
+									var menuElements = document.querySelectorAll('[data-tab]');
+									for (var i = 0; i < menuElements.length; i++) {
+										menuElements[i].addEventListener('click', change, false);
+									}
+								}
+
+								var clear = function () {
+									var menuElements = document.querySelectorAll('[data-tab]');
+									for (var i = 0; i < menuElements.length; i++) {
+										menuElements[i].classList.remove('active');
+										var id = menuElements[i].getAttribute('data-tab');
+										document.getElementById(id).classList.remove('active');
+									}
+								}
+
+								var change = function (e) {
+									clear();
+									e.target.classList.add('active');
+									var id = e.currentTarget.getAttribute('data-tab');
+									document.getElementById(id).classList.add('active');
+								}
+
+								bindAll();
+							}
+
+							var connectTabs = new Tabs();
+
+						</script>
+
+
+					</div>
+					
+					<script type="text/javascript">
+						var arrSchemes = [];
+						var arrSchemesFromOutSide = [];
+						setTimeout(function () {
+							var cookieClientCode = getCookie('IsLogin');
+							if (cookieClientCode != null && cookieClientCode != '') {
+								GetMWSchems();
+							}
+						}, 50);
+						setTimeout(function () {
+							var cookieCompareSchemes = getCookie('CompareSchemes');
+							if (cookieCompareSchemes != null && cookieCompareSchemes != '') {
+								arrSchemesFromOutSide = cookieCompareSchemes.split('~');
+								callInitFunc();
+								setCookie('CompareSchemes', null, -1);
+							}
+						}, 50);
+						function callInitFunc() {
+							setTimeout("FillSchemesOverviewDetails();", 50);
+							setTimeout("FillSchemePerformance();", 50);
+						}
+                    /* else {
+							 arrSchemes.push("10668");
+							 arrSchemes.push("2");
+						 }*/
+
+					</script>
+
+					<script>
+						jQuery("#view-chart").click(function () {
+							jQuery(".table.compare-table tr:nth-child(2)").toggle();
+						});
+					</script>
+					<script type="text/javascript">
+
+						function InvestNoSignIn(data) {
+							localStorage.SchemeCode = jQuery("#hdnSchemCode_" + data).val();
+							localStorage.SelectedTab = "Lumpsum";
+							//setCookie('InvestSchemeCode', localStorage.SchemeCode, 1);
+							//InvestForScheme(localStorage.SchemeCode);
+						}
+						jQuery(document).ready(function () {
+							localStorage.SchemeCode = "";
+							localStorage.SelectedTab = "";
+							setCookie('InvestSchemeCode', null, 1);
+							setCookie('InvestSIPSchemeCode', null, 1);
+
+						});
+					</script>
+				</div>
+
+				<!----------- compare funds ends here ---------------->
+			</div>
+			<!-------- row ends ------------->
+			<!---------------- explore fund category ----------------->
+	</section>
+	<!--====  End of Hero Section  ====-->
+	<div class="container" style="margin-bottom: 3%;">
+		<div class="explore-fund" style="margin:0 auto;">
+			<div class="row text-center" style="background-color: #eef6fe; border-radius: 20px;">
+				<div class="col-md-1"></div>
+				<div class="col-md-5 d-flex align-items-center" style="padding-top: 1.25%;">
+					<ul>
+						<li> <i class="ti-check-box"></i> Paperless A/C</li>
+						<li> <i class="ti-check-box"></i> Trusted View</li>
+						<li> <i class="ti-check-box"></i> List of analysis</li>
+					</ul>
+				</div>
+				<div class="col-md-5 d-flex align-items-center">
+					<!-- <a href="" style="margin: auto;" class="btn btn-main-md">Explore more</a> -->
+					<a href="" style="margin: auto;" data-toggle="modal" data-target="#login-signup-form" class="btn btn-rounded-icon btn-comm btn-main-md">Invest Now</a>
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+		</div>
+	</div>
+
+	<!--==============================
+=            Services            =
+===============================-->
+<div class="p-5 bg-light-blue mb-prouctsbg">
+	<div class="m-5 p-3 mb-product-h2 ">
+		<h2 class="d-flex justify-content-center prods-head mb-product">Invest timely for your child's future</h2>
+		<p class="text-center prods-desc ">Invest4Edu makes it easy to invest for your kids' future education goals.
+			No complicated tasks. No gimmicks.</p>
+	</div>
+	<div class="container-md">
+		<div class="mb-productrow row">
+			<div class="col-sm-6 mg-auto  col"><img
+					class="img-fluid prod-invsttimely-img mb-productimg aos-init aos-animate"
+					src="./images/svg/I4E_INVESTTIMELY_ICON.svg" data-aos="fade-right"></div>
+			<div class="col-sm-6 align-self-center wd100 col">
+				<div class="bg-white p-3 prods-container row">
+					<div class="col-sm-6 text-white col">
+						<div class="justify-content-center d-block align-items-center prods-img-cont row">
+							<!-- Icon -->
+							<a href="mutual_funds.html">  <img src="images/svg/I4E_INVESTTIMELY_MUTULAFUND_ICON.svg" class="img-fluid img-responsive product-circle" alt="">
+								<!-- Heading -->
+								<h4 class="text-center prods-name">Mutual Funds</h4>
+								</a>
+						</div>
+					</div>
+					<div class="col-sm-6 text-white col">
+						<div class="justify-content-center d-block align-items-center prods-img-cont row">
+							<!-- Icon -->
+							<a href="fixed_deposits.html"><img src="images/svg/I4E_INVESTTIMELY_FIXEDDEPOSIT_ICON.svg" class="img-fluid img-responsive product-circle" alt="">
+								<!-- Heading -->
+								<h4 class="text-center prods-name">Fixed Deposits</h4>
+								<!-- Description -->
+								</a>
+						</div>
+					</div>
+					<div class="col-sm-6 text-white col">
+						<div class="justify-content-center d-block align-items-center prods-img-cont row">
+							<!-- Icon -->
+							<a href="gold_bonds.html"><img src="images/svg/I4E_INVESTTIMELY_GOLD_ICON.svg" class="img-fluid img-responsive product-circle" alt="">
+								<!-- Heading -->
+								<h4 class="text-center prods-name">Gold Bond</h4></a>
+						</div>
+					</div>
+					<div class="col-sm-6 text-white col">
+						<div class="justify-content-center d-block align-items-center prods-img-cont row">
+							<!-- Icon -->
+							<img src="images/svg/I4E_INVESTTIMELY_EDULOAN_ICON.svg" class="img-fluid img-responsive product-circle" alt="">
+							<!-- Heading -->
+							<h4 class="text-center prods-name">Education Loan</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	<!--====  End of Services  ====-->
+
+
+	<!--=================================
+=            Video Promo            =
+==================================-->
+	<section class="video-promo section bg-1">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="content-block">
+						<!-- Heading -->
+						<h2>Invest4Edu : How we can help you ?</h2>
+						<!-- Promotional Speech -->
+						<p style="color:#fff;">Education is the most powerful investment in our future. Education
+							expense have grown exponentially and will continue to rise. In such scenario saving for
+							education merely will not suffice , start investing. We leverage our platform to start this
+							investment process to never compromise on your future. </p>
+						<!-- Popup Video -->
+						<a data-fancybox href="https://www.youtube.com/watch?v=FVE4EgwkM-o">
+							<i class="ti-control-play video"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--====  End of Video Promo  ====-->
+
+	<!--=================================
+=            Testimonial            =
+==================================-->
+	<section class="section testimonial" id="testimonial" style="display: none;">
+		<div class="container">
+
+
+			<div class="row">
+
+				<div class="col-lg-4"></div>
+				<div class="col-lg-4"><img src="images/testimonials_header.png" class="img-fluid" alt=""></div>
+				<div class="col-lg-4"></div>
+
+			</div>
+
+
+			<div class="row">
+				<div class="col-lg-12">
+					<!-- Testimonial Slider -->
+					<div class="testimonial-slider owl-carousel owl-theme">
+						<!-- Testimonial 01 -->
+						<div class="item">
+							<div class="block shadow">
+								<!-- Speech -->
+								<p>
+									Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Donec sollicitudin
+									molestie malesuada.
+									Donec sollicitudin molestie malesuada. Pellentesque in ipsum id orci porta dapibus.
+									Lorem ipsum dolor
+									sit amet, consectetur adipiscing elit. Pellentesque in ipsum id orci porta dapibus.
+									Quisque velit nisi,
+									pretium ut lacinia in, elementum id enim.
+								</p>
+								<!-- Person Thumb -->
+								<div class="image">
+									<img src="images/testimonial/feature-testimonial-thumb_4.jpg" alt="image">
+								</div>
+								<!-- Name and Company -->
+								<cite>Abraham Singh , Bank of Malta</cite>
+							</div>
+						</div>
+						<!-- Testimonial 01 -->
+						<div class="item">
+							<div class="block shadow">
+								<!-- Speech -->
+								<p>
+									Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Donec sollicitudin
+									molestie malesuada.
+									Donec sollicitudin molestie malesuada. Pellentesque in ipsum id orci porta dapibus.
+									Lorem ipsum dolor
+									sit amet, consectetur adipiscing elit. Pellentesque in ipsum id orci porta dapibus.
+									Quisque velit nisi,
+									pretium ut lacinia in, elementum id enim.
+								</p>
+								<!-- Person Thumb -->
+								<div class="image">
+									<img src="images/testimonial/feature-testimonial-thumb_5.jpg" alt="image">
+								</div>
+								<!-- Name and Company -->
+								<cite>Dhawal Shah, Student</cite>
+							</div>
+						</div>
+						<!-- Testimonial 01 -->
+						<div class="item">
+							<div class="block shadow">
+								<!-- Speech -->
+								<p>
+									Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Donec sollicitudin
+									molestie malesuada.
+									Donec sollicitudin molestie malesuada. Pellentesque in ipsum id orci porta dapibus.
+									Lorem ipsum dolor
+									sit amet, consectetur adipiscing elit. Pellentesque in ipsum id orci porta dapibus.
+									Quisque velit nisi,
+									pretium ut lacinia in, elementum id enim.
+								</p>
+								<!-- Person Thumb -->
+								<div class="image">
+									<img src="images/testimonial/feature-testimonial-thumb_4.jpg" alt="image">
+								</div>
+								<!-- Name and Company -->
+								<cite>Abhinav Pant, Student in Canada</cite>
+							</div>
+						</div>
+						<!-- Testimonial 01 -->
+						<div class="item">
+							<div class="block shadow">
+								<!-- Speech -->
+								<p>
+									Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Donec sollicitudin
+									molestie malesuada.
+									Donec sollicitudin molestie malesuada. Pellentesque in ipsum id orci porta dapibus.
+									Lorem ipsum dolor
+									sit amet, consectetur adipiscing elit. Pellentesque in ipsum id orci porta dapibus.
+									Quisque velit nisi,
+									pretium ut lacinia in, elementum id enim.
+								</p>
+								<!-- Person Thumb -->
+								<div class="image">
+									<img src="images/testimonial/feature-testimonial-thumb_5.jpg" alt="image">
+								</div>
+								<!-- Name and Company -->
+								<cite>Dr. Manish Singh, Parent</cite>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--====  End of Testimonial  ====-->
+
+	<section class="call-to-action-app section bg-blue">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<h2>It's time to secure your future </h2>
+					<p>Download our trusted app. Get <a href="#">Invest4Edu App</a> & never miss an opportunity!
+						<br>We promise - you won’t look back.
+					</p>
+					<ul class="list-inline">
+						<li class="list-inline-item">
+							<a href="" class="btn btn-rounded-icon">
+								<i class="ti-apple"></i>
+								Iphone
+							</a>
+						</li>
+						<li class="list-inline-item">
+							<a href="" class="btn btn-rounded-icon">
+								<i class="ti-android"></i>
+								Android
+							</a>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--============================
+=            Footer            =
+=============================-->
+	<footer>
+		<div class="footer-main">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-12 align-self-center">
+						<div class="block">
+							<a href="index.html"><img src="images/logo_footer.png" alt="footer-logo" class="img-fluid"
+									style="width: 50%;"></a>
+							<p style="font-size: 14px !important;">308, A Wing,Gokul Arcade, <br />
+								Near Garware House,<br />
+								Sahar Road,Ville Parle (E), Mumbai - 400057<br />
+
+								<br />
+								Phone : +91 98995 75852<br />
+								Email : info@invest4edu.com
+							</p>
+							<br />
+							<br />
+
+							<!-- Social Site Icons -->
+							<ul class="social-icon list-inline">
+								<li class="list-inline-item">
+									<a href="https://www.facebook.com/"><i class="ti-facebook"></i></a>
+								</li>
+								<li class="list-inline-item">
+									<a href="https://twitter.com/"><i class="ti-twitter"></i></a>
+								</li>
+								<li class="list-inline-item">
+									<a href="https://www.instagram.com/"><i class="ti-instagram"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-3 col-6 mt-5 mt-lg-0" style="text-align: center;">
+						<div class="block-2">
+							<!-- heading -->
+							<h6>Products</h6>
+							<!-- links -->
+							<ul>
+								<li><a href="mutual_funds.html">Mutual Funds</a></li>
+								<li><a href="fixed_deposits.html">Fixed Deposit</a></li>
+								<li><a href="gold_bonds.html">Gold Bond</a></li>
+
+								<li><a href="edu_loans.html">Education Loan</a></li>
+								<li></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-3 col-6 mt-5 mt-lg-0" style="text-align: center;">
+						<div class="block-2">
+							<!-- heading -->
+							<h6>Invest4Edu</h6>
+							<!-- links -->
+							<ul>
+								<li><a href="#">About us</a></li>
+								<li><a href="#">Education opportunities</a></li>
+								<li><a href="blog.html">Blog</a></li>
+								<li><a href="careers.html">Careers</a></li>
+								<li><a href="#">Help & Support</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-3 col-6 mt-5 mt-lg-0" style="text-align: center;">
+						<div class="block-2">
+							<!-- heading -->
+							<h6>Quick Links</h6>
+							<!-- links -->
+							<ul>
+								
+								<li><a href="contact.html">Contact us</a></li>
+								<li><a href="faq.html">FAQs</a></li>
+								<li><a href="tnc-2.html">Terms & Conditions</a></li>
+								<li><a href="privacy-policy-2.html">Privacy Policy</a></li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="text-center bg-dark py-4">
+			<small class="text-secondary">Copyright &copy;
+				<script>document.write(new Date().getFullYear())</script>. Invest4Edu Pvt Ltd.
+			</small class="text-secondary">
+		</div>
+	</footer>
+
+
+	<!-- To Top -->
+	<div class="scroll-top-to">
+		<i class="ti-angle-up"></i>
+	</div>
+
+
+	<!----------- MODAL - LOGIN ---------->
+
+	<!-- Modal -->
+	<div class="modal fade" id="login-form" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+		aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content" style="background-color: #006bde;
+		background-size: cover;">
+				<div class="modal-header" style="border-bottom: none;">
+					<h5 class="modal-title" id="exampleModalCenterTitle" style="color: #fff;
+font-weight: bold;
+text-align: center;">Log in</h5>
+
+
+					<div class="user-login-icon" style="margin: 0 auto;
+display: block;">
+
+						<img src="images/user-icon.png" class="img-responsive" alt="">
+
+					</div>
+
+
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close" style="padding-left: 0;
+margin-left: 6%;">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+
+
+					<form action="mf-baskets-post-login.html">
+						<!-- Username -->
+						<input class="form-control main" type="text" placeholder="Username" required="">
+						<!-- Password -->
+						<input class="form-control main" type="password" placeholder="Password" required="">
+						<!-- Submit Button -->
+						<div class="form-row" style="text-align: center;">
+							<!-- Submit Button -->
+							<button class="btn btn-main-sm" style="margin: 0 auto;">Log in</button>
+						</div>
+					</form>
+
+
+
+					<form action="mf-baskets-post-login.html">
+						<h5 class="modal-title" id="exampleModalCenterTitle" style="color: #fff;
+font-weight: bold; padding-left: 45%;
+margin-top: 10%;
+
+
+margin-bottom: 3.5%; padding-bottom: 4%;"><i>or</i></h5>
+
+						<!-- Username -->
+						<input class="form-control main" type="text" placeholder="+91 xxxx xxxx xx" required="">
+						<!-- Password -->
+						<input class="form-control main" type="text" placeholder="Secure OTP" required="">
+						<!-- Submit Button -->
+						<div class="form-row" style="text-align: center;">
+							<!-- Submit Button -->
+							<button class="btn btn-main-sm" style="margin: 0 auto;">Login</button>
+						</div>
+
+						<div class="form-row" style="text-align: center;">
+
+							<p style="color: #FFFFFF; margin: 10% 0 5% 15%;">Not yet a registered user ? Please <a
+									href="" style="color: #d39e00;" data-toggle="modal"
+									data-target="#signup-form">Sign-up</a> here</p>
+
+						</div>
+
+
+					</form>
+
+
+
+
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!------------- MODAL - SIGN UP --------------->
+
+	<div class="modal fade" id="signup-form" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+		aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content" style="background-color: #006bde;
+		background-size: cover;">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalCenterTitle" style="color: #fff;
+font-weight: bold;
+text-align: center;">Sign-up to discover more</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+
+					<h5 class="modal-title" id="exampleModalCenterTitle" style="color: #fff;
+font-weight: bold;
+margin-bottom: 3.5%; padding-bottom: 4%;">Sign-up</h5>
+
+
+					<ul style="list-style: none; position: absolute; text-align: center; padding-left: 0px;">
+						<li style="display: inline-block; width:25%;">
+							<img src="images/social-media/google-2.png" class="img-responsive" alt=""
+								style="width: 50%;">
+						</li>
+						<li style="display: inline-block; width:25%;"><img src="images/social-media/facebook-2.png"
+								class="img-responsive" alt="" style="width:
+							50%;"></li>
+						<li style="display: inline-block; width:25%;">
+							<img src="images/social-media/linkedin-2.png" class="img-responsive" alt=""
+								style="width: 50%;">
+						</li>
+					</ul>
+
+					<br><br><br><br>
+
+
+
+
+					<form action="user-dashboard.html">
+						<h5 class="modal-title" id="exampleModalCenterTitle" style="color: #fff;
+
+
+border-bottom: 1px solid #fff;
+margin-bottom: 3.5%; padding-bottom: 4%; text-align: center;"><i>or</i></h5>
+
+
+
+						<div class="form-row" style="margin-bottom: 5%;">
+
+							<div class="col">
+								<input class="form-control" type="text" placeholder="First name" required="">
+
+							</div>
+
+							<div class="col">
+								<input class="form-control" type="text" placeholder="Last name" required="">
+
+							</div>
+
+						</div>
+
+						<div class="form-row" style="margin-bottom: 5%;">
+
+
+
+							<div class="col">
+								<input class="form-control" type="text" placeholder="Email" required="">
+
+							</div>
+
+							<div class="col">
+								<input class="form-control" type="text" placeholder="Mobile number" required="">
+
+							</div>
+
+
+
+
+
+						</div>
+
+						<div class="form-row" style="margin-bottom: 5%;">
+
+							<div class="col">
+
+								<input class="form-control" type="password" placeholder="Password" required="">
+
+
+							</div>
+
+						</div>
+
+
+						<div class="form-group">
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" id="gridCheck">
+								<label class="form-check-label" for="gridCheck" style="color: #fff;">
+									By creating an account, you agree to our <a href="" style="color: #ed2e2e;">Terms &
+										conditions</a>
+								</label>
+							</div>
+						</div>
+
+						<div class="form-row" style="text-align: center;">
+							<!-- Submit Button -->
+							<button class="btn btn-main-sm" style="margin: 0 auto;">Sign up</button>
+						</div>
+
+					</form>
+
+
+
+
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+<!------- MODAL - LOG-SIGN-FORM----START ------->
+
+<div class="modal fade" id="login-signup-form" tabindex="-1" aria-labelledby="exampleModalCenterTitle" aria-modal="true" role="dialog">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+	  <div class="modal-content" style="/* background-color: #006bde; */ background-color: #eef6fe; border-radius: 20px; padding: 5%; background-size: cover;">
+		<div class="modal-header" style="display: block; border-bottom: 1px solid #000">
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">×</span>
+		  </button>
+		  <ul class="nav nav-tabs" style="margin-bottom: 0px">
+			<li class="nav-item">
+			  <a id="LogTab" data-toggle="tab" href="#Login-form" class="nav-link  active" onclick="SetTab('Login')" style="font-weight: bold; color: #2e7eed">Login</a>
+			</li>
+			<li class="nav-item" style="border-left: 2px solid #2e7eed; padding-left: 5%">
+			  <a id="SignTab" data-toggle="tab" href="#SignIn-form" onclick="SetTab('SignIn')" class="show nav-link" style="font-weight: bold; color: #2e7eed">New User SignUp</a>
+			</li>
+		  </ul>
+		</div>
+		<div class="tab-content clearfix pt-0 active">
+		  <div class="modal-body tab-pane fade active show" id="Login-form">
+			<div class="user-login-icon" style="display: block; text-align: center; margin: 10px">
+			  <img src="images/user-icon.png" class="img-responsive" alt="" />
+			</div>
+  
+			<form action="suresh_verify%20pan.html">
+			  <!-- Username -->
+			  <input class="form-control main" type="text" placeholder="Username" required="" />
+			  <!-- Password -->
+			  <input class="form-control main" type="password" placeholder="Password" required="" />
+			  <!-- Submit Button -->
+			  <div class="form-row" style="text-align: center">
+				<!-- Submit Button -->
+				<button class="btn btn-main-sm" style="margin: 0 auto">
+				  Log in
+				</button>
+			  </div>
+			</form>
+  
+			<form action="suresh_verify%20pan.html">
+			  <h5 class="modal-title" id="exampleModalCenterTitle" style=" color: #000; font-weight: bold; margin: 3.5% 0%; border-bottom: 1px solid #000; text-align: center; ">
+				<i>OR</i>
+			  </h5>
+  
+			  <!-- Username -->
+			  <input class="form-control main" type="text" placeholder="+91 xxxx xxxx xx" required=""/>
+			  <!-- Password -->
+			  <input class="form-control main" type="text" placeholder="Secure OTP" required=""/>
+			  <!-- Submit Button -->
+			  <div class="form-row" style="text-align: center">
+				<!-- Submit Button -->
+				<button class="btn btn-main-sm" style="margin: 0 auto">
+				  Log in
+				</button>
+			  </div>
+			</form>
+		  </div>
+		  <div class="modal-body tab-pane fade in" id="SignIn-form">
+			<h5 class="modal-title" id="exampleModalCenterTitle" style=" color: #fff; font-weight: bold; margin-bottom: 3.5%; padding-bottom: 4%; "></h5>
+  
+			<ul style=" list-style: none; position: absolute; text-align: center; padding-left: 0px; ">
+			  <li style="display: inline-block; width: 25%">
+				<img src="images/social-media/google-2.png" class="img-responsive" alt="" style="width: 50%" />
+			  </li>
+			  <li style="display: inline-block; width: 25%">
+				<img src="images/social-media/facebook-2.png" class="img-responsive" alt="" style="width: 50%" />
+			  </li>
+			  <li style="display: inline-block; width: 25%">
+				<img src="images/social-media/linkedin-2.png" class="img-responsive" alt="" style="width: 50%" />
+			  </li>
+			</ul>
+  
+			<br /><br /><br /><br />
+  
+			<form action="suresh_verify%20pan.html">
+			  <h5 class="modal-title" id="exampleModalCenterTitle" style=" color: #000; border-bottom: 1px solid #000; margin-bottom: 3.5%; padding-bottom: 4%; text-align: center; ">
+				<i>or</i>
+			  </h5>
+  
+			  <div class="form-row" style="margin-bottom: 5%">
+				<div class="col">
+				  <input class="form-control" type="text" placeholder="First name" requi />
+				</div>
+  
+				<div class="col">
+				  <input class="form-control" type="text" placeholder="Last name" required="" />
+				</div>
+			  </div>
+  
+			  <div class="form-row" style="margin-bottom: 5%">
+				<div class="col">
+				  <input class="form-control" type="text" placeholder="Email" required="" />
+				</div>
+  
+				<div class="col">
+				  <input class="form-control" type="text" placeholder="Mobile number" required=""/>
+				</div>
+			  </div>
+  
+			  <div class="form-row" style="margin-bottom: 5%">
+				<div class="col">
+				  <input class="form-control" type="password" placeholder="Password" required="" />
+				</div>
+			  </div>
+  
+			  <div class="form-group">
+				<div class="form-check">
+				  <input class="form-check-input" type="checkbox" id="gridCheck" />
+				  <label class="form-check-label" for="gridCheck" style="color: #2e7eed"
+				  >
+					By creating an account, you agree to our
+					<a href="" style="color: #ed2e2e">Terms &amp; conditions</a>
+				  </label>
+				</div>
+			  </div>
+  
+			  <div class="form-row" style="text-align: center">
+				<!-- Submit Button -->
+				<button class="btn btn-main-sm" style="margin: 0 auto">
+				  Sign up
+				</button>
+			  </div>
+			</form>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </div>
+  
+
+<!------- MODAL - LOG-SIGN-FORM----END ------->
+
+	
+	<!-- JAVASCRIPTS -->
+
+
+
+	<script src="plugins/slick/slick.min.js"></script>
+	<script src="plugins/fancybox/jquery.fancybox.min.js"></script>
+	<script src="plugins/syotimer/jquery.syotimer.min.js"></script>
+	<script src="plugins/aos/aos.js"></script>
+
+	<!----------- compare JS ----------->
+	<script src="js/compare.js"></script>
+
+
+	<!-- google map -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgeuuDfRlweIs7D6uo4wdIHVvJ0LonQ6g"></script>
+	<script src="plugins/google-map/gmap.js"></script>
+
+	<script src="js/script.js"></script>
+
+	<script>
+
+		$("#btnHolding").click(holdingClick);
+
+
+
+
+		function holdingClick() {
+			jQuery("#btn-holding").addClass('active');
+			jQuery("#btn-overview").removeClass('active');
+			jQuery("#btn-Performance").removeClass('active');
+			jQuery("#Sector-holding").show();
+			jQuery("#overview").hide();
+			jQuery("#performance").hide();
+			if (isresetclick == false) {
+				miscHoldingPersentage = 0.00;
+			}
+		}
+
+		// something is missing in this function
+		// function(n) {
+		// 	if (typeof i !== o && (!n || i.event.triggered !== n.type)) return i.event.dispatch.apply(c.elem, arguments)
+		// }
+
+
+
+
+
+
+	</script>
+
+
+</body>
+
+</html>
